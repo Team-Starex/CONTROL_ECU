@@ -47,7 +47,24 @@ void core0_main(void)
     IfxCpu_waitEvent(&cpuSyncEvent, 1);
 
 
-    while(1)
+    while (1)
     {
+        if (g_flag_50ms != FALSE)
+        {
+            g_flag_50ms = FALSE;
+            /* 50ms마다 할 작업 가*/
+        }
+
+        if (g_flag_100ms != FALSE)
+        {
+            g_flag_100ms = FALSE;
+            /* 100ms마다 할 작업 */
+        }
+
+        if (g_flag_1000ms != FALSE)
+        {
+            g_flag_1000ms = FALSE;
+            /* 1000ms마다 할 작업 */
+        }
     }
 }

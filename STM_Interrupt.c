@@ -48,7 +48,10 @@
 IfxStm_CompareConfig g_STMConf;                                 /* STM configuration structure                      */
 Ifx_TickTime g_ticksFor10ms;                                   /* Variable to store the number of ticks to wait    */
 
-volatile uint32 g_tick10ms = 0;
+volatile uint8 g_cnt50ms = 0u;
+volatile uint8 g_cnt100ms = 0u;
+volatile uint8 g_cnt1000ms = 0u;
+
 volatile boolean g_flag_50ms = FALSE;
 volatile boolean g_flag_100ms = FALSE;
 volatile boolean g_flag_1000ms = FALSE;
@@ -79,19 +82,25 @@ void isrSTM(void)
 {
     IfxStm_increaseCompare(STM, g_STMConf.comparator, g_ticksFor10ms);
 
-    g_tick10ms++;
+    g_cnt50ms++;
+    g_cnt100ms++;
+    g_cnt1000ms++;
 
-    if ((g_tick10ms % 5u) == 0u)
+    if (g_cnt50ms >= 5u)
     {
+        g_cnt50ms = 0u;
         g_flag_50ms = TRUE;
     }
 
-    if ((g_tick10ms % 10u) == 0u)
+    if (g_cnt100ms >= 10u)
     {
+        g_cnt100ms = 0u;
         g_flag_100ms = TRUE;
     }
 
-    if((g_tick10ms % 100u) == 0u){
+    if (g_cnt1000ms >= 100u)
+    {
+        g_cnt1000ms = 0u;
         g_flag_1000ms = TRUE;
     }
 }
