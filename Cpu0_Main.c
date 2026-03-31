@@ -30,6 +30,8 @@
 #include "Ifx_Cfg_Ssw.h"
 #include "STM_Interrupt.h"
 
+#define LED                     &MODULE_P00,5
+
 IFX_ALIGN(4) IfxCpu_syncEvent cpuSyncEvent = 0;
 
 void core0_main(void)
@@ -46,7 +48,9 @@ void core0_main(void)
     IfxCpu_emitEvent(&cpuSyncEvent);
     IfxCpu_waitEvent(&cpuSyncEvent, 1);
 
-
+    // init 처리부
+    initPeripherals();
+    uint8 isOn = 1;
     while (1)
     {
         if (g_flag_50ms != FALSE)
@@ -65,6 +69,18 @@ void core0_main(void)
         {
             g_flag_1000ms = FALSE;
             /* 1000ms마다 할 작업 */
+
+            //토글 테스트
+            if(isOn==1){
+                isOn = 0;
+                IfxPort_setPinState(LED, IfxPort_State_low);
+            }
+            else{
+                isOn = 1;
+                IfxPort_setPinState(LED, IfxPort_State_high);
+            }
+
+
         }
     }
 }

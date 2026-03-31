@@ -24,13 +24,20 @@
  * CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
  * IN THE SOFTWARE.
  *********************************************************************************************************************/
+#include "Ifx_Types.h"
 
 #ifndef STM_INTERRUPT_H_
 #define STM_INTERRUPT_H_ 1
+
+extern volatile boolean g_flag_50ms;
+extern volatile boolean g_flag_100ms;
+extern volatile boolean g_flag_1000ms;
 
 /*********************************************************************************************************************/
 /*------------------------------------------------Function Prototypes------------------------------------------------*/
 /*********************************************************************************************************************/
 void initPeripherals(void);
+void initLED(void);
+void initSTM(void);
 
 #endif /* STM_INTERRUPT_H_ */
