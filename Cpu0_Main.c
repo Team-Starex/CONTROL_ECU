@@ -28,25 +28,59 @@
 #include "IfxCpu.h"
 #include "IfxScuWdt.h"
 #include "Ifx_Cfg_Ssw.h"
+#include "STM_Interrupt.h"
+
+#define LED                     &MODULE_P00,5
 
 IFX_ALIGN(4) IfxCpu_syncEvent cpuSyncEvent = 0;
 
 void core0_main(void)
 {
     IfxCpu_enableInterrupts();
-    
+
     /* !!WATCHDOG0 AND SAFETY WATCHDOG ARE DISABLED HERE!!
      * Enable the watchdogs and service them periodically if it is required
      */
     IfxScuWdt_disableCpuWatchdog(IfxScuWdt_getCpuWatchdogPassword());
     IfxScuWdt_disableSafetyWatchdog(IfxScuWdt_getSafetyWatchdogPassword());
-    
+
     /* Wait for CPU sync event */
     IfxCpu_emitEvent(&cpuSyncEvent);
     IfxCpu_waitEvent(&cpuSyncEvent, 1);
-    
-    
-    while(1)
+
+    // init 처리부
+    initPeripherals();
+    uint8 isOn = 1;
+    while (1)
     {
+        if (g_flag_50ms != FALSE)
+        {
+            g_flag_50ms = FALSE;
+            /* 50ms마다 할 작업 가*/
+        }
+
+        if (g_flag_100ms != FALSE)
+        {
+            g_flag_100ms = FALSE;
+            /* 100ms마다 할 작업 */
+        }
+
+        if (g_flag_1000ms != FALSE)
+        {
+            g_flag_1000ms = FALSE;
+            /* 1000ms마다 할 작업 */
+
+            //토글 테스트
+            if(isOn==1){
+                isOn = 0;
+                IfxPort_setPinState(LED, IfxPort_State_low);
+            }
+            else{
+                isOn = 1;
+                IfxPort_setPinState(LED, IfxPort_State_high);
+            }
+
+
+        }
     }
 }

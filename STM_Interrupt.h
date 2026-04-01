@@ -1,5 +1,5 @@
 /**********************************************************************************************************************
- * \file Cpu2_Main.c
+ * \file STM_Interrupt.h
  * \copyright Copyright (C) Infineon Technologies AG 2019
  *
  * Use of this file is subject to the terms of use agreed between (i) you or the company in which ordinary course of
@@ -25,26 +25,19 @@
  * IN THE SOFTWARE.
  *********************************************************************************************************************/
 #include "Ifx_Types.h"
-#include "IfxCpu.h"
-#include "IfxScuWdt.h"
-#include "Ifx_Cfg_Ssw.h"
 
-extern IfxCpu_syncEvent cpuSyncEvent;
+#ifndef STM_INTERRUPT_H_
+#define STM_INTERRUPT_H_ 1
 
-void core2_main(void)
-{
-    IfxCpu_enableInterrupts();
+extern volatile boolean g_flag_50ms;
+extern volatile boolean g_flag_100ms;
+extern volatile boolean g_flag_1000ms;
 
-    /* !!WATCHDOG2 IS DISABLED HERE!!
-     * Enable the watchdog and service it periodically if it is required
-     */
-    IfxScuWdt_disableCpuWatchdog(IfxScuWdt_getCpuWatchdogPassword());
+/*********************************************************************************************************************/
+/*------------------------------------------------Function Prototypes------------------------------------------------*/
+/*********************************************************************************************************************/
+void initPeripherals(void);
+void initLED(void);
+void initSTM(void);
 
-    /* Wait for CPU sync event */
-    IfxCpu_emitEvent(&cpuSyncEvent);
-    IfxCpu_waitEvent(&cpuSyncEvent, 1);
-
-    while(1)
-    {
-    }
-}
+#endif /* STM_INTERRUPT_H_ */

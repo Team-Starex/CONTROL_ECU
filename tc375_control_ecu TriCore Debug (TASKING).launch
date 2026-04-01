@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.rt.hightec.agent.launcher.launchConfigurationType">
+    <stringAttribute key="ACC_HW" value="DAS JDS AURIX LITE KIT V2.0 (TC375) LK989PF3"/>
+    <booleanAttribute key="ENABLE_AGENTLOG" value="false"/>
+    <booleanAttribute key="ENABLE_FLASHING" value="true"/>
+    <booleanAttribute key="ENABLE_STOPPING" value="true"/>
+    <stringAttribute key="EXECUTABLE_PATH" value="${workspace_loc}/tc375_control_ecu/TriCore Debug (TASKING)/tc375_control_ecu.elf"/>
+    <stringAttribute key="STOP_FUNCTION" value="core0_main"/>
+    <stringAttribute key="SVD" value="C:/Infineon/AURIX-Studio-1.10.32/build_system/bundled-artefacts-repo/svd/tc37xpd/1.2-3/device.svd"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="tc375_control_ecu"/>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/tc375_control_ecu"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="4"/>
+    </listAttribute>
+    <stringAttribute key="org.eclipse.debug.ui.ATTR_LOCATION" value="/tc375_control_ecu/tc375_control_ecu TriCore Debug (TASKING).launch"/>
+    <stringAttribute key="org.eclipse.debug.ui.ATTR_PROJECT_NAME" value="tc375_control_ecu"/>
+    <booleanAttribute key="org.eclipse.debug.ui.ATTR_SHARED" value="true"/>
+    <stringAttribute key="org.eclipse.tcf.debug.MemoryMap" value="[{&quot;FileName&quot;:&quot;C:/tools/aurix/tc375_control_ecu/TriCore Debug (TASKING)/tc375_control_ecu.elf&quot;,&quot;ID&quot;:&quot;/DAS JDS AURIX LITE KIT V2.0 (TC375) LK989PF3/Core 2: CPU2 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;101a4076-92b1-425e-95b2-202226e14422&quot;},{&quot;FileName&quot;:&quot;C:/tools/aurix/tc375_control_ecu/TriCore Debug (TASKING)/tc375_control_ecu.elf&quot;,&quot;ID&quot;:&quot;/DAS JDS AURIX LITE KIT V2.0 (TC375) LK989PF3/Core 2: CPU2 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;a21010ce-6a8f-45aa-8842-d739ff2284e9&quot;},{&quot;FileName&quot;:&quot;C:/tools/aurix/tc375_control_ecu/TriCore Debug (TASKING)/tc375_control_ecu.elf&quot;,&quot;ID&quot;:&quot;/DAS JDS AURIX LITE KIT V2.0 (TC375) LK989PF3/Core 2: CPU2 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;29f76437-e464-4a41-a3bb-464abdf17536&quot;},{&quot;FileName&quot;:&quot;C:/tools/aurix/tc375_control_ecu/TriCore Debug (TASKING)/tc375_control_ecu.elf&quot;,&quot;ID&quot;:&quot;/DAS JDS AURIX LITE KIT V2.0 (TC375) LK989PF3/Core 0: CPU0 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;2e74a4ac-dfee-423b-8f10-c9106cbd7340&quot;},{&quot;FileName&quot;:&quot;C:/tools/aurix/tc375_control_ecu/TriCore Debug (TASKING)/tc375_control_ecu.elf&quot;,&quot;ID&quot;:&quot;/DAS JDS AURIX LITE KIT V2.0 (TC375) LK989PF3/Core 2: CPU2 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;f2a0e937-3f17-427c-b3cc-ceb6e91cbd9c&quot;},{&quot;FileName&quot;:&quot;C:/tools/aurix/tc375_control_ecu/TriCore Debug (TASKING)/tc375_control_ecu.elf&quot;,&quot;ID&quot;:&quot;/DAS JDS AURIX LITE KIT V2.0 (TC375) LK989PF3/Core 0: CPU0 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;744686ae-ced8-4025-bb4e-016e75e1229b&quot;},{&quot;FileName&quot;:&quot;C:/tools/aurix/tc375_control_ecu/TriCore Debug (TASKING)/tc375_control_ecu.elf&quot;,&quot;ID&quot;:&quot;/DAS JDS AURIX LITE KIT V2.0 (TC375) LK989PF3/Core 2: CPU2 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;c1e05b8f-09e8-4b88-a1e4-791d5a9f2cc9&quot;},{&quot;FileName&quot;:&quot;C:/tools/aurix/tc375_control_ecu/TriCore Debug (TASKING)/tc375_control_ecu.elf&quot;,&quot;ID&quot;:&quot;/DAS JDS AURIX LITE KIT V2.0 (TC375) LK989PF3/Core 0: CPU0 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;bf0f2100-176a-4ca3-9401-a298db805bc6&quot;},{&quot;FileName&quot;:&quot;C:/tools/aurix/tc375_control_ecu/TriCore Debug (TASKING)/tc375_control_ecu.elf&quot;,&quot;ID&quot;:&quot;/DAS JDS AURIX LITE KIT V2.0 (TC375) LK989PF3/Core 1: CPU1 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;d96adf1d-9753-457d-b0ec-2497431cab20&quot;},{&quot;FileName&quot;:&quot;C:/tools/aurix/tc375_control_ecu/TriCore Debug (TASKING)/tc375_control_ecu.elf&quot;,&quot;ID&quot;:&quot;/DAS JDS AURIX LITE KIT V2.0 (TC375) LK989PF3/Core 2: CPU2 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;2df51790-b163-4afe-b20c-86b3c2834d12&quot;},{&quot;FileName&quot;:&quot;C:/tools/aurix/tc375_control_ecu/TriCore Debug (TASKING)/tc375_control_ecu.elf&quot;,&quot;ID&quot;:&quot;/DAS JDS AURIX LITE KIT V2.0 (TC375) LK989PF3/Core 0: CPU0 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;c7f50b5b-e6a3-4eb9-927f-2d999abe31e9&quot;},{&quot;FileName&quot;:&quot;C:/tools/aurix/tc375_control_ecu/TriCore Debug (TASKING)/tc375_control_ecu.elf&quot;,&quot;ID&quot;:&quot;/DAS JDS AURIX LITE KIT V2.0 (TC375) LK989PF3/Core 1: CPU1 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;ff21d41c-9940-4338-a5c0-695a4ed769f3&quot;}]"/>
+    <stringAttribute key="org.eclipse.tcf.debug.PeerID" value="TCP:127.0.0.1:1534"/>
+    <stringAttribute key="org.eclipse.tcf.debug.ProjectName" value="tc375_control_ecu"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.RunLocalAgent" value="false"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.RunLocalServer" value="false"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.UseLocalAgent" value="false"/>
+    <stringAttribute key="org.eclipse.tcf.debug.executable_name" value="${workspace_loc}/tc375_control_ecu/TriCore Debug (TASKING)/tc375_control_ecu.elf"/>
+    <stringAttribute key="sessionID" value="61d5df57-1f99-4f32-a158-21f3f75be70a"/>
+</launchConfiguration>
