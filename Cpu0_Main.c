@@ -53,23 +53,21 @@ void core0_main(void)
     uint8 isOn = 1;
     while (1)
     {
-        if (g_flag_50ms != FALSE)
+        if (stm_get_10msflag() != FALSE)
         {
-            g_flag_50ms = FALSE;
-            /* 50ms마다 할 작업 가*/
+            /* 50ms마다 할 작업*/
         }
-
-        if (g_flag_100ms != FALSE)
+        if (stm_get_50msflag() != FALSE)
         {
-            g_flag_100ms = FALSE;
+            /* 50ms마다 할 작업*/
+        }
+        if (stm_get_100msflag() != FALSE)
+        {
             /* 100ms마다 할 작업 */
         }
-
-        if (g_flag_1000ms != FALSE)
+        if (stm_get_1000msflag() != FALSE)
         {
-            g_flag_1000ms = FALSE;
             /* 1000ms마다 할 작업 */
-
             //토글 테스트
             if(isOn==1){
                 isOn = 0;

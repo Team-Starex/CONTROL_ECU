@@ -48,13 +48,15 @@
 IfxStm_CompareConfig g_STMConf;                                 /* STM configuration structure                      */
 Ifx_TickTime g_ticksFor10ms;                                   /* Variable to store the number of ticks to wait    */
 
-volatile uint8 g_cnt50ms = 0u;
-volatile uint8 g_cnt100ms = 0u;
-volatile uint8 g_cnt1000ms = 0u;
+static volatile uint8 g_cnt10ms = 0u;
+static volatile uint8 g_cnt50ms = 0u;
+static volatile uint8 g_cnt100ms = 0u;
+static volatile uint8 g_cnt1000ms = 0u;
 
-volatile boolean g_flag_50ms = FALSE;
-volatile boolean g_flag_100ms = FALSE;
-volatile boolean g_flag_1000ms = FALSE;
+static volatile boolean g_flag_10ms = FALSE;
+static volatile boolean g_flag_50ms = FALSE;
+static volatile boolean g_flag_100ms = FALSE;
+static volatile boolean g_flag_1000ms = FALSE;
 
 /*********************************************************************************************************************/
 /*------------------------------------------------Function Prototypes------------------------------------------------*/
@@ -78,13 +80,60 @@ void initSTM(void);
  */
 IFX_INTERRUPT(isrSTM, 0, ISR_PRIORITY_STM);
 
+boolean stm_get_10msflag(void)
+{
+    boolean flag = g_flag_10ms;
+    if (flag != FALSE)
+    {
+        g_flag_10ms = FALSE;
+    }
+    return flag;
+}
+
+boolean stm_get_50msflag(void)
+{
+    boolean flag = g_flag_50ms;
+    if (flag != FALSE)
+    {
+        g_flag_50ms = FALSE;
+    }
+    return flag;
+}
+
+boolean stm_get_100msflag(void)
+{
+    boolean flag = g_flag_100ms;
+    if (flag != FALSE)
+    {
+        g_flag_100ms = FALSE;
+    }
+    return flag;
+}
+
+boolean stm_get_1000msflag(void)
+{
+    boolean flag = g_flag_1000ms;
+    if (flag != FALSE)
+    {
+        g_flag_1000ms = FALSE;
+    }
+    return flag;
+}
+
 void isrSTM(void)
 {
     IfxStm_increaseCompare(STM, g_STMConf.comparator, g_ticksFor10ms);
 
+    g_cnt10ms++;
     g_cnt50ms++;
     g_cnt100ms++;
     g_cnt1000ms++;
+
+    if (g_cnt10ms >= 1u)
+    {
+        g_cnt50ms = 0u;
+        g_flag_10ms = TRUE;
+    }
 
     if (g_cnt50ms >= 5u)
     {
