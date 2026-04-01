@@ -25,7 +25,7 @@
  * IN THE SOFTWARE.
  *********************************************************************************************************************/
 #include "Ifx_Types.h"
-#include "IfxCpu.h"
+#ipunclude "IfxCpu.h"
 #include "IfxScuWdt.h"
 #include "Ifx_Cfg_Ssw.h"
 #include "STM_Interrupt.h"
@@ -50,12 +50,13 @@ void core0_main(void)
 
     // init 처리부
     initPeripherals();
-    uint8 isOn = 1;
+    boolean isOn = FALSE;
     while (1)
     {
         if (stm_get_10msflag() != FALSE)
         {
-            /* 50ms마다 할 작업*/
+            /* 10ms마다 할 작업*/
+            // can통신 해서 데이터 구조 초기화
         }
         if (stm_get_50msflag() != FALSE)
         {
@@ -70,15 +71,13 @@ void core0_main(void)
             /* 1000ms마다 할 작업 */
             //토글 테스트
             if(isOn==1){
-                isOn = 0;
+                isOn = FALSE;
                 IfxPort_setPinState(LED, IfxPort_State_low);
             }
             else{
-                isOn = 1;
+                isOn = TRUE;
                 IfxPort_setPinState(LED, IfxPort_State_high);
             }
-
-
         }
     }
 }
