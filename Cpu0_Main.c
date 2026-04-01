@@ -25,7 +25,7 @@
  * IN THE SOFTWARE.
  *********************************************************************************************************************/
 #include "Ifx_Types.h"
-#ipunclude "IfxCpu.h"
+#include "IfxCpu.h"
 #include "IfxScuWdt.h"
 #include "Ifx_Cfg_Ssw.h"
 #include "STM_Interrupt.h"
@@ -50,6 +50,11 @@ void core0_main(void)
 
     // init 처리부
     initPeripherals();
+    IfxScuWdt_disableCpuWatchdog(IfxScuWdt_getCpuWatchdogPassword());
+    IfxScuWdt_disableSafetyWatchdog(IfxScuWdt_getSafetyWatchdogPassword());
+    init_gpio();
+    init_can();
+
     boolean isOn = FALSE;
     while (1)
     {
@@ -65,6 +70,7 @@ void core0_main(void)
         if (stm_get_100msflag() != FALSE)
         {
             /* 100ms마다 할 작업 */
+            can_perceive_ras_100ms();
         }
         if (stm_get_1000msflag() != FALSE)
         {
@@ -72,11 +78,11 @@ void core0_main(void)
             //토글 테스트
             if(isOn==1){
                 isOn = FALSE;
-                IfxPort_setPinState(LED, IfxPort_State_low);
+                //IfxPort_setPinState(LED, IfxPort_State_low);
             }
             else{
                 isOn = TRUE;
-                IfxPort_setPinState(LED, IfxPort_State_high);
+                //IfxPort_setPinState(LED, IfxPort_State_high);
             }
         }
     }
