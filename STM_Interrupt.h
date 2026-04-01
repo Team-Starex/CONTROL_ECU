@@ -29,15 +29,18 @@
 #ifndef STM_INTERRUPT_H_
 #define STM_INTERRUPT_H_ 1
 
-extern volatile boolean g_flag_50ms;
-extern volatile boolean g_flag_100ms;
-extern volatile boolean g_flag_1000ms;
-
 /*********************************************************************************************************************/
 /*------------------------------------------------Function Prototypes------------------------------------------------*/
 /*********************************************************************************************************************/
+
 void initPeripherals(void);
 void initLED(void);
 void initSTM(void);
+
+// Timer Function
+boolean stm_get_10msflag(void);
+boolean stm_get_50msflag(void);
+boolean stm_get_100msflag(void);
+boolean stm_get_1000msflag(void);
 
 #endif /* STM_INTERRUPT_H_ */
