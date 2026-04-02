@@ -76,6 +76,8 @@ void core0_main(void)
         {
             /* 1000ms마다 할 작업 */
             //토글 테스트
+
+            critical_response_timer_down();
             if(isOn==1){
                 isOn = FALSE;
                 //IfxPort_setPinState(LED, IfxPort_State_low);

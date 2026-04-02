@@ -19,6 +19,7 @@ static IfxCan_Can_Pins    g_canPins;
 
 static IfxCan_Message     g_txMsg;
 static uint32             g_txData[2];
+static uint8 timeout_counter = 10;  // ← 정적 변수로 값 유지
 
 typedef struct {
     uint8 speed_value;
@@ -128,18 +129,28 @@ static void send_perceive_data(const CanPerceiveData *d)
     }
 }
 
+void critical_response_timer_down(void){
+    if (timeout_counter > 0)
+    {
+        timeout_counter--;
+    }
+    else
+    {
+        timeout_counter = 10;  // 0이 되면 다시 10으로 리셋
+    }
+}
+
 void can_perceive_ras_100ms(void)
 {
-/*    boolean now = button_pressed();
-    send_button_state(now);*/
     CanPerceiveData data;
 
-    /* 더미값 */
+
     data.speed_value = 10u;
     data.steer_angle = 90u;
-    data.safe_state  = 1u;
+    data.safe_state  = 2u;
     data.log_num     = 42u;
-    data.timeout     = 0u;
+    data.timeout     = timeout_counter;  // ← 현재 카운터 값 전송
 
-    send_perceive_data(&data);
+    send_perceive_data(&data);  // 한 번만 호출!
+
 }
