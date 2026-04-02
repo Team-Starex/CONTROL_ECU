@@ -50,12 +50,18 @@ void core0_main(void)
 
     // init 처리부
     initPeripherals();
-    uint8 isOn = 1;
+    IfxScuWdt_disableCpuWatchdog(IfxScuWdt_getCpuWatchdogPassword());
+    IfxScuWdt_disableSafetyWatchdog(IfxScuWdt_getSafetyWatchdogPassword());
+    init_gpio();
+    init_can();
+
+    boolean isOn = FALSE;
     while (1)
     {
         if (stm_get_10msflag() != FALSE)
         {
-            /* 50ms마다 할 작업*/
+            /* 10ms마다 할 작업*/
+            // can통신 해서 데이터 구조 초기화
         }
         if (stm_get_50msflag() != FALSE)
         {
@@ -64,21 +70,20 @@ void core0_main(void)
         if (stm_get_100msflag() != FALSE)
         {
             /* 100ms마다 할 작업 */
+            can_perceive_ras_100ms();
         }
         if (stm_get_1000msflag() != FALSE)
         {
             /* 1000ms마다 할 작업 */
             //토글 테스트
             if(isOn==1){
-                isOn = 0;
-                IfxPort_setPinState(LED, IfxPort_State_low);
+                isOn = FALSE;
+                //IfxPort_setPinState(LED, IfxPort_State_low);
             }
             else{
-                isOn = 1;
-                IfxPort_setPinState(LED, IfxPort_State_high);
+                isOn = TRUE;
+                //IfxPort_setPinState(LED, IfxPort_State_high);
             }
-
-
         }
     }
 }
