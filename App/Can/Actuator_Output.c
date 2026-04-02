@@ -1,8 +1,8 @@
 #include "Actuator_Output.h"
 
-#define BRAKE_ACTIVE_THRESHOLD   (1u)
+#define BRAKE_ACTIVE_THRESHOLD   (1u) // 브레이크 활성 상태 임계값
 
-/* one-hot 4bit 인코딩 */
+//SystemState를 4bit one-hot 상태로 변환
 static uint8_t encode_safe_state(SystemState s, bool isTimedOut)
 {
     if (isTimedOut == true)
@@ -45,6 +45,7 @@ static uint8_t encode_speed_state(const VehicleState *vehicleState, bool isTimed
     }
 }
 
+// brake 값이 존재하면 1 없으면 0
 static uint8_t build_brake_active(const VehicleState *vehicleState)
 {
     if (vehicleState == 0)
@@ -55,7 +56,7 @@ static uint8_t build_brake_active(const VehicleState *vehicleState)
     return (vehicleState->brake.cur >= BRAKE_ACTIVE_THRESHOLD) ? 1u : 0u;
 }
 
-//ev_state 정의
+//현재 브레이크, 액셀, 조향 센서의 변화량에 의해 정의한 level에 따라 이벤트 상태를 비트필드로 정의
 static uint8_t build_ev_state(const VehicleState *vehicleState)
 {
     uint8_t evState = 0u;
@@ -65,25 +66,25 @@ static uint8_t build_ev_state(const VehicleState *vehicleState)
         return 0u;
     }
 
-    /* bit0 : Rapid Accel */
+    //bit0 : Rapid Accel
     if (vehicleState->accel.deltalevel >= DELTA_CRITICAL)
     {
         evState |= (1u << 0);
     }
 
-    /* bit1 : Rapid Brake */
+    //bit1 : Rapid Brake
     if (vehicleState->brake.deltalevel >= DELTA_CRITICAL)
     {
         evState |= (1u << 1);
     }
 
-    /* bit2 : Warning Steer */
-    if (vehicleState->steer.deltalevel == DELTA_CRITICAL)
+    //bit2 : Warning Steer
+    if (vehicleState->steer.deltalevel == DELTA_WARNING)
     {
         evState |= (1u << 2);
     }
 
-    /* bit3 : Critical Steer */
+    //bit3 : Critical Steer
     if (vehicleState->steer.deltalevel == DELTA_CRITICAL)
     {
         evState |= (1u << 3);
@@ -92,6 +93,7 @@ static uint8_t build_ev_state(const VehicleState *vehicleState)
     return evState;
 }
 
+// 송신용 데이터 초기화 함수
 void actuator_tx_runtime_init(ActuatorTxRuntime *state)
 {
     if (state == 0)
@@ -105,6 +107,8 @@ void actuator_tx_runtime_init(ActuatorTxRuntime *state)
     state->ackPulse   = 0u;
 }
 
+//버튼의 상태가 0->1로 변하는 순간에만 pulse 발생
+//이전 버튼이 0이고 현재 버튼이 1이면 ackPulse = 1, ackSeq++
 void actuator_tx_runtime_update(ActuatorTxRuntime *state, const VehicleState *vehicleState)
 {
     uint8_t curButton;
@@ -116,7 +120,7 @@ void actuator_tx_runtime_update(ActuatorTxRuntime *state, const VehicleState *ve
 
     curButton = (vehicleState->button != 0u) ? 1u : 0u;
 
-    /* pulse는 기본 0, 상승엣지에서만 1 */
+    // pulse는 기본 0, 상승엣지에서만 1
     state->ackPulse = 0u;
 
     if ((state->prevButton == 0u) && (curButton == 1u))
@@ -128,6 +132,7 @@ void actuator_tx_runtime_update(ActuatorTxRuntime *state, const VehicleState *ve
     state->prevButton = curButton;
 }
 
+//주기 송신이 끝난 뒤 호출하는 함수
 void actuator_tx_runtime_on_periodic_send(ActuatorTxRuntime *state)
 {
     if (state == 0)
@@ -135,12 +140,13 @@ void actuator_tx_runtime_on_periodic_send(ActuatorTxRuntime *state)
         return;
     }
 
-    state->aliveCnt = (uint8_t)((state->aliveCnt + 1u) & 0x0Fu);
+    state->aliveCnt = (uint8_t)((state->aliveCnt + 1u) & 0x0Fu); // 현재 송신중 의미
 
-    /* pulse는 한 프레임만 유지 */
+    //이번 프레임에서만 1로 유지, 끝나면 0으로 초기화
     state->ackPulse = 0u;
 }
 
+//각 데이터를 종합 후 ACT ECU 통신 프로토콜에 맞춰 payload를 제작
 void actuator_build_can_data(const VehicleState *vehicleState,
                              const OutputRuntimeState *runtimeState,
                              const ActuatorTxRuntime *txRuntime,
@@ -162,13 +168,12 @@ void actuator_build_can_data(const VehicleState *vehicleState,
     speedState  = encode_speed_state(vehicleState, runtimeState->isTimedOut);
     brakeActive = build_brake_active(vehicleState);
     evState     = build_ev_state(vehicleState);
-    ackButton   = (txRuntime->ackPulse != 0u) ? 1u : 0u;
-    msgValid    = (runtimeState->isTimedOut == false) ? 1u : 0u;
+    ackButton   = (txRuntime->ackPulse != 0u) ? 1u : 0u;        //button ack pulse가 이번 frame안에 존재?
+    msgValid    = (runtimeState->isTimedOut == false) ? 1u : 0u;//timeout이 아니여서 현재 메시지가 유효?
 
     //Byte0
     // bit0~3 : SAFE_STATE
     // bit4~7 : SPEED_STATE
-    //
     data[0] = (uint8_t)((safeState & 0x0Fu) |
                         ((speedState & 0x0Fu) << 4));
 
@@ -196,6 +201,7 @@ void actuator_build_can_data(const VehicleState *vehicleState,
     data[7] = 0u;
 }
 
+//전에 만든 data를 can 드라이버가 송신하기 쉬운 형태로 convert
 void actuator_build_can_words(const VehicleState *vehicleState,
                               const OutputRuntimeState *runtimeState,
                               const ActuatorTxRuntime *txRuntime,
