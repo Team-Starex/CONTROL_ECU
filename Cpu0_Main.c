@@ -214,8 +214,6 @@ void core0_main(void)
     IfxCpu_waitEvent(&cpuSyncEvent, 1);
 
     initPeripherals();
-//    initCanTransceiver();
-//    app_init_can();
 
     g_inputData.button      = 0u;
     g_inputData.brake_value = 0u;
@@ -230,26 +228,12 @@ void core0_main(void)
     {
         if (stm_get_10msflag() != FALSE)
         {
-            hasInput = FALSE;
-
-            if (g_useDummyTest != FALSE)
-            {
-                hasInput = run_testcase_step(test_step);
-
-                if (hasInput != FALSE)
-                {
-                    output_runtime_notify_input(&g_outputRuntime);
-                }
-                test_step++;
-            }
-//            else
-//            {
-//                if (IfxCan_Can_readMessage(&g_canNode, &g_rxMsg, g_rxData) == IfxCan_Status_newData)
-//                {
-//                    process_rx_frame_words(g_rxData);
-//                    hasInput = TRUE;
-//                }
-//            }
+            /* 10ms마다 할 작업*/
+            // can통신 해서 데이터 구조 초기화
+        }
+        if (stm_get_50msflag() != FALSE)
+        {
+            /* 50ms마다 할 작업*/
         }
 
         if (stm_get_100msflag() != FALSE)
@@ -275,15 +259,7 @@ void core0_main(void)
 
         if (stm_get_1000msflag() != FALSE)
         {
-            if (isOn == 1u)
-            {
-                isOn = 0u;
-                IfxPort_setPinState(LED, IfxPort_State_low);
-            }
-            else
-            {
-                isOn = 1u;
-                IfxPort_setPinState(LED, IfxPort_State_high);
+
             }
         }
     }
