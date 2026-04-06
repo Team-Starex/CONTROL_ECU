@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc18604a --dep-file=Libraries/iLLD/TC3xx/Tricore/_Impl/IfxGeth_cfg.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\App -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\App\\\\Can -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\App\\\\Handlers -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\App\\\\Steer -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\App\\\\Timer -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Common -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Configurations -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37x -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx\\\\Tricore -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Service -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Can -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Can\\\\Can -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Can\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Stm -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Stm\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_Impl -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap\\\\TC37x -g2 -w544 -w557 -w508 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2012 -o Libraries/iLLD/TC3xx/Tricore/_Impl/IfxGeth_cfg.src ../Libraries/iLLD/TC3xx/Tricore/_Impl/IfxGeth_cfg.c"
+	.compiler_invocation	"ctc -f cc16636a --dep-file=Libraries/iLLD/TC3xx/Tricore/_Impl/IfxGeth_cfg.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\CONTROL_ECU -IC:\\\\CONTROL_ECU\\\\App -IC:\\\\CONTROL_ECU\\\\App\\\\Can -IC:\\\\CONTROL_ECU\\\\App\\\\Handlers -IC:\\\\CONTROL_ECU\\\\App\\\\Steer -IC:\\\\CONTROL_ECU\\\\App\\\\Timer -IC:\\\\CONTROL_ECU\\\\Common -IC:\\\\CONTROL_ECU\\\\Configurations -IC:\\\\CONTROL_ECU\\\\Libraries -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Infra -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37x -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx\\\\Tricore -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Service -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Can -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Can\\\\Can -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Can\\\\Std -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms\\\\Std -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port\\\\Std -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu\\\\Std -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src\\\\Std -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Stm -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Stm\\\\Std -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_Impl -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap\\\\TC37x -g2 -w544 -w557 -w508 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2012 -o Libraries/iLLD/TC3xx/Tricore/_Impl/IfxGeth_cfg.src ../Libraries/iLLD/TC3xx/Tricore/_Impl/IfxGeth_cfg.c"
 	.compiler_name		"ctc"
 	;source	'../Libraries/iLLD/TC3xx/Tricore/_Impl/IfxGeth_cfg.c'
 
@@ -18,7 +18,7 @@ IfxGeth_cfg_indexMap:	.type	object
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L3:
-	.word	63436
+	.word	63418
 	.half	3
 	.word	.L4
 	.byte	4
@@ -26,7373 +26,7373 @@ IfxGeth_cfg_indexMap:	.type	object
 	.byte	1
 	.byte	'../Libraries/iLLD/TC3xx/Tricore/_Impl/IfxGeth_cfg.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\tools\\aurix\\tc375_control_ecu\\TriCore Debug (TASKING)\\',0,12,1
+	.byte	'C:\\CONTROL_ECU\\TriCore Debug (TASKING)\\',0,12,1
 	.word	.L5
 	.byte	2
 	.byte	'short int',0,2,5,3
 	.byte	'__wchar_t',0,1,1,1
-	.word	205
+	.word	187
 	.byte	2
 	.byte	'unsigned int',0,4,7,3
 	.byte	'__size_t',0,1,1,1
-	.word	236
+	.word	218
 	.byte	2
 	.byte	'int',0,4,5,3
 	.byte	'__ptrdiff_t',0,1,1,1
-	.word	269
+	.word	251
 	.byte	4,1,5
-	.word	296
+	.word	278
 	.byte	3
 	.byte	'__codeptr',0,1,1,1
-	.word	298
+	.word	280
 	.byte	2
 	.byte	'unsigned short int',0,2,7,3
 	.byte	'uint16',0,2,112,29
-	.word	321
+	.word	303
 	.byte	2
 	.byte	'unsigned long int',0,4,7,3
 	.byte	'uint32',0,2,116,29
-	.word	358
+	.word	340
 	.byte	3
 	.byte	'sint16',0,2,129,1,29
-	.word	205
+	.word	187
 	.byte	2
 	.byte	'long int',0,4,5,3
 	.byte	'sint32',0,2,134,1,29
-	.word	410
+	.word	392
 	.byte	2
 	.byte	'long long int',0,8,5,3
 	.byte	'sint64',0,2,141,1,29
-	.word	438
+	.word	420
 	.byte	2
 	.byte	'float',0,4,4,3
 	.byte	'float32',0,2,170,1,29
-	.word	471
+	.word	453
 	.byte	6
 	.byte	'void',0,5
-	.word	497
+	.word	479
 	.byte	3
 	.byte	'pvoid',0,3,54,28
-	.word	503
+	.word	485
 	.byte	7
-	.word	497
+	.word	479
 	.byte	5
-	.word	522
+	.word	504
 	.byte	8,3,132,1,9,8,9
 	.byte	'module',0
-	.word	527
+	.word	509
 	.byte	4,2,35,0,9
 	.byte	'index',0
-	.word	410
+	.word	392
 	.byte	4,2,35,4,0,3
 	.byte	'IfxModule_IndexMap',0,3,136,1,3
-	.word	532
+	.word	514
 	.byte	2
 	.byte	'unsigned char',0,1,8,3
 	.byte	'Ifx_UReg_8Bit',0,4,97,24
-	.word	598
+	.word	580
 	.byte	3
 	.byte	'Ifx_UReg_32Bit',0,4,99,24
-	.word	236
+	.word	218
 	.byte	3
 	.byte	'Ifx_SReg_32Bit',0,4,102,24
-	.word	269
+	.word	251
 	.byte	10
 	.byte	'_Ifx_GETH_ACCEN0_Bits',0,5,76,16,4,11
 	.byte	'EN0',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'EN1',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'EN2',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,0,11
 	.byte	'EN3',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'EN4',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'EN5',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,0,11
 	.byte	'EN6',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,0,11
 	.byte	'EN7',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,0,11
 	.byte	'EN8',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,1,11
 	.byte	'EN9',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,1,11
 	.byte	'EN10',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,1,11
 	.byte	'EN11',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,1,11
 	.byte	'EN12',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,1,11
 	.byte	'EN13',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,1,11
 	.byte	'EN14',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,1,11
 	.byte	'EN15',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,1,11
 	.byte	'EN16',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,2,11
 	.byte	'EN17',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,2,11
 	.byte	'EN18',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,2,11
 	.byte	'EN19',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,2,11
 	.byte	'EN20',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,2,11
 	.byte	'EN21',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,2,11
 	.byte	'EN22',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,2,11
 	.byte	'EN23',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,2,11
 	.byte	'EN24',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,3,11
 	.byte	'EN25',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,3,11
 	.byte	'EN26',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,3,11
 	.byte	'EN27',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,3,11
 	.byte	'EN28',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,3,11
 	.byte	'EN29',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,3,11
 	.byte	'EN30',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,3,11
 	.byte	'EN31',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,3,0,3
 	.byte	'Ifx_GETH_ACCEN0_Bits',0,5,110,3
-	.word	683
+	.word	665
 	.byte	10
 	.byte	'_Ifx_GETH_ACCEN1_Bits',0,5,113,16,4,11
 	.byte	'reserved_0',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_ACCEN1_Bits',0,5,116,3
-	.word	1242
+	.word	1224
 	.byte	10
 	.byte	'_Ifx_GETH_ACCEND_ACCEN0D_Bits',0,5,119,16,4,11
 	.byte	'EN0',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'EN1',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'EN2',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,0,11
 	.byte	'EN3',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'EN4',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'EN5',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,0,11
 	.byte	'EN6',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,0,11
 	.byte	'EN7',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,0,11
 	.byte	'EN8',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,1,11
 	.byte	'EN9',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,1,11
 	.byte	'EN10',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,1,11
 	.byte	'EN11',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,1,11
 	.byte	'EN12',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,1,11
 	.byte	'EN13',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,1,11
 	.byte	'EN14',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,1,11
 	.byte	'EN15',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,1,11
 	.byte	'EN16',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,2,11
 	.byte	'EN17',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,2,11
 	.byte	'EN18',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,2,11
 	.byte	'EN19',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,2,11
 	.byte	'EN20',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,2,11
 	.byte	'EN21',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,2,11
 	.byte	'EN22',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,2,11
 	.byte	'EN23',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,2,11
 	.byte	'EN24',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,3,11
 	.byte	'EN25',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,3,11
 	.byte	'EN26',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,3,11
 	.byte	'EN27',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,3,11
 	.byte	'EN28',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,3,11
 	.byte	'EN29',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,3,11
 	.byte	'EN30',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,3,11
 	.byte	'EN31',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,3,0,3
 	.byte	'Ifx_GETH_ACCEND_ACCEN0D_Bits',0,5,153,1,3
-	.word	1321
+	.word	1303
 	.byte	10
 	.byte	'_Ifx_GETH_ACCEND_ACCEN1D_Bits',0,5,156,1,16,4,11
 	.byte	'reserved_0',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_ACCEND_ACCEN1D_Bits',0,5,159,1,3
-	.word	1897
+	.word	1879
 	.byte	10
 	.byte	'_Ifx_GETH_CLC_Bits',0,5,162,1,16,4,11
 	.byte	'DISR',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'DISS',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'reserved_2',0,4
-	.word	236
+	.word	218
 	.byte	30,0,2,35,0,0,3
 	.byte	'Ifx_GETH_CLC_Bits',0,5,167,1,3
-	.word	1994
+	.word	1976
 	.byte	10
 	.byte	'_Ifx_GETH_DMA_CH_CONTROL_Bits',0,5,170,1,16,4,11
 	.byte	'reserved_0',0,2
-	.word	321
+	.word	303
 	.byte	14,2,2,35,0,11
 	.byte	'reserved_14',0,1
-	.word	598
+	.word	580
 	.byte	2,0,2,35,1,11
 	.byte	'PBLX8',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,2,11
 	.byte	'reserved_17',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,2,11
 	.byte	'DSL',0,1
-	.word	598
+	.word	580
 	.byte	3,3,2,35,2,11
 	.byte	'reserved_21',0,1
-	.word	598
+	.word	580
 	.byte	3,0,2,35,2,11
 	.byte	'SPH',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,3,11
 	.byte	'reserved_25',0,1
-	.word	598
+	.word	580
 	.byte	7,0,2,35,3,0,3
 	.byte	'Ifx_GETH_DMA_CH_CONTROL_Bits',0,5,180,1,3
-	.word	2101
+	.word	2083
 	.byte	10
 	.byte	'_Ifx_GETH_DMA_CH_CURRENT_APP_RXBUFFER_Bits',0,5,183,1,16,4,11
 	.byte	'CURRBUFAPTR',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_CURRENT_APP_RXBUFFER_Bits',0,5,186,1,3
-	.word	2337
+	.word	2319
 	.byte	10
 	.byte	'_Ifx_GETH_DMA_CH_CURRENT_APP_RXDESC_Bits',0,5,189,1,16,4,11
 	.byte	'CURRDESAPTR',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_CURRENT_APP_RXDESC_Bits',0,5,192,1,3
-	.word	2461
+	.word	2443
 	.byte	10
 	.byte	'_Ifx_GETH_DMA_CH_CURRENT_APP_TXBUFFER_Bits',0,5,195,1,16,4,11
 	.byte	'CURTBUFAPTR',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_CURRENT_APP_TXBUFFER_Bits',0,5,198,1,3
-	.word	2581
+	.word	2563
 	.byte	10
 	.byte	'_Ifx_GETH_DMA_CH_CURRENT_APP_TXDESC_Bits',0,5,201,1,16,4,11
 	.byte	'CURTDESAPTR',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_CURRENT_APP_TXDESC_Bits',0,5,204,1,3
-	.word	2705
+	.word	2687
 	.byte	10
 	.byte	'_Ifx_GETH_DMA_CH_INTERRUPT_ENABLE_Bits',0,5,207,1,16,4,11
 	.byte	'TIE',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'TXSE',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'TBUE',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,0,11
 	.byte	'reserved_3',0,1
-	.word	598
+	.word	580
 	.byte	3,2,2,35,0,11
 	.byte	'RIE',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,0,11
 	.byte	'RBUE',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,0,11
 	.byte	'RSE',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,1,11
 	.byte	'RWTE',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,1,11
 	.byte	'ETIE',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,1,11
 	.byte	'ERIE',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,1,11
 	.byte	'FBEE',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,1,11
 	.byte	'CDEE',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,1,11
 	.byte	'AIE',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,1,11
 	.byte	'NIE',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,1,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_DMA_CH_INTERRUPT_ENABLE_Bits',0,5,224,1,3
-	.word	2825
+	.word	2807
 	.byte	10
 	.byte	'_Ifx_GETH_DMA_CH_MISS_FRAME_CNT_Bits',0,5,227,1,16,4,11
 	.byte	'MFC',0,2
-	.word	321
+	.word	303
 	.byte	11,5,2,35,0,11
 	.byte	'reserved_11',0,1
-	.word	598
+	.word	580
 	.byte	4,1,2,35,1,11
 	.byte	'MFCO',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,1,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_DMA_CH_MISS_FRAME_CNT_Bits',0,5,233,1,3
-	.word	3166
+	.word	3148
 	.byte	10
 	.byte	'_Ifx_GETH_DMA_CH_RXDESC_LIST_ADDRESS_Bits',0,5,236,1,16,4,11
 	.byte	'reserved_0',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,0,11
 	.byte	'RDESLA',0,4
-	.word	236
+	.word	218
 	.byte	30,0,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_RXDESC_LIST_ADDRESS_Bits',0,5,240,1,3
-	.word	3332
+	.word	3314
 	.byte	10
 	.byte	'_Ifx_GETH_DMA_CH_RXDESC_RING_LENGTH_Bits',0,5,243,1,16,4,11
 	.byte	'RDRL',0,2
-	.word	321
+	.word	303
 	.byte	10,6,2,35,0,11
 	.byte	'reserved_10',0,4
-	.word	236
+	.word	218
 	.byte	22,0,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_RXDESC_RING_LENGTH_Bits',0,5,247,1,3
-	.word	3471
+	.word	3453
 	.byte	10
 	.byte	'_Ifx_GETH_DMA_CH_RXDESC_TAIL_POINTER_Bits',0,5,250,1,16,4,11
 	.byte	'reserved_0',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,0,11
 	.byte	'RDTP',0,4
-	.word	236
+	.word	218
 	.byte	30,0,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_RXDESC_TAIL_POINTER_Bits',0,5,254,1,3
-	.word	3607
+	.word	3589
 	.byte	10
 	.byte	'_Ifx_GETH_DMA_CH_RX_CONTROL_Bits',0,5,129,2,16,4,11
 	.byte	'SR',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'RBSZ_X_0',0,1
-	.word	598
+	.word	580
 	.byte	2,5,2,35,0,11
 	.byte	'RBSZ_13_Y',0,2
-	.word	321
+	.word	303
 	.byte	12,1,2,35,0,11
 	.byte	'reserved_15',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,1,11
 	.byte	'RXPBL',0,1
-	.word	598
+	.word	580
 	.byte	6,2,2,35,2,11
 	.byte	'reserved_22',0,1
-	.word	598
+	.word	580
 	.byte	2,0,2,35,2,11
 	.byte	'reserved_24',0,1
-	.word	598
+	.word	580
 	.byte	4,4,2,35,3,11
 	.byte	'reserved_28',0,1
-	.word	598
+	.word	580
 	.byte	3,1,2,35,3,11
 	.byte	'RPF',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,3,0,3
 	.byte	'Ifx_GETH_DMA_CH_RX_CONTROL_Bits',0,5,140,2,3
-	.word	3744
+	.word	3726
 	.byte	10
 	.byte	'_Ifx_GETH_DMA_CH_RX_INTERRUPT_WATCHDOG_TIMER_Bits',0,5,143,2,16,4,11
 	.byte	'RWT',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,0,11
 	.byte	'reserved_8',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,1,11
 	.byte	'RWTU',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,2,11
 	.byte	'reserved_18',0,2
-	.word	321
+	.word	303
 	.byte	14,0,2,35,2,0,3
 	.byte	'Ifx_GETH_DMA_CH_RX_INTERRUPT_WATCHDOG_TIMER_Bits',0,5,149,2,3
-	.word	4004
+	.word	3986
 	.byte	10
 	.byte	'_Ifx_GETH_DMA_CH_SLOT_FUNCTION_CONTROL_STATUS_Bits',0,5,152,2,16,4,11
 	.byte	'ESC',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'ASC',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'reserved_2',0,1
-	.word	598
+	.word	580
 	.byte	2,4,2,35,0,11
 	.byte	'SIV',0,2
-	.word	321
+	.word	303
 	.byte	12,0,2,35,0,11
 	.byte	'RSN',0,1
-	.word	598
+	.word	580
 	.byte	4,4,2,35,2,11
 	.byte	'reserved_20',0,2
-	.word	321
+	.word	303
 	.byte	12,0,2,35,2,0,3
 	.byte	'Ifx_GETH_DMA_CH_SLOT_FUNCTION_CONTROL_STATUS_Bits',0,5,160,2,3
-	.word	4195
+	.word	4177
 	.byte	10
 	.byte	'_Ifx_GETH_DMA_CH_STATUS_Bits',0,5,163,2,16,4,11
 	.byte	'TI',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'TPS',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'TBU',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,0,11
 	.byte	'reserved_3',0,1
-	.word	598
+	.word	580
 	.byte	3,2,2,35,0,11
 	.byte	'RI',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,0,11
 	.byte	'RBU',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,0,11
 	.byte	'RPS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,1,11
 	.byte	'RWT',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,1,11
 	.byte	'ETI',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,1,11
 	.byte	'ERI',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,1,11
 	.byte	'FBE',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,1,11
 	.byte	'CDE',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,1,11
 	.byte	'AIS',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,1,11
 	.byte	'NIS',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,1,11
 	.byte	'TEB',0,1
-	.word	598
+	.word	580
 	.byte	3,5,2,35,2,11
 	.byte	'REB',0,1
-	.word	598
+	.word	580
 	.byte	3,2,2,35,2,11
 	.byte	'reserved_22',0,2
-	.word	321
+	.word	303
 	.byte	10,0,2,35,2,0,3
 	.byte	'Ifx_GETH_DMA_CH_STATUS_Bits',0,5,182,2,3
-	.word	4417
+	.word	4399
 	.byte	10
 	.byte	'_Ifx_GETH_DMA_CH_TXDESC_LIST_ADDRESS_Bits',0,5,185,2,16,4,11
 	.byte	'reserved_0',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,0,11
 	.byte	'TDESLA',0,4
-	.word	236
+	.word	218
 	.byte	30,0,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_TXDESC_LIST_ADDRESS_Bits',0,5,189,2,3
-	.word	4758
+	.word	4740
 	.byte	10
 	.byte	'_Ifx_GETH_DMA_CH_TXDESC_RING_LENGTH_Bits',0,5,192,2,16,4,11
 	.byte	'TDRL',0,2
-	.word	321
+	.word	303
 	.byte	10,6,2,35,0,11
 	.byte	'reserved_10',0,4
-	.word	236
+	.word	218
 	.byte	22,0,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_TXDESC_RING_LENGTH_Bits',0,5,196,2,3
-	.word	4897
+	.word	4879
 	.byte	10
 	.byte	'_Ifx_GETH_DMA_CH_TXDESC_TAIL_POINTER_Bits',0,5,199,2,16,4,11
 	.byte	'reserved_0',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,0,11
 	.byte	'TDTP',0,4
-	.word	236
+	.word	218
 	.byte	30,0,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_TXDESC_TAIL_POINTER_Bits',0,5,203,2,3
-	.word	5033
+	.word	5015
 	.byte	10
 	.byte	'_Ifx_GETH_DMA_CH_TX_CONTROL_Bits',0,5,206,2,16,4,11
 	.byte	'ST',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'TCW',0,1
-	.word	598
+	.word	580
 	.byte	3,4,2,35,0,11
 	.byte	'OSF',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'reserved_5',0,2
-	.word	321
+	.word	303
 	.byte	7,4,2,35,0,11
 	.byte	'reserved_12',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,1,11
 	.byte	'reserved_13',0,1
-	.word	598
+	.word	580
 	.byte	2,1,2,35,1,11
 	.byte	'reserved_15',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,1,11
 	.byte	'TXPBL',0,1
-	.word	598
+	.word	580
 	.byte	6,2,2,35,2,11
 	.byte	'reserved_22',0,1
-	.word	598
+	.word	580
 	.byte	2,0,2,35,2,11
 	.byte	'reserved_24',0,1
-	.word	598
+	.word	580
 	.byte	4,4,2,35,3,11
 	.byte	'reserved_28',0,1
-	.word	598
+	.word	580
 	.byte	4,0,2,35,3,0,3
 	.byte	'Ifx_GETH_DMA_CH_TX_CONTROL_Bits',0,5,219,2,3
-	.word	5170
+	.word	5152
 	.byte	10
 	.byte	'_Ifx_GETH_DMA_DEBUG_STATUS0_Bits',0,5,222,2,16,4,11
 	.byte	'AXWHSTS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'reserved_1',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'reserved_2',0,1
-	.word	598
+	.word	580
 	.byte	6,0,2,35,0,11
 	.byte	'RPS0',0,1
-	.word	598
+	.word	580
 	.byte	4,4,2,35,1,11
 	.byte	'TPS0',0,1
-	.word	598
+	.word	580
 	.byte	4,0,2,35,1,11
 	.byte	'RPS1',0,1
-	.word	598
+	.word	580
 	.byte	4,4,2,35,2,11
 	.byte	'TPS1',0,1
-	.word	598
+	.word	580
 	.byte	4,0,2,35,2,11
 	.byte	'RPS2',0,1
-	.word	598
+	.word	580
 	.byte	4,4,2,35,3,11
 	.byte	'TPS2',0,1
-	.word	598
+	.word	580
 	.byte	4,0,2,35,3,0,3
 	.byte	'Ifx_GETH_DMA_DEBUG_STATUS0_Bits',0,5,233,2,3
-	.word	5472
+	.word	5454
 	.byte	10
 	.byte	'_Ifx_GETH_DMA_DEBUG_STATUS1_Bits',0,5,236,2,16,4,11
 	.byte	'RPS3',0,1
-	.word	598
+	.word	580
 	.byte	4,4,2,35,0,11
 	.byte	'TPS3',0,1
-	.word	598
+	.word	580
 	.byte	4,0,2,35,0,11
 	.byte	'reserved_8',0,4
-	.word	236
+	.word	218
 	.byte	24,0,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_DEBUG_STATUS1_Bits',0,5,241,2,3
-	.word	5712
+	.word	5694
 	.byte	10
 	.byte	'_Ifx_GETH_DMA_INTERRUPT_STATUS_Bits',0,5,244,2,16,4,11
 	.byte	'DC0IS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'DC1IS',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'DC2IS',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,0,11
 	.byte	'DC3IS',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'reserved_4',0,1
-	.word	598
+	.word	580
 	.byte	4,0,2,35,0,11
 	.byte	'reserved_8',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,1,11
 	.byte	'MTLIS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,2,11
 	.byte	'MACIS',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,2,11
 	.byte	'reserved_18',0,2
-	.word	321
+	.word	303
 	.byte	14,0,2,35,2,0,3
 	.byte	'Ifx_GETH_DMA_INTERRUPT_STATUS_Bits',0,5,255,2,3
-	.word	5847
+	.word	5829
 	.byte	10
 	.byte	'_Ifx_GETH_DMA_MODE_Bits',0,5,130,3,16,4,11
 	.byte	'SWR',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'DA',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'TAA',0,1
-	.word	598
+	.word	580
 	.byte	3,3,2,35,0,11
 	.byte	'reserved_5',0,2
-	.word	321
+	.word	303
 	.byte	4,7,2,35,0,11
 	.byte	'ARBC',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,1,11
 	.byte	'reserved_10',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,1,11
 	.byte	'TXPR',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,1,11
 	.byte	'PR',0,1
-	.word	598
+	.word	580
 	.byte	3,1,2,35,1,11
 	.byte	'reserved_15',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,1,11
 	.byte	'INTM',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,2,11
 	.byte	'reserved_18',0,2
-	.word	321
+	.word	303
 	.byte	14,0,2,35,2,0,3
 	.byte	'Ifx_GETH_DMA_MODE_Bits',0,5,143,3,3
-	.word	6103
+	.word	6085
 	.byte	10
 	.byte	'_Ifx_GETH_DMA_SYSBUS_MODE_Bits',0,5,146,3,16,4,11
 	.byte	'FB',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'reserved_1',0,1
-	.word	598
+	.word	580
 	.byte	7,0,2,35,0,11
 	.byte	'reserved_8',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,1,11
 	.byte	'reserved_10',0,1
-	.word	598
+	.word	580
 	.byte	2,4,2,35,1,11
 	.byte	'AAL',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,1,11
 	.byte	'reserved_13',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,1,11
 	.byte	'MB',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,1,11
 	.byte	'RB',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,1,11
 	.byte	'reserved_16',0,1
-	.word	598
+	.word	580
 	.byte	3,5,2,35,2,11
 	.byte	'reserved_19',0,1
-	.word	598
+	.word	580
 	.byte	5,0,2,35,2,11
 	.byte	'reserved_24',0,1
-	.word	598
+	.word	580
 	.byte	3,5,2,35,3,11
 	.byte	'reserved_27',0,1
-	.word	598
+	.word	580
 	.byte	3,2,2,35,3,11
 	.byte	'reserved_30',0,1
-	.word	598
+	.word	580
 	.byte	2,0,2,35,3,0,3
 	.byte	'Ifx_GETH_DMA_SYSBUS_MODE_Bits',0,5,161,3,3
-	.word	6363
+	.word	6345
 	.byte	10
 	.byte	'_Ifx_GETH_GPCTL_Bits',0,5,164,3,16,4,11
 	.byte	'ALTI0',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,0,11
 	.byte	'ALTI1',0,1
-	.word	598
+	.word	580
 	.byte	2,4,2,35,0,11
 	.byte	'ALTI2',0,1
-	.word	598
+	.word	580
 	.byte	2,2,2,35,0,11
 	.byte	'ALTI3',0,1
-	.word	598
+	.word	580
 	.byte	2,0,2,35,0,11
 	.byte	'ALTI4',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,1,11
 	.byte	'ALTI5',0,1
-	.word	598
+	.word	580
 	.byte	2,4,2,35,1,11
 	.byte	'ALTI6',0,1
-	.word	598
+	.word	580
 	.byte	2,2,2,35,1,11
 	.byte	'ALTI7',0,1
-	.word	598
+	.word	580
 	.byte	2,0,2,35,1,11
 	.byte	'ALTI8',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,2,11
 	.byte	'ALTI9',0,1
-	.word	598
+	.word	580
 	.byte	2,4,2,35,2,11
 	.byte	'ALTI10',0,1
-	.word	598
+	.word	580
 	.byte	2,2,2,35,2,11
 	.byte	'EPR',0,2
-	.word	321
+	.word	303
 	.byte	3,7,2,35,2,11
 	.byte	'reserved_25',0,1
-	.word	598
+	.word	580
 	.byte	6,1,2,35,3,11
 	.byte	'reserved_31',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,3,0,3
 	.byte	'Ifx_GETH_GPCTL_Bits',0,5,180,3,3
-	.word	6702
+	.word	6684
 	.byte	10
 	.byte	'_Ifx_GETH_ID_Bits',0,5,183,3,16,4,11
 	.byte	'MODREV',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,0,11
 	.byte	'MODTYPE',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,1,11
 	.byte	'MODNUM',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_ID_Bits',0,5,188,3,3
-	.word	7008
+	.word	6990
 	.byte	10
 	.byte	'_Ifx_GETH_KRST0_Bits',0,5,191,3,16,4,11
 	.byte	'RST',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'RSTSTAT',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'reserved_2',0,4
-	.word	236
+	.word	218
 	.byte	30,0,2,35,0,0,3
 	.byte	'Ifx_GETH_KRST0_Bits',0,5,196,3,3
-	.word	7114
+	.word	7096
 	.byte	10
 	.byte	'_Ifx_GETH_KRST1_Bits',0,5,199,3,16,4,11
 	.byte	'RST',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'reserved_1',0,4
-	.word	236
+	.word	218
 	.byte	31,0,2,35,0,0,3
 	.byte	'Ifx_GETH_KRST1_Bits',0,5,203,3,3
-	.word	7227
+	.word	7209
 	.byte	10
 	.byte	'_Ifx_GETH_KRSTCLR_Bits',0,5,206,3,16,4,11
 	.byte	'CLR',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'reserved_1',0,4
-	.word	236
+	.word	218
 	.byte	31,0,2,35,0,0,3
 	.byte	'Ifx_GETH_KRSTCLR_Bits',0,5,210,3,3
-	.word	7321
+	.word	7303
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_1US_TIC_COUNTER_Bits',0,5,213,3,16,4,11
 	.byte	'TIC_1US_CNTR',0,2
-	.word	321
+	.word	303
 	.byte	12,4,2,35,0,11
 	.byte	'reserved_12',0,4
-	.word	236
+	.word	218
 	.byte	20,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_1US_TIC_COUNTER_Bits',0,5,217,3,3
-	.word	7419
+	.word	7401
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_ADDRESS_HIGH_Bits',0,5,220,3,16,4,11
 	.byte	'ADDRHI',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'DCS',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,2,11
 	.byte	'reserved_18',0,1
-	.word	598
+	.word	580
 	.byte	6,0,2,35,2,11
 	.byte	'MBC',0,1
-	.word	598
+	.word	580
 	.byte	6,2,2,35,3,11
 	.byte	'SA',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,3,11
 	.byte	'AE',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MAC_ADDRESS_HIGH_Bits',0,5,228,3,3
-	.word	7551
+	.word	7533
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_ADDRESS_HIGH0_Bits',0,5,231,3,16,4,11
 	.byte	'ADDRHI',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'DCS',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,2,11
 	.byte	'reserved_18',0,2
-	.word	321
+	.word	303
 	.byte	13,1,2,35,2,11
 	.byte	'AE',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MAC_ADDRESS_HIGH0_Bits',0,5,237,3,3
-	.word	7729
+	.word	7711
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_ADDRESS_LOW_Bits',0,5,240,3,16,4,11
 	.byte	'ADDRLO',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_ADDRESS_LOW_Bits',0,5,243,3,3
-	.word	7880
+	.word	7862
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_ADDRESS_LOW0_Bits',0,5,246,3,16,4,11
 	.byte	'ADDRLO',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_ADDRESS_LOW0_Bits',0,5,249,3,3
-	.word	7975
+	.word	7957
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_CONFIGURATION_Bits',0,5,252,3,16,4,11
 	.byte	'RE',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'TE',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'PRELEN',0,1
-	.word	598
+	.word	580
 	.byte	2,4,2,35,0,11
 	.byte	'DC',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'BL',0,1
-	.word	598
+	.word	580
 	.byte	2,1,2,35,0,11
 	.byte	'reserved_7',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,0,11
 	.byte	'DR',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,1,11
 	.byte	'DCRS',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,1,11
 	.byte	'DO',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,1,11
 	.byte	'ECRSFD',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,1,11
 	.byte	'LM',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,1,11
 	.byte	'DM',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,1,11
 	.byte	'FES',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,1,11
 	.byte	'PS',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,1,11
 	.byte	'JE',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,2,11
 	.byte	'JD',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,2,11
 	.byte	'BE',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,2,11
 	.byte	'WD',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,2,11
 	.byte	'ACS',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,2,11
 	.byte	'CST',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,2,11
 	.byte	'S2KP',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,2,11
 	.byte	'GPSLCE',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,2,11
 	.byte	'IPG',0,1
-	.word	598
+	.word	580
 	.byte	3,5,2,35,3,11
 	.byte	'IPC',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,3,11
 	.byte	'SARC',0,1
-	.word	598
+	.word	580
 	.byte	3,1,2,35,3,11
 	.byte	'reserved_31',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MAC_CONFIGURATION_Bits',0,5,152,4,3
-	.word	8072
+	.word	8054
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_CSR_SW_CTRL_Bits',0,5,155,4,16,4,11
 	.byte	'RCWE',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'reserved_1',0,1
-	.word	598
+	.word	580
 	.byte	7,0,2,35,0,11
 	.byte	'SEEN',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,1,11
 	.byte	'reserved_9',0,4
-	.word	236
+	.word	218
 	.byte	23,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_CSR_SW_CTRL_Bits',0,5,161,4,3
-	.word	8557
+	.word	8539
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_DEBUG_Bits',0,5,164,4,16,4,11
 	.byte	'RPESTS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'RFCFCSTS',0,1
-	.word	598
+	.word	580
 	.byte	2,5,2,35,0,11
 	.byte	'reserved_3',0,2
-	.word	321
+	.word	303
 	.byte	13,0,2,35,0,11
 	.byte	'TPESTS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,2,11
 	.byte	'TFCSTS',0,1
-	.word	598
+	.word	580
 	.byte	2,5,2,35,2,11
 	.byte	'reserved_19',0,2
-	.word	321
+	.word	303
 	.byte	13,0,2,35,2,0,3
 	.byte	'Ifx_GETH_MAC_DEBUG_Bits',0,5,172,4,3
-	.word	8710
+	.word	8692
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_EXT_CFG1_Bits',0,5,175,4,16,4,11
 	.byte	'SPLOFST',0,1
-	.word	598
+	.word	580
 	.byte	7,1,2,35,0,11
 	.byte	'reserved_7',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,0,11
 	.byte	'SPLM',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,1,11
 	.byte	'reserved_10',0,4
-	.word	236
+	.word	218
 	.byte	22,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_EXT_CFG1_Bits',0,5,181,4,3
-	.word	8894
+	.word	8876
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_EXT_CONFIGURATION_Bits',0,5,184,4,16,4,11
 	.byte	'GPSL',0,2
-	.word	321
+	.word	303
 	.byte	14,2,2,35,0,11
 	.byte	'reserved_14',0,1
-	.word	598
+	.word	580
 	.byte	2,0,2,35,1,11
 	.byte	'DCRCC',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,2,11
 	.byte	'SPEN',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,2,11
 	.byte	'USP',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,2,11
 	.byte	'reserved_19',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,2,11
 	.byte	'HDSMS',0,1
-	.word	598
+	.word	580
 	.byte	3,1,2,35,2,11
 	.byte	'reserved_23',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,2,11
 	.byte	'EIPGEN',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,3,11
 	.byte	'EIPG',0,1
-	.word	598
+	.word	580
 	.byte	5,2,2,35,3,11
 	.byte	'reserved_30',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,3,11
 	.byte	'FHE',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MAC_EXT_CONFIGURATION_Bits',0,5,198,4,3
-	.word	9045
+	.word	9027
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_HW_FEATURE0_Bits',0,5,201,4,16,4,11
 	.byte	'MIISEL',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'GMIISEL',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'HDSEL',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,0,11
 	.byte	'PCSSEL',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'VLHASH',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'SMASEL',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,0,11
 	.byte	'RWKSEL',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,0,11
 	.byte	'MGKSEL',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,0,11
 	.byte	'MMCSEL',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,1,11
 	.byte	'ARPOFFSEL',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,1,11
 	.byte	'reserved_10',0,1
-	.word	598
+	.word	580
 	.byte	2,4,2,35,1,11
 	.byte	'TSSEL',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,1,11
 	.byte	'EEESEL',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,1,11
 	.byte	'TXCOESEL',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,1,11
 	.byte	'reserved_15',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,1,11
 	.byte	'RXCOESEL',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,2,11
 	.byte	'reserved_17',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,2,11
 	.byte	'ADDMACADRSEL',0,1
-	.word	598
+	.word	580
 	.byte	5,1,2,35,2,11
 	.byte	'MACADR32SEL',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,2,11
 	.byte	'MACADR64SEL',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,3,11
 	.byte	'TSSTSSEL',0,1
-	.word	598
+	.word	580
 	.byte	2,5,2,35,3,11
 	.byte	'SAVLANINS',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,3,11
 	.byte	'ACTPHYSEL',0,1
-	.word	598
+	.word	580
 	.byte	3,1,2,35,3,11
 	.byte	'reserved_31',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MAC_HW_FEATURE0_Bits',0,5,227,4,3
-	.word	9356
+	.word	9338
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_HW_FEATURE1_Bits',0,5,230,4,16,4,11
 	.byte	'RXFIFOSIZE',0,1
-	.word	598
+	.word	580
 	.byte	5,3,2,35,0,11
 	.byte	'SPRAM',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,0,11
 	.byte	'TXFIFOSIZE',0,2
-	.word	321
+	.word	303
 	.byte	5,5,2,35,0,11
 	.byte	'OSTEN',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,1,11
 	.byte	'PTOEN',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,1,11
 	.byte	'ADVTHWORD',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,1,11
 	.byte	'ADDR64',0,1
-	.word	598
+	.word	580
 	.byte	2,0,2,35,1,11
 	.byte	'DCBEN',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,2,11
 	.byte	'SPHEN',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,2,11
 	.byte	'TSOEN',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,2,11
 	.byte	'DBGMEMA',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,2,11
 	.byte	'AVSEL',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,2,11
 	.byte	'RAVSEL',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,2,11
 	.byte	'reserved_22',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,2,11
 	.byte	'POUOST',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,2,11
 	.byte	'HASHTBLSZ',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,3,11
 	.byte	'reserved_26',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,3,11
 	.byte	'L3L4FNUM',0,1
-	.word	598
+	.word	580
 	.byte	4,1,2,35,3,11
 	.byte	'reserved_31',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MAC_HW_FEATURE1_Bits',0,5,251,4,3
-	.word	9915
+	.word	9897
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_HW_FEATURE2_Bits',0,5,254,4,16,4,11
 	.byte	'RXQCNT',0,1
-	.word	598
+	.word	580
 	.byte	4,4,2,35,0,11
 	.byte	'reserved_4',0,1
-	.word	598
+	.word	580
 	.byte	2,2,2,35,0,11
 	.byte	'TXQCNT',0,2
-	.word	321
+	.word	303
 	.byte	4,6,2,35,0,11
 	.byte	'reserved_10',0,1
-	.word	598
+	.word	580
 	.byte	2,4,2,35,1,11
 	.byte	'RXCHCNT',0,1
-	.word	598
+	.word	580
 	.byte	4,0,2,35,1,11
 	.byte	'reserved_16',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,2,11
 	.byte	'TXCHCNT',0,1
-	.word	598
+	.word	580
 	.byte	4,2,2,35,2,11
 	.byte	'reserved_22',0,1
-	.word	598
+	.word	580
 	.byte	2,0,2,35,2,11
 	.byte	'PPSOUTNUM',0,1
-	.word	598
+	.word	580
 	.byte	3,5,2,35,3,11
 	.byte	'reserved_27',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,3,11
 	.byte	'AUXSNAPNUM',0,1
-	.word	598
+	.word	580
 	.byte	3,1,2,35,3,11
 	.byte	'reserved_31',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MAC_HW_FEATURE2_Bits',0,5,140,5,3
-	.word	10359
+	.word	10341
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_HW_FEATURE3_Bits',0,5,143,5,16,4,11
 	.byte	'NRVF',0,1
-	.word	598
+	.word	580
 	.byte	3,5,2,35,0,11
 	.byte	'reserved_3',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'CBTISEL',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'DVLAN',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,0,11
 	.byte	'reserved_6',0,4
-	.word	236
+	.word	218
 	.byte	26,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_HW_FEATURE3_Bits',0,5,150,5,3
-	.word	10690
+	.word	10672
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_INNER_VLAN_INCL_Bits',0,5,153,5,16,4,11
 	.byte	'VLT',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'VLC',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,2,11
 	.byte	'VLP',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,2,11
 	.byte	'CSVL',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,2,11
 	.byte	'VLTI',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,2,11
 	.byte	'reserved_21',0,2
-	.word	321
+	.word	303
 	.byte	11,0,2,35,2,0,3
 	.byte	'Ifx_GETH_MAC_INNER_VLAN_INCL_Bits',0,5,161,5,3
-	.word	10863
+	.word	10845
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_INTERRUPT_ENABLE_Bits',0,5,164,5,16,4,11
 	.byte	'RGSMIIIE',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'reserved_1',0,1
-	.word	598
+	.word	580
 	.byte	2,5,2,35,0,11
 	.byte	'PHYIE',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'PMTIE',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'LPIIE',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,0,11
 	.byte	'reserved_6',0,2
-	.word	321
+	.word	303
 	.byte	6,4,2,35,0,11
 	.byte	'TSIE',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,1,11
 	.byte	'TXSTSIE',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,1,11
 	.byte	'RXSTSIE',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,1,11
 	.byte	'reserved_15',0,4
-	.word	236
+	.word	218
 	.byte	3,14,2,35,0,11
 	.byte	'MDIOIE',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,2,11
 	.byte	'reserved_19',0,2
-	.word	321
+	.word	303
 	.byte	13,0,2,35,2,0,3
 	.byte	'Ifx_GETH_MAC_INTERRUPT_ENABLE_Bits',0,5,178,5,3
-	.word	11048
+	.word	11030
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_INTERRUPT_STATUS_Bits',0,5,181,5,16,4,11
 	.byte	'RGSMIIIS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'reserved_1',0,1
-	.word	598
+	.word	580
 	.byte	2,5,2,35,0,11
 	.byte	'PHYIS',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'PMTIS',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'LPIIS',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,0,11
 	.byte	'reserved_6',0,1
-	.word	598
+	.word	580
 	.byte	2,0,2,35,0,11
 	.byte	'MMCIS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,1,11
 	.byte	'MMCRXIS',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,1,11
 	.byte	'MMCTXIS',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,1,11
 	.byte	'MMCRXIPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,1,11
 	.byte	'TSIS',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,1,11
 	.byte	'TXSTSIS',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,1,11
 	.byte	'RXSTSIS',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,1,11
 	.byte	'reserved_15',0,4
-	.word	236
+	.word	218
 	.byte	3,14,2,35,0,11
 	.byte	'MDIOIS',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,2,11
 	.byte	'reserved_19',0,2
-	.word	321
+	.word	303
 	.byte	13,0,2,35,2,0,3
 	.byte	'Ifx_GETH_MAC_INTERRUPT_STATUS_Bits',0,5,199,5,3
-	.word	11368
+	.word	11350
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_LPI_CONTROL_STATUS_Bits',0,5,202,5,16,4,11
 	.byte	'TLPIEN',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'TLPIEX',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'RLPIEN',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,0,11
 	.byte	'RLPIEX',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'reserved_4',0,1
-	.word	598
+	.word	580
 	.byte	4,0,2,35,0,11
 	.byte	'TLPIST',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,1,11
 	.byte	'RLPIST',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,1,11
 	.byte	'reserved_10',0,1
-	.word	598
+	.word	580
 	.byte	6,0,2,35,1,11
 	.byte	'LPIEN',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,2,11
 	.byte	'PLS',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,2,11
 	.byte	'PLSEN',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,2,11
 	.byte	'LPITXA',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,2,11
 	.byte	'LPIATE',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,2,11
 	.byte	'LPITCSE',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,2,11
 	.byte	'reserved_22',0,2
-	.word	321
+	.word	303
 	.byte	10,0,2,35,2,0,3
 	.byte	'Ifx_GETH_MAC_LPI_CONTROL_STATUS_Bits',0,5,219,5,3
-	.word	11764
+	.word	11746
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_LPI_ENTRY_TIMER_Bits',0,5,222,5,16,4,11
 	.byte	'reserved_0',0,1
-	.word	598
+	.word	580
 	.byte	3,5,2,35,0,11
 	.byte	'LPIET',0,4
-	.word	236
+	.word	218
 	.byte	17,12,2,35,0,11
 	.byte	'reserved_20',0,2
-	.word	321
+	.word	303
 	.byte	12,0,2,35,2,0,3
 	.byte	'Ifx_GETH_MAC_LPI_ENTRY_TIMER_Bits',0,5,227,5,3
-	.word	12135
+	.word	12117
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_LPI_TIMERS_CONTROL_Bits',0,5,230,5,16,4,11
 	.byte	'TWT',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'LST',0,2
-	.word	321
+	.word	303
 	.byte	10,6,2,35,2,11
 	.byte	'reserved_26',0,1
-	.word	598
+	.word	580
 	.byte	6,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MAC_LPI_TIMERS_CONTROL_Bits',0,5,235,5,3
-	.word	12282
+	.word	12264
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_MDIO_ADDRESS_Bits',0,5,238,5,16,4,11
 	.byte	'GB',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'C45E',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'GOC_0',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,0,11
 	.byte	'GOC_1',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'SKAP',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'reserved_5',0,1
-	.word	598
+	.word	580
 	.byte	3,0,2,35,0,11
 	.byte	'CR',0,1
-	.word	598
+	.word	580
 	.byte	4,4,2,35,1,11
 	.byte	'NTC',0,1
-	.word	598
+	.word	580
 	.byte	3,1,2,35,1,11
 	.byte	'reserved_15',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,1,11
 	.byte	'RDA',0,1
-	.word	598
+	.word	580
 	.byte	5,3,2,35,2,11
 	.byte	'PA',0,2
-	.word	321
+	.word	303
 	.byte	5,6,2,35,2,11
 	.byte	'BTB',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,3,11
 	.byte	'PSE',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,3,11
 	.byte	'reserved_28',0,1
-	.word	598
+	.word	580
 	.byte	4,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MAC_MDIO_ADDRESS_Bits',0,5,254,5,3
-	.word	12426
+	.word	12408
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_MDIO_DATA_Bits',0,5,129,6,16,4,11
 	.byte	'GD',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'RA',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_MAC_MDIO_DATA_Bits',0,5,133,6,3
-	.word	12741
+	.word	12723
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_PACKET_FILTER_Bits',0,5,136,6,16,4,11
 	.byte	'PR',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'reserved_1',0,1
-	.word	598
+	.word	580
 	.byte	2,5,2,35,0,11
 	.byte	'DAIF',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'PM',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'DBF',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,0,11
 	.byte	'PCF',0,1
-	.word	598
+	.word	580
 	.byte	2,0,2,35,0,11
 	.byte	'SAIF',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,1,11
 	.byte	'SAF',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,1,11
 	.byte	'reserved_10',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,1,11
 	.byte	'reserved_11',0,1
-	.word	598
+	.word	580
 	.byte	5,0,2,35,1,11
 	.byte	'VTFE',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,2,11
 	.byte	'reserved_17',0,1
-	.word	598
+	.word	580
 	.byte	3,4,2,35,2,11
 	.byte	'reserved_20',0,1
-	.word	598
+	.word	580
 	.byte	2,2,2,35,2,11
 	.byte	'reserved_22',0,2
-	.word	321
+	.word	303
 	.byte	9,1,2,35,2,11
 	.byte	'RA',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MAC_PACKET_FILTER_Bits',0,5,153,6,3
-	.word	12842
+	.word	12824
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_PHYIF_CONTROL_STATUS_Bits',0,5,156,6,16,4,11
 	.byte	'TC',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'LUD',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'reserved_2',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,0,11
 	.byte	'reserved_3',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'reserved_4',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'reserved_5',0,2
-	.word	321
+	.word	303
 	.byte	11,0,2,35,0,11
 	.byte	'LNKMOD',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,2,11
 	.byte	'LNKSPEED',0,1
-	.word	598
+	.word	580
 	.byte	2,5,2,35,2,11
 	.byte	'LNKSTS',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,2,11
 	.byte	'reserved_20',0,2
-	.word	321
+	.word	303
 	.byte	10,2,2,35,2,11
 	.byte	'reserved_30',0,1
-	.word	598
+	.word	580
 	.byte	2,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MAC_PHYIF_CONTROL_STATUS_Bits',0,5,169,6,3
-	.word	13195
+	.word	13177
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_PMT_CONTROL_STATUS_Bits',0,5,172,6,16,4,11
 	.byte	'PWRDWN',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'MGKPKTEN',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'RWKPKTEN',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,0,11
 	.byte	'reserved_3',0,1
-	.word	598
+	.word	580
 	.byte	2,3,2,35,0,11
 	.byte	'MGKPRCVD',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,0,11
 	.byte	'RWKPRCVD',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,0,11
 	.byte	'reserved_7',0,2
-	.word	321
+	.word	303
 	.byte	2,7,2,35,0,11
 	.byte	'GLBLUCAST',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,1,11
 	.byte	'RWKPFE',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,1,11
 	.byte	'reserved_11',0,4
-	.word	236
+	.word	218
 	.byte	13,8,2,35,0,11
 	.byte	'RWKPTR',0,1
-	.word	598
+	.word	580
 	.byte	5,3,2,35,3,11
 	.byte	'reserved_29',0,1
-	.word	598
+	.word	580
 	.byte	2,1,2,35,3,11
 	.byte	'RWKFILTRST',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MAC_PMT_CONTROL_STATUS_Bits',0,5,187,6,3
-	.word	13509
+	.word	13491
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_PPS0_INTERVAL_Bits',0,5,190,6,16,4,11
 	.byte	'PPSINT0',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_PPS0_INTERVAL_Bits',0,5,193,6,3
-	.word	13867
+	.word	13849
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_PPS0_TARGET_TIME_NANOSECONDS_Bits',0,5,196,6,16,4,11
 	.byte	'TTSL0',0,4
-	.word	236
+	.word	218
 	.byte	31,1,2,35,0,11
 	.byte	'TRGTBUSY0',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MAC_PPS0_TARGET_TIME_NANOSECONDS_Bits',0,5,200,6,3
-	.word	13967
+	.word	13949
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_PPS0_TARGET_TIME_SECONDS_Bits',0,5,203,6,16,4,11
 	.byte	'TSTRH0',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_PPS0_TARGET_TIME_SECONDS_Bits',0,5,206,6,3
-	.word	14116
+	.word	14098
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_PPS0_WIDTH_Bits',0,5,209,6,16,4,11
 	.byte	'PPSWIDTH0',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_PPS0_WIDTH_Bits',0,5,212,6,3
-	.word	14237
+	.word	14219
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_PPS_CONTROL_Bits',0,5,215,6,16,4,11
 	.byte	'PPSCTRL_PPSCMD',0,1
-	.word	598
+	.word	580
 	.byte	4,4,2,35,0,11
 	.byte	'PPSEN0',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'TRGTMODSEL0',0,1
-	.word	598
+	.word	580
 	.byte	2,1,2,35,0,11
 	.byte	'reserved_7',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,0,11
 	.byte	'reserved_8',0,1
-	.word	598
+	.word	580
 	.byte	3,5,2,35,1,11
 	.byte	'reserved_11',0,1
-	.word	598
+	.word	580
 	.byte	2,3,2,35,1,11
 	.byte	'reserved_13',0,1
-	.word	598
+	.word	580
 	.byte	2,1,2,35,1,11
 	.byte	'reserved_15',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,1,11
 	.byte	'reserved_16',0,1
-	.word	598
+	.word	580
 	.byte	3,5,2,35,2,11
 	.byte	'reserved_19',0,1
-	.word	598
+	.word	580
 	.byte	2,3,2,35,2,11
 	.byte	'reserved_21',0,1
-	.word	598
+	.word	580
 	.byte	2,1,2,35,2,11
 	.byte	'reserved_23',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,2,11
 	.byte	'reserved_24',0,1
-	.word	598
+	.word	580
 	.byte	3,5,2,35,3,11
 	.byte	'reserved_27',0,1
-	.word	598
+	.word	580
 	.byte	2,3,2,35,3,11
 	.byte	'reserved_29',0,1
-	.word	598
+	.word	580
 	.byte	2,1,2,35,3,11
 	.byte	'reserved_31',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MAC_PPS_CONTROL_Bits',0,5,233,6,3
-	.word	14333
+	.word	14315
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_Q0_TX_FLOW_CTRL_Bits',0,5,236,6,16,4,11
 	.byte	'FCB_BPA',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'TFE',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'reserved_2',0,1
-	.word	598
+	.word	580
 	.byte	2,4,2,35,0,11
 	.byte	'PLT',0,1
-	.word	598
+	.word	580
 	.byte	3,1,2,35,0,11
 	.byte	'DZPQ',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,0,11
 	.byte	'reserved_8',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,1,11
 	.byte	'PT',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_MAC_Q0_TX_FLOW_CTRL_Bits',0,5,245,6,3
-	.word	14774
+	.word	14756
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_RWK_PACKET_FILTER_Bits',0,5,248,6,16,4,11
 	.byte	'WKUPFRMFTR',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_RWK_PACKET_FILTER_Bits',0,5,251,6,3
-	.word	14982
+	.word	14964
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_RXQ_CTRL0_Bits',0,5,254,6,16,4,11
 	.byte	'RXQ0EN',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,0,11
 	.byte	'RXQ1EN',0,1
-	.word	598
+	.word	580
 	.byte	2,4,2,35,0,11
 	.byte	'RXQ2EN',0,1
-	.word	598
+	.word	580
 	.byte	2,2,2,35,0,11
 	.byte	'RXQ3EN',0,1
-	.word	598
+	.word	580
 	.byte	2,0,2,35,0,11
 	.byte	'reserved_8',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,1,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_MAC_RXQ_CTRL0_Bits',0,5,134,7,3
-	.word	15093
+	.word	15075
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_RXQ_CTRL1_Bits',0,5,137,7,16,4,11
 	.byte	'AVCPQ',0,1
-	.word	598
+	.word	580
 	.byte	3,5,2,35,0,11
 	.byte	'reserved_3',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'PTPQ',0,1
-	.word	598
+	.word	580
 	.byte	3,1,2,35,0,11
 	.byte	'reserved_7',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,0,11
 	.byte	'reserved_8',0,1
-	.word	598
+	.word	580
 	.byte	3,5,2,35,1,11
 	.byte	'reserved_11',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,1,11
 	.byte	'UPQ',0,1
-	.word	598
+	.word	580
 	.byte	3,1,2,35,1,11
 	.byte	'reserved_15',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,1,11
 	.byte	'MCBCQ',0,1
-	.word	598
+	.word	580
 	.byte	3,5,2,35,2,11
 	.byte	'reserved_19',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,2,11
 	.byte	'MCBCQEN',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,2,11
 	.byte	'TACPQE',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,2,11
 	.byte	'TPQC',0,1
-	.word	598
+	.word	580
 	.byte	2,0,2,35,2,11
 	.byte	'reserved_24',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MAC_RXQ_CTRL1_Bits',0,5,153,7,3
-	.word	15283
+	.word	15265
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_RXQ_CTRL2_Bits',0,5,156,7,16,4,11
 	.byte	'PSRQ0',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,0,11
 	.byte	'PSRQ1',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,1,11
 	.byte	'PSRQ2',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,2,11
 	.byte	'PSRQ3',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MAC_RXQ_CTRL2_Bits',0,5,162,7,3
-	.word	15632
+	.word	15614
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_RXQ_CTRL4_Bits',0,5,165,7,16,4,11
 	.byte	'UFFQE',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'UFFQ',0,1
-	.word	598
+	.word	580
 	.byte	2,5,2,35,0,11
 	.byte	'reserved_3',0,1
-	.word	598
+	.word	580
 	.byte	5,0,2,35,0,11
 	.byte	'MFFQE',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,1,11
 	.byte	'MFFQ',0,1
-	.word	598
+	.word	580
 	.byte	2,5,2,35,1,11
 	.byte	'reserved_11',0,1
-	.word	598
+	.word	580
 	.byte	5,0,2,35,1,11
 	.byte	'VFFQE',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,2,11
 	.byte	'VFFQ',0,1
-	.word	598
+	.word	580
 	.byte	2,5,2,35,2,11
 	.byte	'reserved_19',0,2
-	.word	321
+	.word	303
 	.byte	13,0,2,35,2,0,3
 	.byte	'Ifx_GETH_MAC_RXQ_CTRL4_Bits',0,5,176,7,3
-	.word	15773
+	.word	15755
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_RX_FLOW_CTRL_Bits',0,5,179,7,16,4,11
 	.byte	'RFE',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'UP',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'reserved_2',0,1
-	.word	598
+	.word	580
 	.byte	6,0,2,35,0,11
 	.byte	'reserved_8',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,1,11
 	.byte	'reserved_9',0,4
-	.word	236
+	.word	218
 	.byte	23,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_RX_FLOW_CTRL_Bits',0,5,186,7,3
-	.word	16013
+	.word	15995
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_RX_TX_STATUS_Bits',0,5,189,7,16,4,11
 	.byte	'TJT',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'NCARR',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'LCARR',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,0,11
 	.byte	'EXDEF',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'LCOL',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'EXCOL',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,0,11
 	.byte	'reserved_6',0,1
-	.word	598
+	.word	580
 	.byte	2,0,2,35,0,11
 	.byte	'RWT',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,1,11
 	.byte	'reserved_9',0,4
-	.word	236
+	.word	218
 	.byte	23,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_RX_TX_STATUS_Bits',0,5,200,7,3
-	.word	16187
+	.word	16169
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_SUB_SECOND_INCREMENT_Bits',0,5,203,7,16,4,11
 	.byte	'reserved_0',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,0,11
 	.byte	'SNSINC',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,1,11
 	.byte	'SSINC',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,2,11
 	.byte	'reserved_24',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MAC_SUB_SECOND_INCREMENT_Bits',0,5,209,7,3
-	.word	16424
+	.word	16406
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_SYSTEM_TIME_HIGHER_WORD_SECONDS_Bits',0,5,212,7,16,4,11
 	.byte	'TSHWR',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_MAC_SYSTEM_TIME_HIGHER_WORD_SECONDS_Bits',0,5,216,7,3
-	.word	16599
+	.word	16581
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_SYSTEM_TIME_NANOSECONDS_Bits',0,5,219,7,16,4,11
 	.byte	'TSSS',0,4
-	.word	236
+	.word	218
 	.byte	31,1,2,35,0,11
 	.byte	'reserved_31',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MAC_SYSTEM_TIME_NANOSECONDS_Bits',0,5,223,7,3
-	.word	16756
+	.word	16738
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_SYSTEM_TIME_NANOSECONDS_UPDATE_Bits',0,5,226,7,16,4,11
 	.byte	'TSSS',0,4
-	.word	236
+	.word	218
 	.byte	31,1,2,35,0,11
 	.byte	'ADDSUB',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MAC_SYSTEM_TIME_NANOSECONDS_UPDATE_Bits',0,5,230,7,3
-	.word	16896
+	.word	16878
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_SYSTEM_TIME_SECONDS_Bits',0,5,233,7,16,4,11
 	.byte	'TSS',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_SYSTEM_TIME_SECONDS_Bits',0,5,236,7,3
-	.word	17045
+	.word	17027
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_SYSTEM_TIME_SECONDS_UPDATE_Bits',0,5,239,7,16,4,11
 	.byte	'TSS',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_SYSTEM_TIME_SECONDS_UPDATE_Bits',0,5,242,7,3
-	.word	17153
+	.word	17135
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_TIMESTAMP_ADDEND_Bits',0,5,245,7,16,4,11
 	.byte	'TSAR',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_TIMESTAMP_ADDEND_Bits',0,5,248,7,3
-	.word	17275
+	.word	17257
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_TIMESTAMP_CONTROL_Bits',0,5,251,7,16,4,11
 	.byte	'TSENA',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'TSCFUPDT',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'TSINIT',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,0,11
 	.byte	'TSUPDT',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'reserved_4',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'TSADDREG',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,0,11
 	.byte	'reserved_6',0,1
-	.word	598
+	.word	580
 	.byte	2,0,2,35,0,11
 	.byte	'TSENALL',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,1,11
 	.byte	'TSCTRLSSR',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,1,11
 	.byte	'TSVER2ENA',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,1,11
 	.byte	'TSIPENA',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,1,11
 	.byte	'TSIPV6ENA',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,1,11
 	.byte	'TSIPV4ENA',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,1,11
 	.byte	'TSEVNTENA',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,1,11
 	.byte	'TSMSTRENA',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,1,11
 	.byte	'SNAPTYPSEL',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,2,11
 	.byte	'TSENMACADDR',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,2,11
 	.byte	'CSC',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,2,11
 	.byte	'reserved_20',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,2,11
 	.byte	'reserved_21',0,1
-	.word	598
+	.word	580
 	.byte	3,0,2,35,2,11
 	.byte	'TXTSSTSM',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,3,11
 	.byte	'reserved_25',0,1
-	.word	598
+	.word	580
 	.byte	3,4,2,35,3,11
 	.byte	'AV8021ASMEN',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,3,11
 	.byte	'reserved_29',0,1
-	.word	598
+	.word	580
 	.byte	3,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MAC_TIMESTAMP_CONTROL_Bits',0,5,149,8,3
-	.word	17378
+	.word	17360
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_TIMESTAMP_EGRESS_ASYM_CORR_Bits',0,5,152,8,16,4,11
 	.byte	'OSTEAC',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_TIMESTAMP_EGRESS_ASYM_CORR_Bits',0,5,155,8,3
-	.word	17963
+	.word	17945
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_TIMESTAMP_EGRESS_CORR_NANOSECOND_Bits',0,5,158,8,16,4,11
 	.byte	'TSEC',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_TIMESTAMP_EGRESS_CORR_NANOSECOND_Bits',0,5,161,8,3
-	.word	18088
+	.word	18070
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_TIMESTAMP_EGRESS_CORR_SUBNANOSEC_Bits',0,5,164,8,16,4,11
 	.byte	'reserved_0',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,0,11
 	.byte	'TSECSNS',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,1,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_MAC_TIMESTAMP_EGRESS_CORR_SUBNANOSEC_Bits',0,5,169,8,3
-	.word	18223
+	.word	18205
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_TIMESTAMP_INGRESS_ASYM_CORR_Bits',0,5,172,8,16,4,11
 	.byte	'OSTIAC',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_TIMESTAMP_INGRESS_ASYM_CORR_Bits',0,5,175,8,3
-	.word	18406
+	.word	18388
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_TIMESTAMP_INGRESS_CORR_NANOSECOND_Bits',0,5,178,8,16,4,11
 	.byte	'TSIC',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_TIMESTAMP_INGRESS_CORR_NANOSECOND_Bits',0,5,181,8,3
-	.word	18533
+	.word	18515
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_TIMESTAMP_INGRESS_CORR_SUBNANOSEC_Bits',0,5,184,8,16,4,11
 	.byte	'reserved_0',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,0,11
 	.byte	'TSICSNS',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,1,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_MAC_TIMESTAMP_INGRESS_CORR_SUBNANOSEC_Bits',0,5,189,8,3
-	.word	18670
+	.word	18652
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_TIMESTAMP_STATUS_Bits',0,5,192,8,16,4,11
 	.byte	'TSSOVF',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'TSTARGT0',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'reserved_2',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,0,11
 	.byte	'TSTRGTERR0',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'TSTARGT1',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'TSTRGTERR1',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,0,11
 	.byte	'TSTARGT2',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,0,11
 	.byte	'TSTRGTERR2',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,0,11
 	.byte	'TSTARGT3',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,1,11
 	.byte	'TSTRGTERR3',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,1,11
 	.byte	'reserved_10',0,1
-	.word	598
+	.word	580
 	.byte	5,1,2,35,1,11
 	.byte	'TXTSSIS',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,1,11
 	.byte	'reserved_16',0,1
-	.word	598
+	.word	580
 	.byte	4,4,2,35,2,11
 	.byte	'reserved_20',0,1
-	.word	598
+	.word	580
 	.byte	4,0,2,35,2,11
 	.byte	'reserved_24',0,1
-	.word	598
+	.word	580
 	.byte	6,2,2,35,3,11
 	.byte	'reserved_30',0,1
-	.word	598
+	.word	580
 	.byte	2,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MAC_TIMESTAMP_STATUS_Bits',0,5,210,8,3
-	.word	18855
+	.word	18837
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_TX_TIMESTAMP_STATUS_NANOSECONDS_Bits',0,5,213,8,16,4,11
 	.byte	'TXTSSLO',0,4
-	.word	236
+	.word	218
 	.byte	31,1,2,35,0,11
 	.byte	'TXTSSMIS',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MAC_TX_TIMESTAMP_STATUS_NANOSECONDS_Bits',0,5,217,8,3
-	.word	19284
+	.word	19266
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_TX_TIMESTAMP_STATUS_SECONDS_Bits',0,5,220,8,16,4,11
 	.byte	'TXTSSHI',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_TX_TIMESTAMP_STATUS_SECONDS_Bits',0,5,223,8,3
-	.word	19440
+	.word	19422
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_VERSION_Bits',0,5,226,8,16,4,11
 	.byte	'SNPSVER',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,0,11
 	.byte	'USERVER',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,1,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_MAC_VERSION_Bits',0,5,231,8,3
-	.word	19568
+	.word	19550
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_VLAN_HASH_TABLE_Bits',0,5,234,8,16,4,11
 	.byte	'VLHT',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_MAC_VLAN_HASH_TABLE_Bits',0,5,238,8,3
-	.word	19698
+	.word	19680
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_VLAN_INCL_Bits',0,5,241,8,16,4,11
 	.byte	'VLT',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'VLC',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,2,11
 	.byte	'VLP',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,2,11
 	.byte	'CSVL',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,2,11
 	.byte	'VLTI',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,2,11
 	.byte	'CBTI',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,2,11
 	.byte	'reserved_22',0,1
-	.word	598
+	.word	580
 	.byte	2,0,2,35,2,11
 	.byte	'ADDR',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,3,11
 	.byte	'reserved_26',0,1
-	.word	598
+	.word	580
 	.byte	4,2,2,35,3,11
 	.byte	'RDWR',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,3,11
 	.byte	'BUSY',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MAC_VLAN_INCL_Bits',0,5,254,8,3
-	.word	19822
+	.word	19804
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_VLAN_INCL_Q_Bits',0,5,129,9,16,4,11
 	.byte	'VLT',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,1
-	.word	598
+	.word	580
 	.byte	3,5,2,35,2,11
 	.byte	'CSVL',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,2,11
 	.byte	'reserved_20',0,2
-	.word	321
+	.word	303
 	.byte	12,0,2,35,2,0,3
 	.byte	'Ifx_GETH_MAC_VLAN_INCL_Q_Bits',0,5,135,9,3
-	.word	20082
+	.word	20064
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_VLAN_TAG_CTRL_Bits',0,5,138,9,16,4,11
 	.byte	'OB',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'CT',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'OFS',0,1
-	.word	598
+	.word	580
 	.byte	5,1,2,35,0,11
 	.byte	'reserved_7',0,4
-	.word	236
+	.word	218
 	.byte	10,15,2,35,0,11
 	.byte	'VTIM',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,2,11
 	.byte	'ESVL',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,2,11
 	.byte	'reserved_19',0,1
-	.word	598
+	.word	580
 	.byte	2,3,2,35,2,11
 	.byte	'EVLS',0,1
-	.word	598
+	.word	580
 	.byte	2,1,2,35,2,11
 	.byte	'reserved_23',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,2,11
 	.byte	'EVLRXS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,3,11
 	.byte	'VTHM',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,3,11
 	.byte	'EDVLP',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,3,11
 	.byte	'RES_27',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,3,11
 	.byte	'EIVLS',0,1
-	.word	598
+	.word	580
 	.byte	2,2,2,35,3,11
 	.byte	'reserved_30',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,3,11
 	.byte	'EIVLRXS',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MAC_VLAN_TAG_CTRL_Bits',0,5,156,9,3
-	.word	20236
+	.word	20218
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_VLAN_TAG_DATA_Bits',0,5,159,9,16,4,11
 	.byte	'VID',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'VEN',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,2,11
 	.byte	'ETV',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,2,11
 	.byte	'DOVLTC',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,2,11
 	.byte	'ERSVLM',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,2,11
 	.byte	'ERIVLT',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,2,11
 	.byte	'reserved_21',0,1
-	.word	598
+	.word	580
 	.byte	3,0,2,35,2,11
 	.byte	'DMACHEN',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,3,11
 	.byte	'DMACHN',0,1
-	.word	598
+	.word	580
 	.byte	2,5,2,35,3,11
 	.byte	'reserved_27',0,1
-	.word	598
+	.word	580
 	.byte	5,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MAC_VLAN_TAG_DATA_Bits',0,5,171,9,3
-	.word	20604
+	.word	20586
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_VLAN_TAG_FILTER_Bits',0,5,174,9,16,4,11
 	.byte	'VID',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'VEN',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,2,11
 	.byte	'ETV',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,2,11
 	.byte	'DOVLTC',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,2,11
 	.byte	'ERSVLM',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,2,11
 	.byte	'ERIVLT',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,2,11
 	.byte	'reserved_21',0,1
-	.word	598
+	.word	580
 	.byte	3,0,2,35,2,11
 	.byte	'DMACHEN',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,3,11
 	.byte	'DMACHN',0,1
-	.word	598
+	.word	580
 	.byte	2,5,2,35,3,11
 	.byte	'reserved_27',0,1
-	.word	598
+	.word	580
 	.byte	5,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MAC_VLAN_TAG_FILTER_Bits',0,5,186,9,3
-	.word	20867
+	.word	20849
 	.byte	10
 	.byte	'_Ifx_GETH_MAC_WATCHDOG_TIMEOUT_Bits',0,5,189,9,16,4,11
 	.byte	'WTO',0,1
-	.word	598
+	.word	580
 	.byte	4,4,2,35,0,11
 	.byte	'reserved_4',0,1
-	.word	598
+	.word	580
 	.byte	4,0,2,35,0,11
 	.byte	'PWE',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,1,11
 	.byte	'reserved_9',0,4
-	.word	236
+	.word	218
 	.byte	23,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_WATCHDOG_TIMEOUT_Bits',0,5,195,9,3
-	.word	21134
+	.word	21116
 	.byte	10
 	.byte	'_Ifx_GETH_MMC_CONTROL_Bits',0,5,198,9,16,4,11
 	.byte	'CNTRST',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'CNTSTOPRO',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'RSTONRD',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,0,11
 	.byte	'CNTFREEZ',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'CNTPRST',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'CNTPRSTLVL',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,0,11
 	.byte	'reserved_6',0,1
-	.word	598
+	.word	580
 	.byte	2,0,2,35,0,11
 	.byte	'UCDBC',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,1,11
 	.byte	'reserved_9',0,4
-	.word	236
+	.word	218
 	.byte	23,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MMC_CONTROL_Bits',0,5,209,9,3
-	.word	21295
+	.word	21277
 	.byte	10
 	.byte	'_Ifx_GETH_MMC_IPC_RX_INTERRUPT_Bits',0,5,212,9,16,4,11
 	.byte	'RXIPV4GPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'RXIPV4HERPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'RXIPV4NOPAYPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,0,11
 	.byte	'RXIPV4FRAGPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'RXIPV4UDSBLPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'RXIPV6GPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,0,11
 	.byte	'RXIPV6HERPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,0,11
 	.byte	'RXIPV6NOPAYPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,0,11
 	.byte	'RXUDPGPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,1,11
 	.byte	'RXUDPERPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,1,11
 	.byte	'RXTCPGPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,1,11
 	.byte	'RXTCPERPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,1,11
 	.byte	'RXICMPGPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,1,11
 	.byte	'RXICMPERPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,1,11
 	.byte	'reserved_14',0,1
-	.word	598
+	.word	580
 	.byte	2,0,2,35,1,11
 	.byte	'RXIPV4GOIS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,2,11
 	.byte	'RXIPV4HEROIS',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,2,11
 	.byte	'RXIPV4NOPAYOIS',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,2,11
 	.byte	'RXIPV4FRAGOIS',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,2,11
 	.byte	'RXIPV4UDSBLOIS',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,2,11
 	.byte	'RXIPV6GOIS',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,2,11
 	.byte	'RXIPV6HEROIS',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,2,11
 	.byte	'RXIPV6NOPAYOIS',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,2,11
 	.byte	'RXUDPGOIS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,3,11
 	.byte	'RXUDPEROIS',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,3,11
 	.byte	'RXTCPGOIS',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,3,11
 	.byte	'RXTCPEROIS',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,3,11
 	.byte	'RXICMPGOIS',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,3,11
 	.byte	'RXICMPEROIS',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,3,11
 	.byte	'reserved_30',0,1
-	.word	598
+	.word	580
 	.byte	2,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MMC_IPC_RX_INTERRUPT_Bits',0,5,244,9,3
-	.word	21544
+	.word	21526
 	.byte	10
 	.byte	'_Ifx_GETH_MMC_IPC_RX_INTERRUPT_MASK_Bits',0,5,247,9,16,4,11
 	.byte	'RXIPV4GPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'RXIPV4HERPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'RXIPV4NOPAYPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,0,11
 	.byte	'RXIPV4FRAGPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'RXIPV4UDSBLPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'RXIPV6GPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,0,11
 	.byte	'RXIPV6HERPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,0,11
 	.byte	'RXIPV6NOPAYPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,0,11
 	.byte	'RXUDPGPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,1,11
 	.byte	'RXUDPERPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,1,11
 	.byte	'RXTCPGPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,1,11
 	.byte	'RXTCPERPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,1,11
 	.byte	'RXICMPGPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,1,11
 	.byte	'RXICMPERPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,1,11
 	.byte	'reserved_14',0,1
-	.word	598
+	.word	580
 	.byte	2,0,2,35,1,11
 	.byte	'RXIPV4GOIM',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,2,11
 	.byte	'RXIPV4HEROIM',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,2,11
 	.byte	'RXIPV4NOPAYOIM',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,2,11
 	.byte	'RXIPV4FRAGOIM',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,2,11
 	.byte	'RXIPV4UDSBLOIM',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,2,11
 	.byte	'RXIPV6GOIM',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,2,11
 	.byte	'RXIPV6HEROIM',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,2,11
 	.byte	'RXIPV6NOPAYOIM',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,2,11
 	.byte	'RXUDPGOIM',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,3,11
 	.byte	'RXUDPEROIM',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,3,11
 	.byte	'RXTCPGOIM',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,3,11
 	.byte	'RXTCPEROIM',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,3,11
 	.byte	'RXICMPGOIM',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,3,11
 	.byte	'RXICMPEROIM',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,3,11
 	.byte	'reserved_30',0,1
-	.word	598
+	.word	580
 	.byte	2,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MMC_IPC_RX_INTERRUPT_MASK_Bits',0,5,151,10,3
-	.word	22329
+	.word	22311
 	.byte	10
 	.byte	'_Ifx_GETH_MMC_RX_INTERRUPT_Bits',0,5,154,10,16,4,11
 	.byte	'RXGBPKTIS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'RXGBOCTIS',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'RXGOCTIS',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,0,11
 	.byte	'RXBCGPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'RXMCGPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'RXCRCERPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,0,11
 	.byte	'RXALGNERPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,0,11
 	.byte	'RXRUNTPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,0,11
 	.byte	'RXJABERPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,1,11
 	.byte	'RXUSIZEGPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,1,11
 	.byte	'RXOSIZEGPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,1,11
 	.byte	'RX64OCTGBPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,1,11
 	.byte	'RX65T127OCTGBPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,1,11
 	.byte	'RX128T255OCTGBPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,1,11
 	.byte	'RX256T511OCTGBPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,1,11
 	.byte	'RX512T1023OCTGBPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,1,11
 	.byte	'RX1024TMAXOCTGBPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,2,11
 	.byte	'RXUCGPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,2,11
 	.byte	'RXLENERPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,2,11
 	.byte	'RXORANGEPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,2,11
 	.byte	'RXPAUSPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,2,11
 	.byte	'RXFOVPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,2,11
 	.byte	'RXVLANGBPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,2,11
 	.byte	'RXWDOGPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,2,11
 	.byte	'RXRCVERRPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,3,11
 	.byte	'RXCTRLPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,3,11
 	.byte	'RXLPIUSCIS',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,3,11
 	.byte	'RXLPITRCIS',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,3,11
 	.byte	'reserved_28',0,1
-	.word	598
+	.word	580
 	.byte	4,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MMC_RX_INTERRUPT_Bits',0,5,185,10,3
-	.word	23124
+	.word	23106
 	.byte	10
 	.byte	'_Ifx_GETH_MMC_RX_INTERRUPT_MASK_Bits',0,5,188,10,16,4,11
 	.byte	'RXGBPKTIM',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'RXGBOCTIM',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'RXGOCTIM',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,0,11
 	.byte	'RXBCGPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'RXMCGPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'RXCRCERPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,0,11
 	.byte	'RXALGNERPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,0,11
 	.byte	'RXRUNTPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,0,11
 	.byte	'RXJABERPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,1,11
 	.byte	'RXUSIZEGPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,1,11
 	.byte	'RXOSIZEGPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,1,11
 	.byte	'RX64OCTGBPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,1,11
 	.byte	'RX65T127OCTGBPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,1,11
 	.byte	'RX128T255OCTGBPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,1,11
 	.byte	'RX256T511OCTGBPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,1,11
 	.byte	'RX512T1023OCTGBPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,1,11
 	.byte	'RX1024TMAXOCTGBPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,2,11
 	.byte	'RXUCGPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,2,11
 	.byte	'RXLENERPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,2,11
 	.byte	'RXORANGEPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,2,11
 	.byte	'RXPAUSPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,2,11
 	.byte	'RXFOVPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,2,11
 	.byte	'RXVLANGBPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,2,11
 	.byte	'RXWDOGPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,2,11
 	.byte	'RXRCVERRPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,3,11
 	.byte	'RXCTRLPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,3,11
 	.byte	'RXLPIUSCIM',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,3,11
 	.byte	'RXLPITRCIM',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,3,11
 	.byte	'reserved_28',0,1
-	.word	598
+	.word	580
 	.byte	4,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MMC_RX_INTERRUPT_MASK_Bits',0,5,219,10,3
-	.word	23870
+	.word	23852
 	.byte	10
 	.byte	'_Ifx_GETH_MMC_TX_INTERRUPT_Bits',0,5,222,10,16,4,11
 	.byte	'TXGBOCTIS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'TXGBPKTIS',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'TXBCGPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,0,11
 	.byte	'TXMCGPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'TX64OCTGBPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'TX65T127OCTGBPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,0,11
 	.byte	'TX128T255OCTGBPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,0,11
 	.byte	'TX256T511OCTGBPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,0,11
 	.byte	'TX512T1023OCTGBPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,1,11
 	.byte	'TX1024TMAXOCTGBPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,1,11
 	.byte	'TXUCGBPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,1,11
 	.byte	'TXMCGBPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,1,11
 	.byte	'TXBCGBPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,1,11
 	.byte	'TXUFLOWERPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,1,11
 	.byte	'TXSCOLGPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,1,11
 	.byte	'TXMCOLGPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,1,11
 	.byte	'TXDEFPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,2,11
 	.byte	'TXLATCOLPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,2,11
 	.byte	'TXEXCOLPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,2,11
 	.byte	'TXCARERPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,2,11
 	.byte	'TXGOCTIS',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,2,11
 	.byte	'TXGPKTIS',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,2,11
 	.byte	'TXEXDEFPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,2,11
 	.byte	'TXPAUSPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,2,11
 	.byte	'TXVLANGPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,3,11
 	.byte	'TXOSIZEGPIS',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,3,11
 	.byte	'TXLPIUSCIS',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,3,11
 	.byte	'TXLPITRCIS',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,3,11
 	.byte	'reserved_28',0,1
-	.word	598
+	.word	580
 	.byte	4,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MMC_TX_INTERRUPT_Bits',0,5,253,10,3
-	.word	24626
+	.word	24608
 	.byte	10
 	.byte	'_Ifx_GETH_MMC_TX_INTERRUPT_MASK_Bits',0,5,128,11,16,4,11
 	.byte	'TXGBOCTIM',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'TXGBPKTIM',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'TXBCGPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,0,11
 	.byte	'TXMCGPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'TX64OCTGBPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'TX65T127OCTGBPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,0,11
 	.byte	'TX128T255OCTGBPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,0,11
 	.byte	'TX256T511OCTGBPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,0,11
 	.byte	'TX512T1023OCTGBPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,1,11
 	.byte	'TX1024TMAXOCTGBPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,1,11
 	.byte	'TXUCGBPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,1,11
 	.byte	'TXMCGBPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,1,11
 	.byte	'TXBCGBPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,1,11
 	.byte	'TXUFLOWERPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,1,11
 	.byte	'TXSCOLGPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,1,11
 	.byte	'TXMCOLGPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,1,11
 	.byte	'TXDEFPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,2,11
 	.byte	'TXLATCOLPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,2,11
 	.byte	'TXEXCOLPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,2,11
 	.byte	'TXCARERPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,2,11
 	.byte	'TXGOCTIM',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,2,11
 	.byte	'TXGPKTIM',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,2,11
 	.byte	'TXEXDEFPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,2,11
 	.byte	'TXPAUSPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,2,11
 	.byte	'TXVLANGPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,3,11
 	.byte	'TXOSIZEGPIM',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,3,11
 	.byte	'TXLPIUSCIM',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,3,11
 	.byte	'TXLPITRCIM',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,3,11
 	.byte	'reserved_28',0,1
-	.word	598
+	.word	580
 	.byte	4,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MMC_TX_INTERRUPT_MASK_Bits',0,5,159,11,3
-	.word	25370
+	.word	25352
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_INTERRUPT_STATUS_Bits',0,5,162,11,16,4,11
 	.byte	'Q0IS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'Q1IS',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'Q2IS',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,0,11
 	.byte	'Q3IS',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'reserved_4',0,1
-	.word	598
+	.word	580
 	.byte	4,0,2,35,0,11
 	.byte	'reserved_8',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,1,11
 	.byte	'reserved_16',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,2,11
 	.byte	'reserved_18',0,2
-	.word	321
+	.word	303
 	.byte	14,0,2,35,2,0,3
 	.byte	'Ifx_GETH_MTL_INTERRUPT_STATUS_Bits',0,5,172,11,3
-	.word	26124
+	.word	26106
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_OPERATION_MODE_Bits',0,5,175,11,16,4,11
 	.byte	'reserved_0',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'DTXSTS',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'RAA',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,0,11
 	.byte	'reserved_3',0,1
-	.word	598
+	.word	580
 	.byte	2,3,2,35,0,11
 	.byte	'SCHALG',0,1
-	.word	598
+	.word	580
 	.byte	2,1,2,35,0,11
 	.byte	'reserved_7',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,0,11
 	.byte	'CNTPRST',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,1,11
 	.byte	'CNTCLR',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,1,11
 	.byte	'reserved_10',0,4
-	.word	236
+	.word	218
 	.byte	22,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_OPERATION_MODE_Bits',0,5,186,11,3
-	.word	26365
+	.word	26347
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_Q0_INTERRUPT_CONTROL_STATUS_Bits',0,5,189,11,16,4,11
 	.byte	'TXUNFIS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'ABPSIS',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'reserved_2',0,1
-	.word	598
+	.word	580
 	.byte	6,0,2,35,0,11
 	.byte	'TXUIE',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,1,11
 	.byte	'ABPSIE',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,1,11
 	.byte	'reserved_10',0,1
-	.word	598
+	.word	580
 	.byte	6,0,2,35,1,11
 	.byte	'RXOVFIS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,2,11
 	.byte	'reserved_17',0,1
-	.word	598
+	.word	580
 	.byte	7,0,2,35,2,11
 	.byte	'RXOIE',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,3,11
 	.byte	'reserved_25',0,1
-	.word	598
+	.word	580
 	.byte	7,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MTL_Q0_INTERRUPT_CONTROL_STATUS_Bits',0,5,201,11,3
-	.word	26625
+	.word	26607
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_Q_INTERRUPT_CONTROL_STATUS_Bits',0,5,204,11,16,4,11
 	.byte	'TXUNFIS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'ABPSIS',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'reserved_2',0,1
-	.word	598
+	.word	580
 	.byte	6,0,2,35,0,11
 	.byte	'TXUIE',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,1,11
 	.byte	'ABPSIE',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,1,11
 	.byte	'reserved_10',0,1
-	.word	598
+	.word	580
 	.byte	6,0,2,35,1,11
 	.byte	'RXOVFIS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,2,11
 	.byte	'reserved_17',0,1
-	.word	598
+	.word	580
 	.byte	7,0,2,35,2,11
 	.byte	'RXOIE',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,3,11
 	.byte	'reserved_25',0,1
-	.word	598
+	.word	580
 	.byte	7,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MTL_Q_INTERRUPT_CONTROL_STATUS_Bits',0,5,216,11,3
-	.word	26933
+	.word	26915
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_RXQ0_CONTROL_Bits',0,5,219,11,16,4,11
 	.byte	'RXQ_WEGT',0,1
-	.word	598
+	.word	580
 	.byte	3,5,2,35,0,11
 	.byte	'RXQ_FRM_ARBIT',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'reserved_4',0,4
-	.word	236
+	.word	218
 	.byte	28,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_RXQ0_CONTROL_Bits',0,5,224,11,3
-	.word	27239
+	.word	27221
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_RXQ0_DEBUG_Bits',0,5,227,11,16,4,11
 	.byte	'RWCSTS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'RRCSTS',0,1
-	.word	598
+	.word	580
 	.byte	2,5,2,35,0,11
 	.byte	'reserved_3',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'RXQSTS',0,1
-	.word	598
+	.word	580
 	.byte	2,2,2,35,0,11
 	.byte	'reserved_6',0,2
-	.word	321
+	.word	303
 	.byte	10,0,2,35,0,11
 	.byte	'PRXQ',0,2
-	.word	321
+	.word	303
 	.byte	14,2,2,35,2,11
 	.byte	'reserved_30',0,1
-	.word	598
+	.word	580
 	.byte	2,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MTL_RXQ0_DEBUG_Bits',0,5,236,11,3
-	.word	27385
+	.word	27367
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_RXQ0_MISSED_PACKET_OVERFLOW_CNT_Bits',0,5,239,11,16,4,11
 	.byte	'OVFPKTCNT',0,2
-	.word	321
+	.word	303
 	.byte	11,5,2,35,0,11
 	.byte	'OVFCNTOVF',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,1,11
 	.byte	'reserved_12',0,1
-	.word	598
+	.word	580
 	.byte	4,0,2,35,1,11
 	.byte	'MISPKTCNT',0,2
-	.word	321
+	.word	303
 	.byte	11,5,2,35,2,11
 	.byte	'MISCNTOVF',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,3,11
 	.byte	'reserved_28',0,1
-	.word	598
+	.word	580
 	.byte	4,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MTL_RXQ0_MISSED_PACKET_OVERFLOW_CNT_Bits',0,5,247,11,3
-	.word	27597
+	.word	27579
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_RXQ0_OPERATION_MODE_Bits',0,5,250,11,16,4,11
 	.byte	'RTC',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,0,11
 	.byte	'reserved_2',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,0,11
 	.byte	'FUP',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'FEP',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'RSF',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,0,11
 	.byte	'DIS_TCP_EF',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,0,11
 	.byte	'EHFC',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,0,11
 	.byte	'RFA',0,1
-	.word	598
+	.word	580
 	.byte	4,4,2,35,1,11
 	.byte	'reserved_12',0,1
-	.word	598
+	.word	580
 	.byte	2,2,2,35,1,11
 	.byte	'RFD',0,4
-	.word	236
+	.word	218
 	.byte	4,14,2,35,0,11
 	.byte	'reserved_18',0,1
-	.word	598
+	.word	580
 	.byte	2,4,2,35,2,11
 	.byte	'RQS',0,2
-	.word	321
+	.word	303
 	.byte	5,7,2,35,2,11
 	.byte	'reserved_25',0,1
-	.word	598
+	.word	580
 	.byte	7,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MTL_RXQ0_OPERATION_MODE_Bits',0,5,137,12,3
-	.word	27844
+	.word	27826
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_RXQ_CONTROL_Bits',0,5,140,12,16,4,11
 	.byte	'RXQ_WEGT',0,1
-	.word	598
+	.word	580
 	.byte	3,5,2,35,0,11
 	.byte	'RXQ_FRM_ARBIT',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'reserved_4',0,4
-	.word	236
+	.word	218
 	.byte	28,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_RXQ_CONTROL_Bits',0,5,145,12,3
-	.word	28171
+	.word	28153
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_RXQ_DEBUG_Bits',0,5,148,12,16,4,11
 	.byte	'RWCSTS',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'RRCSTS',0,1
-	.word	598
+	.word	580
 	.byte	2,5,2,35,0,11
 	.byte	'reserved_3',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'RXQSTS',0,1
-	.word	598
+	.word	580
 	.byte	2,2,2,35,0,11
 	.byte	'reserved_6',0,2
-	.word	321
+	.word	303
 	.byte	10,0,2,35,0,11
 	.byte	'PRXQ',0,2
-	.word	321
+	.word	303
 	.byte	14,2,2,35,2,11
 	.byte	'reserved_30',0,1
-	.word	598
+	.word	580
 	.byte	2,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MTL_RXQ_DEBUG_Bits',0,5,157,12,3
-	.word	28315
+	.word	28297
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_RXQ_DMA_MAP0_Bits',0,5,160,12,16,4,11
 	.byte	'Q0MDMACH',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,0,11
 	.byte	'reserved_2',0,1
-	.word	598
+	.word	580
 	.byte	2,4,2,35,0,11
 	.byte	'Q0DDMACH',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'reserved_5',0,1
-	.word	598
+	.word	580
 	.byte	3,0,2,35,0,11
 	.byte	'Q1MDMACH',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,1,11
 	.byte	'reserved_10',0,1
-	.word	598
+	.word	580
 	.byte	2,4,2,35,1,11
 	.byte	'Q1DDMACH',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,1,11
 	.byte	'reserved_13',0,1
-	.word	598
+	.word	580
 	.byte	3,0,2,35,1,11
 	.byte	'Q2MDMACH',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,2,11
 	.byte	'reserved_18',0,1
-	.word	598
+	.word	580
 	.byte	2,4,2,35,2,11
 	.byte	'Q2DDMACH',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,2,11
 	.byte	'reserved_21',0,1
-	.word	598
+	.word	580
 	.byte	3,0,2,35,2,11
 	.byte	'Q3MDMACH',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,3,11
 	.byte	'reserved_26',0,1
-	.word	598
+	.word	580
 	.byte	2,4,2,35,3,11
 	.byte	'Q3DDMACH',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,3,11
 	.byte	'reserved_29',0,1
-	.word	598
+	.word	580
 	.byte	3,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MTL_RXQ_DMA_MAP0_Bits',0,5,178,12,3
-	.word	28525
+	.word	28507
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_RXQ_MISSED_PACKET_OVERFLOW_CNT_Bits',0,5,181,12,16,4,11
 	.byte	'OVFPKTCNT',0,2
-	.word	321
+	.word	303
 	.byte	11,5,2,35,0,11
 	.byte	'OVFCNTOVF',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,1,11
 	.byte	'reserved_12',0,1
-	.word	598
+	.word	580
 	.byte	4,0,2,35,1,11
 	.byte	'MISPKTCNT',0,2
-	.word	321
+	.word	303
 	.byte	11,5,2,35,2,11
 	.byte	'MISCNTOVF',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,3,11
 	.byte	'reserved_28',0,1
-	.word	598
+	.word	580
 	.byte	4,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MTL_RXQ_MISSED_PACKET_OVERFLOW_CNT_Bits',0,5,189,12,3
-	.word	28946
+	.word	28928
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_RXQ_OPERATION_MODE_Bits',0,5,192,12,16,4,11
 	.byte	'RTC',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,0,11
 	.byte	'reserved_2',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,0,11
 	.byte	'FUP',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'FEP',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'RSF',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,0,11
 	.byte	'DIS_TCP_EF',0,1
-	.word	598
+	.word	580
 	.byte	1,1,2,35,0,11
 	.byte	'EHFC',0,1
-	.word	598
+	.word	580
 	.byte	1,0,2,35,0,11
 	.byte	'RFA',0,1
-	.word	598
+	.word	580
 	.byte	4,4,2,35,1,11
 	.byte	'reserved_12',0,1
-	.word	598
+	.word	580
 	.byte	2,2,2,35,1,11
 	.byte	'RFD',0,4
-	.word	236
+	.word	218
 	.byte	4,14,2,35,0,11
 	.byte	'reserved_18',0,1
-	.word	598
+	.word	580
 	.byte	2,4,2,35,2,11
 	.byte	'RQS',0,2
-	.word	321
+	.word	303
 	.byte	5,7,2,35,2,11
 	.byte	'reserved_25',0,1
-	.word	598
+	.word	580
 	.byte	7,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MTL_RXQ_OPERATION_MODE_Bits',0,5,207,12,3
-	.word	29191
+	.word	29173
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_TXQ0_DEBUG_Bits',0,5,210,12,16,4,11
 	.byte	'TXQPAUSED',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'TRCSTS',0,1
-	.word	598
+	.word	580
 	.byte	2,5,2,35,0,11
 	.byte	'TWCSTS',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'TXQSTS',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'TXSTSFSTS',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,0,11
 	.byte	'reserved_6',0,2
-	.word	321
+	.word	303
 	.byte	10,0,2,35,0,11
 	.byte	'PTXQ',0,1
-	.word	598
+	.word	580
 	.byte	3,5,2,35,2,11
 	.byte	'reserved_19',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,2,11
 	.byte	'STXSTSF',0,1
-	.word	598
+	.word	580
 	.byte	3,1,2,35,2,11
 	.byte	'reserved_23',0,2
-	.word	321
+	.word	303
 	.byte	9,0,2,35,2,0,3
 	.byte	'Ifx_GETH_MTL_TXQ0_DEBUG_Bits',0,5,222,12,3
-	.word	29516
+	.word	29498
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_TXQ0_ETS_STATUS_Bits',0,5,225,12,16,4,11
 	.byte	'ABS',0,4
-	.word	236
+	.word	218
 	.byte	24,8,2,35,0,11
 	.byte	'reserved_24',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MTL_TXQ0_ETS_STATUS_Bits',0,5,229,12,3
-	.word	29790
+	.word	29772
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_TXQ0_OPERATION_MODE_Bits',0,5,232,12,16,4,11
 	.byte	'FTQ',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'TSF',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'TXQEN',0,1
-	.word	598
+	.word	580
 	.byte	2,4,2,35,0,11
 	.byte	'TTC',0,1
-	.word	598
+	.word	580
 	.byte	3,1,2,35,0,11
 	.byte	'reserved_7',0,2
-	.word	321
+	.word	303
 	.byte	9,0,2,35,0,11
 	.byte	'TQS',0,1
-	.word	598
+	.word	580
 	.byte	4,4,2,35,2,11
 	.byte	'reserved_20',0,2
-	.word	321
+	.word	303
 	.byte	12,0,2,35,2,0,3
 	.byte	'Ifx_GETH_MTL_TXQ0_OPERATION_MODE_Bits',0,5,241,12,3
-	.word	29913
+	.word	29895
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_TXQ0_QUANTUM_WEIGHT_Bits',0,5,244,12,16,4,11
 	.byte	'ISCQW',0,4
-	.word	236
+	.word	218
 	.byte	21,11,2,35,0,11
 	.byte	'reserved_21',0,2
-	.word	321
+	.word	303
 	.byte	11,0,2,35,2,0,3
 	.byte	'Ifx_GETH_MTL_TXQ0_QUANTUM_WEIGHT_Bits',0,5,248,12,3
-	.word	30128
+	.word	30110
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_TXQ0_UNDERFLOW_Bits',0,5,251,12,16,4,11
 	.byte	'UFFRMCNT',0,2
-	.word	321
+	.word	303
 	.byte	11,5,2,35,0,11
 	.byte	'UFCNTOVF',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,1,11
 	.byte	'reserved_12',0,4
-	.word	236
+	.word	218
 	.byte	20,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_TXQ0_UNDERFLOW_Bits',0,5,128,13,3
-	.word	30261
+	.word	30243
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_TXQ_DEBUG_Bits',0,5,131,13,16,4,11
 	.byte	'TXQPAUSED',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'TRCSTS',0,1
-	.word	598
+	.word	580
 	.byte	2,5,2,35,0,11
 	.byte	'TWCSTS',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'TXQSTS',0,1
-	.word	598
+	.word	580
 	.byte	1,3,2,35,0,11
 	.byte	'TXSTSFSTS',0,1
-	.word	598
+	.word	580
 	.byte	1,2,2,35,0,11
 	.byte	'reserved_6',0,2
-	.word	321
+	.word	303
 	.byte	10,0,2,35,0,11
 	.byte	'PTXQ',0,1
-	.word	598
+	.word	580
 	.byte	3,5,2,35,2,11
 	.byte	'reserved_19',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,2,11
 	.byte	'STXSTSF',0,1
-	.word	598
+	.word	580
 	.byte	3,1,2,35,2,11
 	.byte	'reserved_23',0,2
-	.word	321
+	.word	303
 	.byte	9,0,2,35,2,0,3
 	.byte	'Ifx_GETH_MTL_TXQ_DEBUG_Bits',0,5,143,13,3
-	.word	30407
+	.word	30389
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_TXQ_ETS_CONTROL_Bits',0,5,146,13,16,4,11
 	.byte	'reserved_0',0,1
-	.word	598
+	.word	580
 	.byte	2,6,2,35,0,11
 	.byte	'AVALG',0,1
-	.word	598
+	.word	580
 	.byte	1,5,2,35,0,11
 	.byte	'CC',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,0,11
 	.byte	'SLC',0,1
-	.word	598
+	.word	580
 	.byte	3,1,2,35,0,11
 	.byte	'reserved_7',0,4
-	.word	236
+	.word	218
 	.byte	25,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_TXQ_ETS_CONTROL_Bits',0,5,153,13,3
-	.word	30679
+	.word	30661
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_TXQ_ETS_STATUS_Bits',0,5,156,13,16,4,11
 	.byte	'ABS',0,4
-	.word	236
+	.word	218
 	.byte	24,8,2,35,0,11
 	.byte	'reserved_24',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MTL_TXQ_ETS_STATUS_Bits',0,5,160,13,3
-	.word	30854
+	.word	30836
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_TXQ_HICREDIT_Bits',0,5,163,13,16,4,11
 	.byte	'HC',0,4
-	.word	236
+	.word	218
 	.byte	29,3,2,35,0,11
 	.byte	'reserved_29',0,1
-	.word	598
+	.word	580
 	.byte	3,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MTL_TXQ_HICREDIT_Bits',0,5,167,13,3
-	.word	30975
+	.word	30957
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_TXQ_LOCREDIT_Bits',0,5,170,13,16,4,11
 	.byte	'LC',0,4
-	.word	236
+	.word	218
 	.byte	29,3,2,35,0,11
 	.byte	'reserved_29',0,1
-	.word	598
+	.word	580
 	.byte	3,0,2,35,3,0,3
 	.byte	'Ifx_GETH_MTL_TXQ_LOCREDIT_Bits',0,5,174,13,3
-	.word	31091
+	.word	31073
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_TXQ_OPERATION_MODE_Bits',0,5,177,13,16,4,11
 	.byte	'FTQ',0,1
-	.word	598
+	.word	580
 	.byte	1,7,2,35,0,11
 	.byte	'TSF',0,1
-	.word	598
+	.word	580
 	.byte	1,6,2,35,0,11
 	.byte	'TXQEN',0,1
-	.word	598
+	.word	580
 	.byte	2,4,2,35,0,11
 	.byte	'TTC',0,1
-	.word	598
+	.word	580
 	.byte	3,1,2,35,0,11
 	.byte	'reserved_7',0,2
-	.word	321
+	.word	303
 	.byte	9,0,2,35,0,11
 	.byte	'TQS',0,1
-	.word	598
+	.word	580
 	.byte	4,4,2,35,2,11
 	.byte	'reserved_20',0,2
-	.word	321
+	.word	303
 	.byte	12,0,2,35,2,0,3
 	.byte	'Ifx_GETH_MTL_TXQ_OPERATION_MODE_Bits',0,5,186,13,3
-	.word	31207
+	.word	31189
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_TXQ_QUANTUM_WEIGHT_Bits',0,5,189,13,16,4,11
 	.byte	'ISCQW',0,4
-	.word	236
+	.word	218
 	.byte	21,11,2,35,0,11
 	.byte	'reserved_21',0,2
-	.word	321
+	.word	303
 	.byte	11,0,2,35,2,0,3
 	.byte	'Ifx_GETH_MTL_TXQ_QUANTUM_WEIGHT_Bits',0,5,193,13,3
-	.word	31420
+	.word	31402
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_TXQ_SENDSLOPECREDIT_Bits',0,5,196,13,16,4,11
 	.byte	'SSC',0,2
-	.word	321
+	.word	303
 	.byte	14,2,2,35,0,11
 	.byte	'reserved_14',0,4
-	.word	236
+	.word	218
 	.byte	18,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_TXQ_SENDSLOPECREDIT_Bits',0,5,200,13,3
-	.word	31551
+	.word	31533
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_TXQ_UNDERFLOW_Bits',0,5,203,13,16,4,11
 	.byte	'UFFRMCNT',0,2
-	.word	321
+	.word	303
 	.byte	11,5,2,35,0,11
 	.byte	'UFCNTOVF',0,1
-	.word	598
+	.word	580
 	.byte	1,4,2,35,1,11
 	.byte	'reserved_12',0,4
-	.word	236
+	.word	218
 	.byte	20,0,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_TXQ_UNDERFLOW_Bits',0,5,208,13,3
-	.word	31682
+	.word	31664
 	.byte	10
 	.byte	'_Ifx_GETH_RWK_FILTER_BYTE_MASK_Bits',0,5,211,13,16,4,11
 	.byte	'FILTERI_BYTE_MASK',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_RWK_FILTER_BYTE_MASK_Bits',0,5,214,13,3
-	.word	31826
+	.word	31808
 	.byte	10
 	.byte	'_Ifx_GETH_RWK_FILTER_COMMAND_0_Bits',0,5,217,13,16,4,11
 	.byte	'FILTER0_COMMAND',0,1
-	.word	598
+	.word	580
 	.byte	4,4,2,35,0,11
 	.byte	'reserved_4',0,1
-	.word	598
+	.word	580
 	.byte	4,0,2,35,0,11
 	.byte	'FILTER1_COMMAND',0,1
-	.word	598
+	.word	580
 	.byte	4,4,2,35,1,11
 	.byte	'reserved_12',0,1
-	.word	598
+	.word	580
 	.byte	4,0,2,35,1,11
 	.byte	'FILTER2_COMMAND',0,1
-	.word	598
+	.word	580
 	.byte	4,4,2,35,2,11
 	.byte	'reserved_20',0,1
-	.word	598
+	.word	580
 	.byte	4,0,2,35,2,11
 	.byte	'FILTER3_COMMAND',0,1
-	.word	598
+	.word	580
 	.byte	4,4,2,35,3,11
 	.byte	'reserved_28',0,1
-	.word	598
+	.word	580
 	.byte	4,0,2,35,3,0,3
 	.byte	'Ifx_GETH_RWK_FILTER_COMMAND_0_Bits',0,5,227,13,3
-	.word	31942
+	.word	31924
 	.byte	10
 	.byte	'_Ifx_GETH_RWK_FILTER_CRC_Bits',0,5,230,13,16,4,11
 	.byte	'FILTER0_CRC',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'FILTER1_CRC',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RWK_FILTER_CRC_Bits',0,5,234,13,3
-	.word	32228
+	.word	32210
 	.byte	10
 	.byte	'_Ifx_GETH_RWK_FILTER_OFFSET_0_Bits',0,5,237,13,16,4,11
 	.byte	'FILTER0_OFFSET',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,0,11
 	.byte	'FILTER1_OFFSET',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,1,11
 	.byte	'FILTER2_OFFSET',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,2,11
 	.byte	'FILTER3_OFFSET',0,1
-	.word	598
+	.word	580
 	.byte	8,0,2,35,3,0,3
 	.byte	'Ifx_GETH_RWK_FILTER_OFFSET_0_Bits',0,5,243,13,3
-	.word	32349
+	.word	32331
 	.byte	10
 	.byte	'_Ifx_GETH_RXICMP_ERROR_OCTETS_Bits',0,5,246,13,16,4,11
 	.byte	'RXICMPERROCT',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_RXICMP_ERROR_OCTETS_Bits',0,5,249,13,3
-	.word	32538
+	.word	32520
 	.byte	10
 	.byte	'_Ifx_GETH_RXICMP_ERROR_PACKETS_Bits',0,5,252,13,16,4,11
 	.byte	'RXICMPERRPKT',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RXICMP_ERROR_PACKETS_Bits',0,5,128,14,3
-	.word	32647
+	.word	32629
 	.byte	10
 	.byte	'_Ifx_GETH_RXICMP_GOOD_OCTETS_Bits',0,5,131,14,16,4,11
 	.byte	'RXICMPGDOCT',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_RXICMP_GOOD_OCTETS_Bits',0,5,134,14,3
-	.word	32781
+	.word	32763
 	.byte	10
 	.byte	'_Ifx_GETH_RXICMP_GOOD_PACKETS_Bits',0,5,137,14,16,4,11
 	.byte	'RXICMPGDPKT',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RXICMP_GOOD_PACKETS_Bits',0,5,141,14,3
-	.word	32887
+	.word	32869
 	.byte	10
 	.byte	'_Ifx_GETH_RXIPV4_FRAGMENTED_OCTETS_Bits',0,5,144,14,16,4,11
 	.byte	'RXIPV4FRAGOCT',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_RXIPV4_FRAGMENTED_OCTETS_Bits',0,5,147,14,3
-	.word	33018
+	.word	33000
 	.byte	10
 	.byte	'_Ifx_GETH_RXIPV4_FRAGMENTED_PACKETS_Bits',0,5,150,14,16,4,11
 	.byte	'RXIPV4FRAGPKT',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RXIPV4_FRAGMENTED_PACKETS_Bits',0,5,154,14,3
-	.word	33138
+	.word	33120
 	.byte	10
 	.byte	'_Ifx_GETH_RXIPV4_GOOD_OCTETS_Bits',0,5,157,14,16,4,11
 	.byte	'RXIPV4GDOCT',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_RXIPV4_GOOD_OCTETS_Bits',0,5,160,14,3
-	.word	33283
+	.word	33265
 	.byte	10
 	.byte	'_Ifx_GETH_RXIPV4_GOOD_PACKETS_Bits',0,5,163,14,16,4,11
 	.byte	'RXIPV4GDPKT',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RXIPV4_GOOD_PACKETS_Bits',0,5,167,14,3
-	.word	33389
+	.word	33371
 	.byte	10
 	.byte	'_Ifx_GETH_RXIPV4_HEADER_ERROR_OCTETS_Bits',0,5,170,14,16,4,11
 	.byte	'RXIPV4HDRERROCT',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_RXIPV4_HEADER_ERROR_OCTETS_Bits',0,5,173,14,3
-	.word	33520
+	.word	33502
 	.byte	10
 	.byte	'_Ifx_GETH_RXIPV4_HEADER_ERROR_PACKETS_Bits',0,5,176,14,16,4,11
 	.byte	'RXIPV4HDRERRPKT',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RXIPV4_HEADER_ERROR_PACKETS_Bits',0,5,180,14,3
-	.word	33646
+	.word	33628
 	.byte	10
 	.byte	'_Ifx_GETH_RXIPV4_NO_PAYLOAD_OCTETS_Bits',0,5,183,14,16,4,11
 	.byte	'RXIPV4NOPAYOCT',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_RXIPV4_NO_PAYLOAD_OCTETS_Bits',0,5,186,14,3
-	.word	33797
+	.word	33779
 	.byte	10
 	.byte	'_Ifx_GETH_RXIPV4_NO_PAYLOAD_PACKETS_Bits',0,5,189,14,16,4,11
 	.byte	'RXIPV4NOPAYPKT',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RXIPV4_NO_PAYLOAD_PACKETS_Bits',0,5,193,14,3
-	.word	33918
+	.word	33900
 	.byte	10
 	.byte	'_Ifx_GETH_RXIPV4_UDP_CHECKSUM_DISABLED_PACKETS_Bits',0,5,196,14,16,4,11
 	.byte	'RXIPV4UDSBLPKT',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RXIPV4_UDP_CHECKSUM_DISABLED_PACKETS_Bits',0,5,200,14,3
-	.word	34064
+	.word	34046
 	.byte	10
 	.byte	'_Ifx_GETH_RXIPV4_UDP_CHECKSUM_DISABLE_OCTETS_Bits',0,5,203,14,16,4,11
 	.byte	'RXIPV4UDSBLOCT',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_RXIPV4_UDP_CHECKSUM_DISABLE_OCTETS_Bits',0,5,206,14,3
-	.word	34232
+	.word	34214
 	.byte	10
 	.byte	'_Ifx_GETH_RXIPV6_GOOD_OCTETS_Bits',0,5,209,14,16,4,11
 	.byte	'RXIPV6GDOCT',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_RXIPV6_GOOD_OCTETS_Bits',0,5,212,14,3
-	.word	34373
+	.word	34355
 	.byte	10
 	.byte	'_Ifx_GETH_RXIPV6_GOOD_PACKETS_Bits',0,5,215,14,16,4,11
 	.byte	'RXIPV6GDPKT',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RXIPV6_GOOD_PACKETS_Bits',0,5,219,14,3
-	.word	34479
+	.word	34461
 	.byte	10
 	.byte	'_Ifx_GETH_RXIPV6_HEADER_ERROR_OCTETS_Bits',0,5,222,14,16,4,11
 	.byte	'RXIPV6HDRERROCT',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_RXIPV6_HEADER_ERROR_OCTETS_Bits',0,5,225,14,3
-	.word	34610
+	.word	34592
 	.byte	10
 	.byte	'_Ifx_GETH_RXIPV6_HEADER_ERROR_PACKETS_Bits',0,5,228,14,16,4,11
 	.byte	'RXIPV6HDRERRPKT',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RXIPV6_HEADER_ERROR_PACKETS_Bits',0,5,232,14,3
-	.word	34736
+	.word	34718
 	.byte	10
 	.byte	'_Ifx_GETH_RXIPV6_NO_PAYLOAD_OCTETS_Bits',0,5,235,14,16,4,11
 	.byte	'RXIPV6NOPAYOCT',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_RXIPV6_NO_PAYLOAD_OCTETS_Bits',0,5,238,14,3
-	.word	34887
+	.word	34869
 	.byte	10
 	.byte	'_Ifx_GETH_RXIPV6_NO_PAYLOAD_PACKETS_Bits',0,5,241,14,16,4,11
 	.byte	'RXIPV6NOPAYPKT',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RXIPV6_NO_PAYLOAD_PACKETS_Bits',0,5,245,14,3
-	.word	35008
+	.word	34990
 	.byte	10
 	.byte	'_Ifx_GETH_RXTCP_ERROR_OCTETS_Bits',0,5,248,14,16,4,11
 	.byte	'RXTCPERROCT',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_RXTCP_ERROR_OCTETS_Bits',0,5,251,14,3
-	.word	35154
+	.word	35136
 	.byte	10
 	.byte	'_Ifx_GETH_RXTCP_ERROR_PACKETS_Bits',0,5,254,14,16,4,11
 	.byte	'RXTCPERRPKT',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RXTCP_ERROR_PACKETS_Bits',0,5,130,15,3
-	.word	35260
+	.word	35242
 	.byte	10
 	.byte	'_Ifx_GETH_RXTCP_GOOD_OCTETS_Bits',0,5,133,15,16,4,11
 	.byte	'RXTCPGDOCT',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_RXTCP_GOOD_OCTETS_Bits',0,5,136,15,3
-	.word	35391
+	.word	35373
 	.byte	10
 	.byte	'_Ifx_GETH_RXTCP_GOOD_PACKETS_Bits',0,5,139,15,16,4,11
 	.byte	'RXTCPGDPKT',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RXTCP_GOOD_PACKETS_Bits',0,5,143,15,3
-	.word	35494
+	.word	35476
 	.byte	10
 	.byte	'_Ifx_GETH_RXUDP_ERROR_OCTETS_Bits',0,5,146,15,16,4,11
 	.byte	'RXUDPERROCT',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_RXUDP_ERROR_OCTETS_Bits',0,5,149,15,3
-	.word	35622
+	.word	35604
 	.byte	10
 	.byte	'_Ifx_GETH_RXUDP_ERROR_PACKETS_Bits',0,5,152,15,16,4,11
 	.byte	'RXUDPERRPKT',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RXUDP_ERROR_PACKETS_Bits',0,5,156,15,3
-	.word	35728
+	.word	35710
 	.byte	10
 	.byte	'_Ifx_GETH_RXUDP_GOOD_OCTETS_Bits',0,5,159,15,16,4,11
 	.byte	'RXUDPGDOCT',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_RXUDP_GOOD_OCTETS_Bits',0,5,162,15,3
-	.word	35859
+	.word	35841
 	.byte	10
 	.byte	'_Ifx_GETH_RXUDP_GOOD_PACKETS_Bits',0,5,165,15,16,4,11
 	.byte	'RXUDPGDPKT',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RXUDP_GOOD_PACKETS_Bits',0,5,169,15,3
-	.word	35962
+	.word	35944
 	.byte	10
 	.byte	'_Ifx_GETH_RX_1024TOMAXOCTETS_PACKETS_GOOD_BAD_Bits',0,5,172,15,16,4,11
 	.byte	'RX1024_MAXOCTGB',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RX_1024TOMAXOCTETS_PACKETS_GOOD_BAD_Bits',0,5,176,15,3
-	.word	36090
+	.word	36072
 	.byte	10
 	.byte	'_Ifx_GETH_RX_128TO255OCTETS_PACKETS_GOOD_BAD_Bits',0,5,179,15,16,4,11
 	.byte	'RX128_255OCTGB',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RX_128TO255OCTETS_PACKETS_GOOD_BAD_Bits',0,5,183,15,3
-	.word	36257
+	.word	36239
 	.byte	10
 	.byte	'_Ifx_GETH_RX_256TO511OCTETS_PACKETS_GOOD_BAD_Bits',0,5,186,15,16,4,11
 	.byte	'RX256_511OCTGB',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RX_256TO511OCTETS_PACKETS_GOOD_BAD_Bits',0,5,190,15,3
-	.word	36421
+	.word	36403
 	.byte	10
 	.byte	'_Ifx_GETH_RX_512TO1023OCTETS_PACKETS_GOOD_BAD_Bits',0,5,193,15,16,4,11
 	.byte	'RX512_1023OCTGB',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RX_512TO1023OCTETS_PACKETS_GOOD_BAD_Bits',0,5,197,15,3
-	.word	36585
+	.word	36567
 	.byte	10
 	.byte	'_Ifx_GETH_RX_64OCTETS_PACKETS_GOOD_BAD_Bits',0,5,200,15,16,4,11
 	.byte	'RX64OCTGB',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RX_64OCTETS_PACKETS_GOOD_BAD_Bits',0,5,204,15,3
-	.word	36752
+	.word	36734
 	.byte	10
 	.byte	'_Ifx_GETH_RX_65TO127OCTETS_PACKETS_GOOD_BAD_Bits',0,5,207,15,16,4,11
 	.byte	'RX65_127OCTGB',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RX_65TO127OCTETS_PACKETS_GOOD_BAD_Bits',0,5,211,15,3
-	.word	36899
+	.word	36881
 	.byte	10
 	.byte	'_Ifx_GETH_RX_ALIGNMENT_ERROR_PACKETS_Bits',0,5,214,15,16,4,11
 	.byte	'RXALGNERR',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RX_ALIGNMENT_ERROR_PACKETS_Bits',0,5,218,15,3
-	.word	37060
+	.word	37042
 	.byte	10
 	.byte	'_Ifx_GETH_RX_BROADCAST_PACKETS_GOOD_Bits',0,5,221,15,16,4,11
 	.byte	'RXBCASTG',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RX_BROADCAST_PACKETS_GOOD_Bits',0,5,225,15,3
-	.word	37203
+	.word	37185
 	.byte	10
 	.byte	'_Ifx_GETH_RX_CONTROL_PACKETS_GOOD_Bits',0,5,228,15,16,4,11
 	.byte	'RXCTRLG',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RX_CONTROL_PACKETS_GOOD_Bits',0,5,232,15,3
-	.word	37343
+	.word	37325
 	.byte	10
 	.byte	'_Ifx_GETH_RX_CRC_ERROR_PACKETS_Bits',0,5,235,15,16,4,11
 	.byte	'RXCRCERR',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RX_CRC_ERROR_PACKETS_Bits',0,5,239,15,3
-	.word	37478
+	.word	37460
 	.byte	10
 	.byte	'_Ifx_GETH_RX_FIFO_OVERFLOW_PACKETS_Bits',0,5,242,15,16,4,11
 	.byte	'RXFIFOOVFL',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RX_FIFO_OVERFLOW_PACKETS_Bits',0,5,246,15,3
-	.word	37608
+	.word	37590
 	.byte	10
 	.byte	'_Ifx_GETH_RX_JABBER_ERROR_PACKETS_Bits',0,5,249,15,16,4,11
 	.byte	'RXJABERR',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RX_JABBER_ERROR_PACKETS_Bits',0,5,253,15,3
-	.word	37748
+	.word	37730
 	.byte	10
 	.byte	'_Ifx_GETH_RX_LENGTH_ERROR_PACKETS_Bits',0,5,128,16,16,4,11
 	.byte	'RXLENERR',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RX_LENGTH_ERROR_PACKETS_Bits',0,5,132,16,3
-	.word	37884
+	.word	37866
 	.byte	10
 	.byte	'_Ifx_GETH_RX_LPI_TRAN_CNTR_Bits',0,5,135,16,16,4,11
 	.byte	'RXLPITRC',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RX_LPI_TRAN_CNTR_Bits',0,5,139,16,3
-	.word	38020
+	.word	38002
 	.byte	10
 	.byte	'_Ifx_GETH_RX_LPI_USEC_CNTR_Bits',0,5,142,16,16,4,11
 	.byte	'RXLPIUSC',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RX_LPI_USEC_CNTR_Bits',0,5,146,16,3
-	.word	38142
+	.word	38124
 	.byte	10
 	.byte	'_Ifx_GETH_RX_MULTICAST_PACKETS_GOOD_Bits',0,5,149,16,16,4,11
 	.byte	'RXMCASTG',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RX_MULTICAST_PACKETS_GOOD_Bits',0,5,153,16,3
-	.word	38264
+	.word	38246
 	.byte	10
 	.byte	'_Ifx_GETH_RX_OCTET_COUNT_GOOD_Bits',0,5,156,16,16,4,11
 	.byte	'RXOCTG',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_OCTET_COUNT_GOOD_Bits',0,5,159,16,3
-	.word	38404
+	.word	38386
 	.byte	10
 	.byte	'_Ifx_GETH_RX_OCTET_COUNT_GOOD_BAD_Bits',0,5,162,16,16,4,11
 	.byte	'RXOCTGB',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_OCTET_COUNT_GOOD_BAD_Bits',0,5,165,16,3
-	.word	38507
+	.word	38489
 	.byte	10
 	.byte	'_Ifx_GETH_RX_OUT_OF_RANGE_TYPE_PACKETS_Bits',0,5,168,16,16,4,11
 	.byte	'RXOUTOFRNG',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RX_OUT_OF_RANGE_TYPE_PACKETS_Bits',0,5,172,16,3
-	.word	38619
+	.word	38601
 	.byte	10
 	.byte	'_Ifx_GETH_RX_OVERSIZE_PACKETS_GOOD_Bits',0,5,175,16,16,4,11
 	.byte	'RXOVERSZG',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RX_OVERSIZE_PACKETS_GOOD_Bits',0,5,179,16,3
-	.word	38767
+	.word	38749
 	.byte	10
 	.byte	'_Ifx_GETH_RX_PACKETS_COUNT_GOOD_BAD_Bits',0,5,182,16,16,4,11
 	.byte	'RXPKTGB',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RX_PACKETS_COUNT_GOOD_BAD_Bits',0,5,186,16,3
-	.word	38906
+	.word	38888
 	.byte	10
 	.byte	'_Ifx_GETH_RX_PAUSE_PACKETS_Bits',0,5,189,16,16,4,11
 	.byte	'RXPAUSEPKT',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RX_PAUSE_PACKETS_Bits',0,5,193,16,3
-	.word	39045
+	.word	39027
 	.byte	10
 	.byte	'_Ifx_GETH_RX_RECEIVE_ERROR_PACKETS_Bits',0,5,196,16,16,4,11
 	.byte	'RXRCVERR',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RX_RECEIVE_ERROR_PACKETS_Bits',0,5,200,16,3
-	.word	39169
+	.word	39151
 	.byte	10
 	.byte	'_Ifx_GETH_RX_RUNT_ERROR_PACKETS_Bits',0,5,203,16,16,4,11
 	.byte	'RXRUNTERR',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RX_RUNT_ERROR_PACKETS_Bits',0,5,207,16,3
-	.word	39307
+	.word	39289
 	.byte	10
 	.byte	'_Ifx_GETH_RX_UNDERSIZE_PACKETS_GOOD_Bits',0,5,210,16,16,4,11
 	.byte	'RXUNDERSZG',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RX_UNDERSIZE_PACKETS_GOOD_Bits',0,5,214,16,3
-	.word	39440
+	.word	39422
 	.byte	10
 	.byte	'_Ifx_GETH_RX_UNICAST_PACKETS_GOOD_Bits',0,5,217,16,16,4,11
 	.byte	'RXUCASTG',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RX_UNICAST_PACKETS_GOOD_Bits',0,5,221,16,3
-	.word	39582
+	.word	39564
 	.byte	10
 	.byte	'_Ifx_GETH_RX_VLAN_PACKETS_GOOD_BAD_Bits',0,5,224,16,16,4,11
 	.byte	'RXVLANPKTGB',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RX_VLAN_PACKETS_GOOD_BAD_Bits',0,5,228,16,3
-	.word	39718
+	.word	39700
 	.byte	10
 	.byte	'_Ifx_GETH_RX_WATCHDOG_ERROR_PACKETS_Bits',0,5,231,16,16,4,11
 	.byte	'RXWDGERR',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_RX_WATCHDOG_ERROR_PACKETS_Bits',0,5,235,16,3
-	.word	39859
+	.word	39841
 	.byte	10
 	.byte	'_Ifx_GETH_SKEWCTL_Bits',0,5,238,16,16,4,11
 	.byte	'TXCFG',0,1
-	.word	598
+	.word	580
 	.byte	4,4,2,35,0,11
 	.byte	'reserved_4',0,1
-	.word	598
+	.word	580
 	.byte	4,0,2,35,0,11
 	.byte	'RXCFG',0,1
-	.word	598
+	.word	580
 	.byte	4,4,2,35,1,11
 	.byte	'reserved_12',0,4
-	.word	236
+	.word	218
 	.byte	20,0,2,35,0,0,3
 	.byte	'Ifx_GETH_SKEWCTL_Bits',0,5,244,16,3
-	.word	39999
+	.word	39981
 	.byte	10
 	.byte	'_Ifx_GETH_TX_1024TOMAXOCTETS_PACKETS_GOOD_BAD_Bits',0,5,247,16,16,4,11
 	.byte	'TX1024_MAXOCTGB',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_TX_1024TOMAXOCTETS_PACKETS_GOOD_BAD_Bits',0,5,251,16,3
-	.word	40139
+	.word	40121
 	.byte	10
 	.byte	'_Ifx_GETH_TX_128TO255OCTETS_PACKETS_GOOD_BAD_Bits',0,5,254,16,16,4,11
 	.byte	'TX128_255OCTGB',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_TX_128TO255OCTETS_PACKETS_GOOD_BAD_Bits',0,5,130,17,3
-	.word	40306
+	.word	40288
 	.byte	10
 	.byte	'_Ifx_GETH_TX_256TO511OCTETS_PACKETS_GOOD_BAD_Bits',0,5,133,17,16,4,11
 	.byte	'TX256_511OCTGB',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_TX_256TO511OCTETS_PACKETS_GOOD_BAD_Bits',0,5,137,17,3
-	.word	40470
+	.word	40452
 	.byte	10
 	.byte	'_Ifx_GETH_TX_512TO1023OCTETS_PACKETS_GOOD_BAD_Bits',0,5,140,17,16,4,11
 	.byte	'TX512_1023OCTGB',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_TX_512TO1023OCTETS_PACKETS_GOOD_BAD_Bits',0,5,144,17,3
-	.word	40634
+	.word	40616
 	.byte	10
 	.byte	'_Ifx_GETH_TX_64OCTETS_PACKETS_GOOD_BAD_Bits',0,5,147,17,16,4,11
 	.byte	'TX64OCTGB',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_TX_64OCTETS_PACKETS_GOOD_BAD_Bits',0,5,151,17,3
-	.word	40801
+	.word	40783
 	.byte	10
 	.byte	'_Ifx_GETH_TX_65TO127OCTETS_PACKETS_GOOD_BAD_Bits',0,5,154,17,16,4,11
 	.byte	'TX65_127OCTGB',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_TX_65TO127OCTETS_PACKETS_GOOD_BAD_Bits',0,5,158,17,3
-	.word	40948
+	.word	40930
 	.byte	10
 	.byte	'_Ifx_GETH_TX_BROADCAST_PACKETS_GOOD_Bits',0,5,161,17,16,4,11
 	.byte	'TXBCASTG',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_TX_BROADCAST_PACKETS_GOOD_Bits',0,5,165,17,3
-	.word	41109
+	.word	41091
 	.byte	10
 	.byte	'_Ifx_GETH_TX_BROADCAST_PACKETS_GOOD_BAD_Bits',0,5,168,17,16,4,11
 	.byte	'TXBCASTGB',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_TX_BROADCAST_PACKETS_GOOD_BAD_Bits',0,5,172,17,3
-	.word	41249
+	.word	41231
 	.byte	10
 	.byte	'_Ifx_GETH_TX_CARRIER_ERROR_PACKETS_Bits',0,5,175,17,16,4,11
 	.byte	'TXCARR',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_TX_CARRIER_ERROR_PACKETS_Bits',0,5,179,17,3
-	.word	41398
+	.word	41380
 	.byte	10
 	.byte	'_Ifx_GETH_TX_DEFERRED_PACKETS_Bits',0,5,182,17,16,4,11
 	.byte	'TXDEFRD',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_TX_DEFERRED_PACKETS_Bits',0,5,186,17,3
-	.word	41534
+	.word	41516
 	.byte	10
 	.byte	'_Ifx_GETH_TX_EXCESSIVE_COLLISION_PACKETS_Bits',0,5,189,17,16,4,11
 	.byte	'TXEXSCOL',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_TX_EXCESSIVE_COLLISION_PACKETS_Bits',0,5,193,17,3
-	.word	41661
+	.word	41643
 	.byte	10
 	.byte	'_Ifx_GETH_TX_EXCESSIVE_DEFERRAL_ERROR_Bits',0,5,196,17,16,4,11
 	.byte	'TXEXSDEF',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_TX_EXCESSIVE_DEFERRAL_ERROR_Bits',0,5,200,17,3
-	.word	41811
+	.word	41793
 	.byte	10
 	.byte	'_Ifx_GETH_TX_LATE_COLLISION_PACKETS_Bits',0,5,203,17,16,4,11
 	.byte	'TXLATECOL',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_TX_LATE_COLLISION_PACKETS_Bits',0,5,207,17,3
-	.word	41955
+	.word	41937
 	.byte	10
 	.byte	'_Ifx_GETH_TX_LPI_TRAN_CNTR_Bits',0,5,210,17,16,4,11
 	.byte	'TXLPITRC',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_TX_LPI_TRAN_CNTR_Bits',0,5,214,17,3
-	.word	42096
+	.word	42078
 	.byte	10
 	.byte	'_Ifx_GETH_TX_LPI_USEC_CNTR_Bits',0,5,217,17,16,4,11
 	.byte	'TXLPIUSC',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_TX_LPI_USEC_CNTR_Bits',0,5,221,17,3
-	.word	42218
+	.word	42200
 	.byte	10
 	.byte	'_Ifx_GETH_TX_MULTICAST_PACKETS_GOOD_Bits',0,5,224,17,16,4,11
 	.byte	'TXMCASTG',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_TX_MULTICAST_PACKETS_GOOD_Bits',0,5,228,17,3
-	.word	42340
+	.word	42322
 	.byte	10
 	.byte	'_Ifx_GETH_TX_MULTICAST_PACKETS_GOOD_BAD_Bits',0,5,231,17,16,4,11
 	.byte	'TXMCASTGB',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_TX_MULTICAST_PACKETS_GOOD_BAD_Bits',0,5,235,17,3
-	.word	42480
+	.word	42462
 	.byte	10
 	.byte	'_Ifx_GETH_TX_MULTIPLE_COLLISION_GOOD_PACKETS_Bits',0,5,238,17,16,4,11
 	.byte	'TXMULTCOLG',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_TX_MULTIPLE_COLLISION_GOOD_PACKETS_Bits',0,5,242,17,3
-	.word	42629
+	.word	42611
 	.byte	10
 	.byte	'_Ifx_GETH_TX_OCTET_COUNT_GOOD_Bits',0,5,245,17,16,4,11
 	.byte	'TXOCTG',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_OCTET_COUNT_GOOD_Bits',0,5,248,17,3
-	.word	42789
+	.word	42771
 	.byte	10
 	.byte	'_Ifx_GETH_TX_OCTET_COUNT_GOOD_BAD_Bits',0,5,251,17,16,4,11
 	.byte	'TXOCTGB',0,4
-	.word	236
+	.word	218
 	.byte	32,0,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_OCTET_COUNT_GOOD_BAD_Bits',0,5,254,17,3
-	.word	42892
+	.word	42874
 	.byte	10
 	.byte	'_Ifx_GETH_TX_OSIZE_PACKETS_GOOD_Bits',0,5,129,18,16,4,11
 	.byte	'TXOSIZG',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_TX_OSIZE_PACKETS_GOOD_Bits',0,5,133,18,3
-	.word	43004
+	.word	42986
 	.byte	10
 	.byte	'_Ifx_GETH_TX_PACKET_COUNT_GOOD_Bits',0,5,136,18,16,4,11
 	.byte	'TXPKTG',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_TX_PACKET_COUNT_GOOD_Bits',0,5,140,18,3
-	.word	43135
+	.word	43117
 	.byte	10
 	.byte	'_Ifx_GETH_TX_PACKET_COUNT_GOOD_BAD_Bits',0,5,143,18,16,4,11
 	.byte	'TXPKTGB',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_TX_PACKET_COUNT_GOOD_BAD_Bits',0,5,147,18,3
-	.word	43263
+	.word	43245
 	.byte	10
 	.byte	'_Ifx_GETH_TX_PAUSE_PACKETS_Bits',0,5,150,18,16,4,11
 	.byte	'TXPAUSE',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_TX_PAUSE_PACKETS_Bits',0,5,154,18,3
-	.word	43400
+	.word	43382
 	.byte	10
 	.byte	'_Ifx_GETH_TX_SINGLE_COLLISION_GOOD_PACKETS_Bits',0,5,157,18,16,4,11
 	.byte	'TXSNGLCOLG',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_TX_SINGLE_COLLISION_GOOD_PACKETS_Bits',0,5,161,18,3
-	.word	43521
+	.word	43503
 	.byte	10
 	.byte	'_Ifx_GETH_TX_UNDERFLOW_ERROR_PACKETS_Bits',0,5,164,18,16,4,11
 	.byte	'TXUNDRFLW',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_TX_UNDERFLOW_ERROR_PACKETS_Bits',0,5,168,18,3
-	.word	43677
+	.word	43659
 	.byte	10
 	.byte	'_Ifx_GETH_TX_UNICAST_PACKETS_GOOD_BAD_Bits',0,5,171,18,16,4,11
 	.byte	'TXUCASTGB',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_TX_UNICAST_PACKETS_GOOD_BAD_Bits',0,5,175,18,3
-	.word	43820
+	.word	43802
 	.byte	10
 	.byte	'_Ifx_GETH_TX_VLAN_PACKETS_GOOD_Bits',0,5,178,18,16,4,11
 	.byte	'TXVLANG',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,0,11
 	.byte	'reserved_16',0,2
-	.word	321
+	.word	303
 	.byte	16,0,2,35,2,0,3
 	.byte	'Ifx_GETH_TX_VLAN_PACKETS_GOOD_Bits',0,5,182,18,3
-	.word	43965
+	.word	43947
 	.byte	12,5,190,18,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	683
+	.word	665
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_ACCEN0',0,5,195,18,3
-	.word	44094
+	.word	44076
 	.byte	12,5,198,18,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	1242
+	.word	1224
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_ACCEN1',0,5,203,18,3
-	.word	44159
+	.word	44141
 	.byte	12,5,206,18,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	1321
+	.word	1303
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_ACCEND_ACCEN0D',0,5,211,18,3
-	.word	44224
+	.word	44206
 	.byte	12,5,214,18,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	1897
+	.word	1879
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_ACCEND_ACCEN1D',0,5,219,18,3
-	.word	44297
+	.word	44279
 	.byte	12,5,222,18,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	1994
+	.word	1976
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_CLC',0,5,227,18,3
-	.word	44370
+	.word	44352
 	.byte	12,5,230,18,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	2101
+	.word	2083
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_CONTROL',0,5,235,18,3
-	.word	44432
+	.word	44414
 	.byte	12,5,238,18,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	2337
+	.word	2319
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_CURRENT_APP_RXBUFFER',0,5,243,18,3
-	.word	44505
+	.word	44487
 	.byte	12,5,246,18,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	2461
+	.word	2443
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_CURRENT_APP_RXDESC',0,5,251,18,3
-	.word	44591
+	.word	44573
 	.byte	12,5,254,18,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	2581
+	.word	2563
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_CURRENT_APP_TXBUFFER',0,5,131,19,3
-	.word	44675
+	.word	44657
 	.byte	12,5,134,19,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	2705
+	.word	2687
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_CURRENT_APP_TXDESC',0,5,139,19,3
-	.word	44761
+	.word	44743
 	.byte	12,5,142,19,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	2825
+	.word	2807
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_INTERRUPT_ENABLE',0,5,147,19,3
-	.word	44845
+	.word	44827
 	.byte	12,5,150,19,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	3166
+	.word	3148
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_MISS_FRAME_CNT',0,5,155,19,3
-	.word	44927
+	.word	44909
 	.byte	12,5,158,19,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	3332
+	.word	3314
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_RXDESC_LIST_ADDRESS',0,5,163,19,3
-	.word	45007
+	.word	44989
 	.byte	12,5,166,19,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	3471
+	.word	3453
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_RXDESC_RING_LENGTH',0,5,171,19,3
-	.word	45092
+	.word	45074
 	.byte	12,5,174,19,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	3607
+	.word	3589
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_RXDESC_TAIL_POINTER',0,5,179,19,3
-	.word	45176
+	.word	45158
 	.byte	12,5,182,19,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	3744
+	.word	3726
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_RX_CONTROL',0,5,187,19,3
-	.word	45261
+	.word	45243
 	.byte	12,5,190,19,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	4004
+	.word	3986
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_RX_INTERRUPT_WATCHDOG_TIMER',0,5,195,19,3
-	.word	45337
+	.word	45319
 	.byte	12,5,198,19,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	4195
+	.word	4177
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_SLOT_FUNCTION_CONTROL_STATUS',0,5,203,19,3
-	.word	45430
+	.word	45412
 	.byte	12,5,206,19,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	4417
+	.word	4399
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_STATUS',0,5,211,19,3
-	.word	45524
+	.word	45506
 	.byte	12,5,214,19,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	4758
+	.word	4740
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_TXDESC_LIST_ADDRESS',0,5,219,19,3
-	.word	45596
+	.word	45578
 	.byte	12,5,222,19,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	4897
+	.word	4879
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_TXDESC_RING_LENGTH',0,5,227,19,3
-	.word	45681
+	.word	45663
 	.byte	12,5,230,19,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	5033
+	.word	5015
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_TXDESC_TAIL_POINTER',0,5,235,19,3
-	.word	45765
+	.word	45747
 	.byte	12,5,238,19,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	5170
+	.word	5152
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_CH_TX_CONTROL',0,5,243,19,3
-	.word	45850
+	.word	45832
 	.byte	12,5,246,19,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	5472
+	.word	5454
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_DEBUG_STATUS0',0,5,251,19,3
-	.word	45926
+	.word	45908
 	.byte	12,5,254,19,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	5712
+	.word	5694
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_DEBUG_STATUS1',0,5,131,20,3
-	.word	46002
+	.word	45984
 	.byte	12,5,134,20,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	5847
+	.word	5829
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_INTERRUPT_STATUS',0,5,139,20,3
-	.word	46078
+	.word	46060
 	.byte	12,5,142,20,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	6103
+	.word	6085
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_MODE',0,5,147,20,3
-	.word	46157
+	.word	46139
 	.byte	12,5,150,20,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	6363
+	.word	6345
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_DMA_SYSBUS_MODE',0,5,155,20,3
-	.word	46224
+	.word	46206
 	.byte	12,5,158,20,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	6702
+	.word	6684
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_GPCTL',0,5,163,20,3
-	.word	46298
+	.word	46280
 	.byte	12,5,166,20,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	7008
+	.word	6990
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_ID',0,5,171,20,3
-	.word	46362
+	.word	46344
 	.byte	12,5,174,20,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	7114
+	.word	7096
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_KRST0',0,5,179,20,3
-	.word	46423
+	.word	46405
 	.byte	12,5,182,20,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	7227
+	.word	7209
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_KRST1',0,5,187,20,3
-	.word	46487
+	.word	46469
 	.byte	12,5,190,20,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	7321
+	.word	7303
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_KRSTCLR',0,5,195,20,3
-	.word	46551
+	.word	46533
 	.byte	12,5,198,20,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	7419
+	.word	7401
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_1US_TIC_COUNTER',0,5,203,20,3
-	.word	46617
+	.word	46599
 	.byte	12,5,206,20,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	7551
+	.word	7533
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_ADDRESS_HIGH',0,5,211,20,3
-	.word	46695
+	.word	46677
 	.byte	12,5,214,20,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	7729
+	.word	7711
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_ADDRESS_HIGH0',0,5,219,20,3
-	.word	46770
+	.word	46752
 	.byte	12,5,222,20,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	7880
+	.word	7862
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_ADDRESS_LOW',0,5,227,20,3
-	.word	46846
+	.word	46828
 	.byte	12,5,230,20,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	7975
+	.word	7957
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_ADDRESS_LOW0',0,5,235,20,3
-	.word	46920
+	.word	46902
 	.byte	12,5,238,20,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	8072
+	.word	8054
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_CONFIGURATION',0,5,243,20,3
-	.word	46995
+	.word	46977
 	.byte	12,5,246,20,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	8557
+	.word	8539
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_CSR_SW_CTRL',0,5,251,20,3
-	.word	47071
+	.word	47053
 	.byte	12,5,254,20,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	8710
+	.word	8692
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_DEBUG',0,5,131,21,3
-	.word	47145
+	.word	47127
 	.byte	12,5,134,21,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	8894
+	.word	8876
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_EXT_CFG1',0,5,139,21,3
-	.word	47213
+	.word	47195
 	.byte	12,5,142,21,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	9045
+	.word	9027
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_EXT_CONFIGURATION',0,5,147,21,3
-	.word	47284
+	.word	47266
 	.byte	12,5,150,21,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	9356
+	.word	9338
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_HW_FEATURE0',0,5,155,21,3
-	.word	47364
+	.word	47346
 	.byte	12,5,158,21,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	9915
+	.word	9897
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_HW_FEATURE1',0,5,163,21,3
-	.word	47438
+	.word	47420
 	.byte	12,5,166,21,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	10359
+	.word	10341
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_HW_FEATURE2',0,5,171,21,3
-	.word	47512
+	.word	47494
 	.byte	12,5,174,21,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	10690
+	.word	10672
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_HW_FEATURE3',0,5,179,21,3
-	.word	47586
+	.word	47568
 	.byte	12,5,182,21,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	10863
+	.word	10845
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_INNER_VLAN_INCL',0,5,187,21,3
-	.word	47660
+	.word	47642
 	.byte	12,5,190,21,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	11048
+	.word	11030
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_INTERRUPT_ENABLE',0,5,195,21,3
-	.word	47738
+	.word	47720
 	.byte	12,5,198,21,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	11368
+	.word	11350
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_INTERRUPT_STATUS',0,5,203,21,3
-	.word	47817
+	.word	47799
 	.byte	12,5,206,21,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	11764
+	.word	11746
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_LPI_CONTROL_STATUS',0,5,211,21,3
-	.word	47896
+	.word	47878
 	.byte	12,5,214,21,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	12135
+	.word	12117
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_LPI_ENTRY_TIMER',0,5,219,21,3
-	.word	47977
+	.word	47959
 	.byte	12,5,222,21,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	12282
+	.word	12264
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_LPI_TIMERS_CONTROL',0,5,227,21,3
-	.word	48055
+	.word	48037
 	.byte	12,5,230,21,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	12426
+	.word	12408
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_MDIO_ADDRESS',0,5,235,21,3
-	.word	48136
+	.word	48118
 	.byte	12,5,238,21,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	12741
+	.word	12723
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_MDIO_DATA',0,5,243,21,3
-	.word	48211
+	.word	48193
 	.byte	12,5,246,21,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	12842
+	.word	12824
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_PACKET_FILTER',0,5,251,21,3
-	.word	48283
+	.word	48265
 	.byte	12,5,254,21,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	13195
+	.word	13177
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_PHYIF_CONTROL_STATUS',0,5,131,22,3
-	.word	48359
+	.word	48341
 	.byte	12,5,134,22,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	13509
+	.word	13491
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_PMT_CONTROL_STATUS',0,5,139,22,3
-	.word	48442
+	.word	48424
 	.byte	12,5,142,22,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	13867
+	.word	13849
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_PPS0_INTERVAL',0,5,147,22,3
-	.word	48523
+	.word	48505
 	.byte	12,5,150,22,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	13967
+	.word	13949
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_PPS0_TARGET_TIME_NANOSECONDS',0,5,155,22,3
-	.word	48599
+	.word	48581
 	.byte	12,5,158,22,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	14116
+	.word	14098
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_PPS0_TARGET_TIME_SECONDS',0,5,163,22,3
-	.word	48690
+	.word	48672
 	.byte	12,5,166,22,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	14237
+	.word	14219
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_PPS0_WIDTH',0,5,171,22,3
-	.word	48777
+	.word	48759
 	.byte	12,5,174,22,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	14333
+	.word	14315
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_PPS_CONTROL',0,5,179,22,3
-	.word	48850
+	.word	48832
 	.byte	12,5,182,22,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	14774
+	.word	14756
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_Q0_TX_FLOW_CTRL',0,5,187,22,3
-	.word	48924
+	.word	48906
 	.byte	12,5,190,22,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	14982
+	.word	14964
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_RWK_PACKET_FILTER',0,5,195,22,3
-	.word	49002
+	.word	48984
 	.byte	12,5,198,22,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	15093
+	.word	15075
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_RXQ_CTRL0',0,5,203,22,3
-	.word	49082
+	.word	49064
 	.byte	12,5,206,22,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	15283
+	.word	15265
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_RXQ_CTRL1',0,5,211,22,3
-	.word	49154
+	.word	49136
 	.byte	12,5,214,22,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	15632
+	.word	15614
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_RXQ_CTRL2',0,5,219,22,3
-	.word	49226
+	.word	49208
 	.byte	12,5,222,22,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	15773
+	.word	15755
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_RXQ_CTRL4',0,5,227,22,3
-	.word	49298
+	.word	49280
 	.byte	12,5,230,22,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	16013
+	.word	15995
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_RX_FLOW_CTRL',0,5,235,22,3
-	.word	49370
+	.word	49352
 	.byte	12,5,238,22,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	16187
+	.word	16169
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_RX_TX_STATUS',0,5,243,22,3
-	.word	49445
+	.word	49427
 	.byte	12,5,246,22,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	16424
+	.word	16406
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_SUB_SECOND_INCREMENT',0,5,251,22,3
-	.word	49520
+	.word	49502
 	.byte	12,5,254,22,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	16599
+	.word	16581
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_SYSTEM_TIME_HIGHER_WORD_SECONDS',0,5,131,23,3
-	.word	49603
+	.word	49585
 	.byte	12,5,134,23,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	16756
+	.word	16738
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_SYSTEM_TIME_NANOSECONDS',0,5,139,23,3
-	.word	49697
+	.word	49679
 	.byte	12,5,142,23,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	16896
+	.word	16878
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_SYSTEM_TIME_NANOSECONDS_UPDATE',0,5,147,23,3
-	.word	49783
+	.word	49765
 	.byte	12,5,150,23,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	17045
+	.word	17027
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_SYSTEM_TIME_SECONDS',0,5,155,23,3
-	.word	49876
+	.word	49858
 	.byte	12,5,158,23,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	17153
+	.word	17135
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_SYSTEM_TIME_SECONDS_UPDATE',0,5,163,23,3
-	.word	49958
+	.word	49940
 	.byte	12,5,166,23,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	17275
+	.word	17257
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_TIMESTAMP_ADDEND',0,5,171,23,3
-	.word	50047
+	.word	50029
 	.byte	12,5,174,23,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	17378
+	.word	17360
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_TIMESTAMP_CONTROL',0,5,179,23,3
-	.word	50126
+	.word	50108
 	.byte	12,5,182,23,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	17963
+	.word	17945
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_TIMESTAMP_EGRESS_ASYM_CORR',0,5,187,23,3
-	.word	50206
+	.word	50188
 	.byte	12,5,190,23,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	18088
+	.word	18070
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_TIMESTAMP_EGRESS_CORR_NANOSECOND',0,5,195,23,3
-	.word	50295
+	.word	50277
 	.byte	12,5,198,23,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	18223
+	.word	18205
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_TIMESTAMP_EGRESS_CORR_SUBNANOSEC',0,5,203,23,3
-	.word	50390
+	.word	50372
 	.byte	12,5,206,23,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	18406
+	.word	18388
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_TIMESTAMP_INGRESS_ASYM_CORR',0,5,211,23,3
-	.word	50485
+	.word	50467
 	.byte	12,5,214,23,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	18533
+	.word	18515
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_TIMESTAMP_INGRESS_CORR_NANOSECOND',0,5,219,23,3
-	.word	50575
+	.word	50557
 	.byte	12,5,222,23,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	18670
+	.word	18652
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_TIMESTAMP_INGRESS_CORR_SUBNANOSEC',0,5,227,23,3
-	.word	50671
+	.word	50653
 	.byte	12,5,230,23,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	18855
+	.word	18837
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_TIMESTAMP_STATUS',0,5,235,23,3
-	.word	50767
+	.word	50749
 	.byte	12,5,238,23,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	19284
+	.word	19266
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_TX_TIMESTAMP_STATUS_NANOSECONDS',0,5,243,23,3
-	.word	50846
+	.word	50828
 	.byte	12,5,246,23,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	19440
+	.word	19422
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_TX_TIMESTAMP_STATUS_SECONDS',0,5,251,23,3
-	.word	50940
+	.word	50922
 	.byte	12,5,254,23,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	19568
+	.word	19550
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_VERSION',0,5,131,24,3
-	.word	51030
+	.word	51012
 	.byte	12,5,134,24,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	19698
+	.word	19680
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_VLAN_HASH_TABLE',0,5,139,24,3
-	.word	51100
+	.word	51082
 	.byte	12,5,142,24,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	19822
+	.word	19804
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_VLAN_INCL',0,5,147,24,3
-	.word	51178
+	.word	51160
 	.byte	12,5,150,24,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	20082
+	.word	20064
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_VLAN_INCL_Q',0,5,155,24,3
-	.word	51250
+	.word	51232
 	.byte	12,5,158,24,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	20236
+	.word	20218
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_VLAN_TAG_CTRL',0,5,163,24,3
-	.word	51324
+	.word	51306
 	.byte	12,5,166,24,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	20604
+	.word	20586
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_VLAN_TAG_DATA',0,5,171,24,3
-	.word	51400
+	.word	51382
 	.byte	12,5,174,24,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	20867
+	.word	20849
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_VLAN_TAG_FILTER',0,5,179,24,3
-	.word	51476
+	.word	51458
 	.byte	12,5,182,24,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	21134
+	.word	21116
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MAC_WATCHDOG_TIMEOUT',0,5,187,24,3
-	.word	51554
+	.word	51536
 	.byte	12,5,190,24,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	21295
+	.word	21277
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MMC_CONTROL',0,5,195,24,3
-	.word	51633
+	.word	51615
 	.byte	12,5,198,24,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	21544
+	.word	21526
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MMC_IPC_RX_INTERRUPT',0,5,203,24,3
-	.word	51703
+	.word	51685
 	.byte	12,5,206,24,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	22329
+	.word	22311
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MMC_IPC_RX_INTERRUPT_MASK',0,5,211,24,3
-	.word	51782
+	.word	51764
 	.byte	12,5,214,24,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	23124
+	.word	23106
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MMC_RX_INTERRUPT',0,5,219,24,3
-	.word	51866
+	.word	51848
 	.byte	12,5,222,24,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	23870
+	.word	23852
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MMC_RX_INTERRUPT_MASK',0,5,227,24,3
-	.word	51941
+	.word	51923
 	.byte	12,5,230,24,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	24626
+	.word	24608
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MMC_TX_INTERRUPT',0,5,235,24,3
-	.word	52021
+	.word	52003
 	.byte	12,5,238,24,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	25370
+	.word	25352
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MMC_TX_INTERRUPT_MASK',0,5,243,24,3
-	.word	52096
+	.word	52078
 	.byte	12,5,246,24,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	26124
+	.word	26106
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_INTERRUPT_STATUS',0,5,251,24,3
-	.word	52176
+	.word	52158
 	.byte	12,5,254,24,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	26365
+	.word	26347
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_OPERATION_MODE',0,5,131,25,3
-	.word	52255
+	.word	52237
 	.byte	12,5,134,25,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	26625
+	.word	26607
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_Q0_INTERRUPT_CONTROL_STATUS',0,5,139,25,3
-	.word	52332
+	.word	52314
 	.byte	12,5,142,25,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	26933
+	.word	26915
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_Q_INTERRUPT_CONTROL_STATUS',0,5,147,25,3
-	.word	52422
+	.word	52404
 	.byte	12,5,150,25,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	27239
+	.word	27221
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_RXQ0_CONTROL',0,5,155,25,3
-	.word	52511
+	.word	52493
 	.byte	12,5,158,25,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	27385
+	.word	27367
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_RXQ0_DEBUG',0,5,163,25,3
-	.word	52586
+	.word	52568
 	.byte	12,5,166,25,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	27597
+	.word	27579
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_RXQ0_MISSED_PACKET_OVERFLOW_CNT',0,5,171,25,3
-	.word	52659
+	.word	52641
 	.byte	12,5,174,25,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	27844
+	.word	27826
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_RXQ0_OPERATION_MODE',0,5,179,25,3
-	.word	52753
+	.word	52735
 	.byte	12,5,182,25,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	28171
+	.word	28153
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_RXQ_CONTROL',0,5,187,25,3
-	.word	52835
+	.word	52817
 	.byte	12,5,190,25,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	28315
+	.word	28297
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_RXQ_DEBUG',0,5,195,25,3
-	.word	52909
+	.word	52891
 	.byte	12,5,198,25,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	28525
+	.word	28507
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_RXQ_DMA_MAP0',0,5,203,25,3
-	.word	52981
+	.word	52963
 	.byte	12,5,206,25,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	28946
+	.word	28928
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_RXQ_MISSED_PACKET_OVERFLOW_CNT',0,5,211,25,3
-	.word	53056
+	.word	53038
 	.byte	12,5,214,25,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	29191
+	.word	29173
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_RXQ_OPERATION_MODE',0,5,219,25,3
-	.word	53149
+	.word	53131
 	.byte	12,5,222,25,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	29516
+	.word	29498
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_TXQ0_DEBUG',0,5,227,25,3
-	.word	53230
+	.word	53212
 	.byte	12,5,230,25,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	29790
+	.word	29772
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_TXQ0_ETS_STATUS',0,5,235,25,3
-	.word	53303
+	.word	53285
 	.byte	12,5,238,25,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	29913
+	.word	29895
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_TXQ0_OPERATION_MODE',0,5,243,25,3
-	.word	53381
+	.word	53363
 	.byte	12,5,246,25,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	30128
+	.word	30110
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_TXQ0_QUANTUM_WEIGHT',0,5,251,25,3
-	.word	53463
+	.word	53445
 	.byte	12,5,254,25,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	30261
+	.word	30243
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_TXQ0_UNDERFLOW',0,5,131,26,3
-	.word	53545
+	.word	53527
 	.byte	12,5,134,26,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	30407
+	.word	30389
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_TXQ_DEBUG',0,5,139,26,3
-	.word	53622
+	.word	53604
 	.byte	12,5,142,26,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	30679
+	.word	30661
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_TXQ_ETS_CONTROL',0,5,147,26,3
-	.word	53694
+	.word	53676
 	.byte	12,5,150,26,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	30854
+	.word	30836
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_TXQ_ETS_STATUS',0,5,155,26,3
-	.word	53772
+	.word	53754
 	.byte	12,5,158,26,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	30975
+	.word	30957
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_TXQ_HICREDIT',0,5,163,26,3
-	.word	53849
+	.word	53831
 	.byte	12,5,166,26,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	31091
+	.word	31073
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_TXQ_LOCREDIT',0,5,171,26,3
-	.word	53924
+	.word	53906
 	.byte	12,5,174,26,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	31207
+	.word	31189
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_TXQ_OPERATION_MODE',0,5,179,26,3
-	.word	53999
+	.word	53981
 	.byte	12,5,182,26,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	31420
+	.word	31402
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_TXQ_QUANTUM_WEIGHT',0,5,187,26,3
-	.word	54080
+	.word	54062
 	.byte	12,5,190,26,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	31551
+	.word	31533
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_TXQ_SENDSLOPECREDIT',0,5,195,26,3
-	.word	54161
+	.word	54143
 	.byte	12,5,198,26,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	31682
+	.word	31664
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_MTL_TXQ_UNDERFLOW',0,5,203,26,3
-	.word	54243
+	.word	54225
 	.byte	12,5,206,26,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	31826
+	.word	31808
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RWK_FILTER_BYTE_MASK',0,5,211,26,3
-	.word	54319
+	.word	54301
 	.byte	12,5,214,26,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	31942
+	.word	31924
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RWK_FILTER_COMMAND_0',0,5,219,26,3
-	.word	54398
+	.word	54380
 	.byte	12,5,222,26,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	32228
+	.word	32210
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RWK_FILTER_CRC',0,5,227,26,3
-	.word	54477
+	.word	54459
 	.byte	12,5,230,26,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	32349
+	.word	32331
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RWK_FILTER_OFFSET_0',0,5,235,26,3
-	.word	54550
+	.word	54532
 	.byte	12,5,238,26,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	32538
+	.word	32520
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXICMP_ERROR_OCTETS',0,5,243,26,3
-	.word	54628
+	.word	54610
 	.byte	12,5,246,26,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	32647
+	.word	32629
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXICMP_ERROR_PACKETS',0,5,251,26,3
-	.word	54706
+	.word	54688
 	.byte	12,5,254,26,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	32781
+	.word	32763
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXICMP_GOOD_OCTETS',0,5,131,27,3
-	.word	54785
+	.word	54767
 	.byte	12,5,134,27,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	32887
+	.word	32869
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXICMP_GOOD_PACKETS',0,5,139,27,3
-	.word	54862
+	.word	54844
 	.byte	12,5,142,27,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	33018
+	.word	33000
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXIPV4_FRAGMENTED_OCTETS',0,5,147,27,3
-	.word	54940
+	.word	54922
 	.byte	12,5,150,27,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	33138
+	.word	33120
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXIPV4_FRAGMENTED_PACKETS',0,5,155,27,3
-	.word	55023
+	.word	55005
 	.byte	12,5,158,27,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	33283
+	.word	33265
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXIPV4_GOOD_OCTETS',0,5,163,27,3
-	.word	55107
+	.word	55089
 	.byte	12,5,166,27,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	33389
+	.word	33371
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXIPV4_GOOD_PACKETS',0,5,171,27,3
-	.word	55184
+	.word	55166
 	.byte	12,5,174,27,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	33520
+	.word	33502
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXIPV4_HEADER_ERROR_OCTETS',0,5,179,27,3
-	.word	55262
+	.word	55244
 	.byte	12,5,182,27,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	33646
+	.word	33628
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXIPV4_HEADER_ERROR_PACKETS',0,5,187,27,3
-	.word	55347
+	.word	55329
 	.byte	12,5,190,27,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	33797
+	.word	33779
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXIPV4_NO_PAYLOAD_OCTETS',0,5,195,27,3
-	.word	55433
+	.word	55415
 	.byte	12,5,198,27,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	33918
+	.word	33900
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXIPV4_NO_PAYLOAD_PACKETS',0,5,203,27,3
-	.word	55516
+	.word	55498
 	.byte	12,5,206,27,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	34064
+	.word	34046
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXIPV4_UDP_CHECKSUM_DISABLED_PACKETS',0,5,211,27,3
-	.word	55600
+	.word	55582
 	.byte	12,5,214,27,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	34232
+	.word	34214
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXIPV4_UDP_CHECKSUM_DISABLE_OCTETS',0,5,219,27,3
-	.word	55695
+	.word	55677
 	.byte	12,5,222,27,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	34373
+	.word	34355
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXIPV6_GOOD_OCTETS',0,5,227,27,3
-	.word	55788
+	.word	55770
 	.byte	12,5,230,27,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	34479
+	.word	34461
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXIPV6_GOOD_PACKETS',0,5,235,27,3
-	.word	55865
+	.word	55847
 	.byte	12,5,238,27,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	34610
+	.word	34592
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXIPV6_HEADER_ERROR_OCTETS',0,5,243,27,3
-	.word	55943
+	.word	55925
 	.byte	12,5,246,27,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	34736
+	.word	34718
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXIPV6_HEADER_ERROR_PACKETS',0,5,251,27,3
-	.word	56028
+	.word	56010
 	.byte	12,5,254,27,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	34887
+	.word	34869
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXIPV6_NO_PAYLOAD_OCTETS',0,5,131,28,3
-	.word	56114
+	.word	56096
 	.byte	12,5,134,28,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	35008
+	.word	34990
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXIPV6_NO_PAYLOAD_PACKETS',0,5,139,28,3
-	.word	56197
+	.word	56179
 	.byte	12,5,142,28,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	35154
+	.word	35136
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXTCP_ERROR_OCTETS',0,5,147,28,3
-	.word	56281
+	.word	56263
 	.byte	12,5,150,28,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	35260
+	.word	35242
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXTCP_ERROR_PACKETS',0,5,155,28,3
-	.word	56358
+	.word	56340
 	.byte	12,5,158,28,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	35391
+	.word	35373
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXTCP_GOOD_OCTETS',0,5,163,28,3
-	.word	56436
+	.word	56418
 	.byte	12,5,166,28,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	35494
+	.word	35476
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXTCP_GOOD_PACKETS',0,5,171,28,3
-	.word	56512
+	.word	56494
 	.byte	12,5,174,28,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	35622
+	.word	35604
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXUDP_ERROR_OCTETS',0,5,179,28,3
-	.word	56589
+	.word	56571
 	.byte	12,5,182,28,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	35728
+	.word	35710
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXUDP_ERROR_PACKETS',0,5,187,28,3
-	.word	56666
+	.word	56648
 	.byte	12,5,190,28,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	35859
+	.word	35841
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXUDP_GOOD_OCTETS',0,5,195,28,3
-	.word	56744
+	.word	56726
 	.byte	12,5,198,28,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	35962
+	.word	35944
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RXUDP_GOOD_PACKETS',0,5,203,28,3
-	.word	56820
+	.word	56802
 	.byte	12,5,206,28,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	36090
+	.word	36072
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_1024TOMAXOCTETS_PACKETS_GOOD_BAD',0,5,211,28,3
-	.word	56897
+	.word	56879
 	.byte	12,5,214,28,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	36257
+	.word	36239
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_128TO255OCTETS_PACKETS_GOOD_BAD',0,5,219,28,3
-	.word	56991
+	.word	56973
 	.byte	12,5,222,28,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	36421
+	.word	36403
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_256TO511OCTETS_PACKETS_GOOD_BAD',0,5,227,28,3
-	.word	57084
+	.word	57066
 	.byte	12,5,230,28,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	36585
+	.word	36567
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_512TO1023OCTETS_PACKETS_GOOD_BAD',0,5,235,28,3
-	.word	57177
+	.word	57159
 	.byte	12,5,238,28,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	36752
+	.word	36734
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_64OCTETS_PACKETS_GOOD_BAD',0,5,243,28,3
-	.word	57271
+	.word	57253
 	.byte	12,5,246,28,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	36899
+	.word	36881
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_65TO127OCTETS_PACKETS_GOOD_BAD',0,5,251,28,3
-	.word	57358
+	.word	57340
 	.byte	12,5,254,28,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	37060
+	.word	37042
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_ALIGNMENT_ERROR_PACKETS',0,5,131,29,3
-	.word	57450
+	.word	57432
 	.byte	12,5,134,29,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	37203
+	.word	37185
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_BROADCAST_PACKETS_GOOD',0,5,139,29,3
-	.word	57535
+	.word	57517
 	.byte	12,5,142,29,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	37343
+	.word	37325
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_CONTROL_PACKETS_GOOD',0,5,147,29,3
-	.word	57619
+	.word	57601
 	.byte	12,5,150,29,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	37478
+	.word	37460
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_CRC_ERROR_PACKETS',0,5,155,29,3
-	.word	57701
+	.word	57683
 	.byte	12,5,158,29,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	37608
+	.word	37590
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_FIFO_OVERFLOW_PACKETS',0,5,163,29,3
-	.word	57780
+	.word	57762
 	.byte	12,5,166,29,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	37748
+	.word	37730
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_JABBER_ERROR_PACKETS',0,5,171,29,3
-	.word	57863
+	.word	57845
 	.byte	12,5,174,29,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	37884
+	.word	37866
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_LENGTH_ERROR_PACKETS',0,5,179,29,3
-	.word	57945
+	.word	57927
 	.byte	12,5,182,29,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	38020
+	.word	38002
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_LPI_TRAN_CNTR',0,5,187,29,3
-	.word	58027
+	.word	58009
 	.byte	12,5,190,29,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	38142
+	.word	38124
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_LPI_USEC_CNTR',0,5,195,29,3
-	.word	58102
+	.word	58084
 	.byte	12,5,198,29,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	38264
+	.word	38246
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_MULTICAST_PACKETS_GOOD',0,5,203,29,3
-	.word	58177
+	.word	58159
 	.byte	12,5,206,29,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	38404
+	.word	38386
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_OCTET_COUNT_GOOD',0,5,211,29,3
-	.word	58261
+	.word	58243
 	.byte	12,5,214,29,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	38507
+	.word	38489
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_OCTET_COUNT_GOOD_BAD',0,5,219,29,3
-	.word	58339
+	.word	58321
 	.byte	12,5,222,29,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	38619
+	.word	38601
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_OUT_OF_RANGE_TYPE_PACKETS',0,5,227,29,3
-	.word	58421
+	.word	58403
 	.byte	12,5,230,29,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	38767
+	.word	38749
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_OVERSIZE_PACKETS_GOOD',0,5,235,29,3
-	.word	58508
+	.word	58490
 	.byte	12,5,238,29,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	38906
+	.word	38888
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_PACKETS_COUNT_GOOD_BAD',0,5,243,29,3
-	.word	58591
+	.word	58573
 	.byte	12,5,246,29,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	39045
+	.word	39027
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_PAUSE_PACKETS',0,5,251,29,3
-	.word	58675
+	.word	58657
 	.byte	12,5,254,29,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	39169
+	.word	39151
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_RECEIVE_ERROR_PACKETS',0,5,131,30,3
-	.word	58750
+	.word	58732
 	.byte	12,5,134,30,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	39307
+	.word	39289
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_RUNT_ERROR_PACKETS',0,5,139,30,3
-	.word	58833
+	.word	58815
 	.byte	12,5,142,30,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	39440
+	.word	39422
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_UNDERSIZE_PACKETS_GOOD',0,5,147,30,3
-	.word	58913
+	.word	58895
 	.byte	12,5,150,30,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	39582
+	.word	39564
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_UNICAST_PACKETS_GOOD',0,5,155,30,3
-	.word	58997
+	.word	58979
 	.byte	12,5,158,30,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	39718
+	.word	39700
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_VLAN_PACKETS_GOOD_BAD',0,5,163,30,3
-	.word	59079
+	.word	59061
 	.byte	12,5,166,30,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	39859
+	.word	39841
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_RX_WATCHDOG_ERROR_PACKETS',0,5,171,30,3
-	.word	59162
+	.word	59144
 	.byte	12,5,174,30,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	39999
+	.word	39981
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_SKEWCTL',0,5,179,30,3
-	.word	59246
+	.word	59228
 	.byte	12,5,182,30,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	40139
+	.word	40121
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_1024TOMAXOCTETS_PACKETS_GOOD_BAD',0,5,187,30,3
-	.word	59312
+	.word	59294
 	.byte	12,5,190,30,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	40306
+	.word	40288
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_128TO255OCTETS_PACKETS_GOOD_BAD',0,5,195,30,3
-	.word	59406
+	.word	59388
 	.byte	12,5,198,30,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	40470
+	.word	40452
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_256TO511OCTETS_PACKETS_GOOD_BAD',0,5,203,30,3
-	.word	59499
+	.word	59481
 	.byte	12,5,206,30,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	40634
+	.word	40616
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_512TO1023OCTETS_PACKETS_GOOD_BAD',0,5,211,30,3
-	.word	59592
+	.word	59574
 	.byte	12,5,214,30,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	40801
+	.word	40783
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_64OCTETS_PACKETS_GOOD_BAD',0,5,219,30,3
-	.word	59686
+	.word	59668
 	.byte	12,5,222,30,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	40948
+	.word	40930
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_65TO127OCTETS_PACKETS_GOOD_BAD',0,5,227,30,3
-	.word	59773
+	.word	59755
 	.byte	12,5,230,30,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	41109
+	.word	41091
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_BROADCAST_PACKETS_GOOD',0,5,235,30,3
-	.word	59865
+	.word	59847
 	.byte	12,5,238,30,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	41249
+	.word	41231
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_BROADCAST_PACKETS_GOOD_BAD',0,5,243,30,3
-	.word	59949
+	.word	59931
 	.byte	12,5,246,30,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	41398
+	.word	41380
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_CARRIER_ERROR_PACKETS',0,5,251,30,3
-	.word	60037
+	.word	60019
 	.byte	12,5,254,30,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	41534
+	.word	41516
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_DEFERRED_PACKETS',0,5,131,31,3
-	.word	60120
+	.word	60102
 	.byte	12,5,134,31,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	41661
+	.word	41643
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_EXCESSIVE_COLLISION_PACKETS',0,5,139,31,3
-	.word	60198
+	.word	60180
 	.byte	12,5,142,31,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	41811
+	.word	41793
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_EXCESSIVE_DEFERRAL_ERROR',0,5,147,31,3
-	.word	60287
+	.word	60269
 	.byte	12,5,150,31,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	41955
+	.word	41937
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_LATE_COLLISION_PACKETS',0,5,155,31,3
-	.word	60373
+	.word	60355
 	.byte	12,5,158,31,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	42096
+	.word	42078
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_LPI_TRAN_CNTR',0,5,163,31,3
-	.word	60457
+	.word	60439
 	.byte	12,5,166,31,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	42218
+	.word	42200
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_LPI_USEC_CNTR',0,5,171,31,3
-	.word	60532
+	.word	60514
 	.byte	12,5,174,31,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	42340
+	.word	42322
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_MULTICAST_PACKETS_GOOD',0,5,179,31,3
-	.word	60607
+	.word	60589
 	.byte	12,5,182,31,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	42480
+	.word	42462
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_MULTICAST_PACKETS_GOOD_BAD',0,5,187,31,3
-	.word	60691
+	.word	60673
 	.byte	12,5,190,31,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	42629
+	.word	42611
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_MULTIPLE_COLLISION_GOOD_PACKETS',0,5,195,31,3
-	.word	60779
+	.word	60761
 	.byte	12,5,198,31,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	42789
+	.word	42771
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_OCTET_COUNT_GOOD',0,5,203,31,3
-	.word	60872
+	.word	60854
 	.byte	12,5,206,31,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	42892
+	.word	42874
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_OCTET_COUNT_GOOD_BAD',0,5,211,31,3
-	.word	60950
+	.word	60932
 	.byte	12,5,214,31,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	43004
+	.word	42986
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_OSIZE_PACKETS_GOOD',0,5,219,31,3
-	.word	61032
+	.word	61014
 	.byte	12,5,222,31,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	43135
+	.word	43117
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_PACKET_COUNT_GOOD',0,5,227,31,3
-	.word	61112
+	.word	61094
 	.byte	12,5,230,31,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	43263
+	.word	43245
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_PACKET_COUNT_GOOD_BAD',0,5,235,31,3
-	.word	61191
+	.word	61173
 	.byte	12,5,238,31,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	43400
+	.word	43382
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_PAUSE_PACKETS',0,5,243,31,3
-	.word	61274
+	.word	61256
 	.byte	12,5,246,31,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	43521
+	.word	43503
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_SINGLE_COLLISION_GOOD_PACKETS',0,5,251,31,3
-	.word	61349
+	.word	61331
 	.byte	12,5,254,31,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	43677
+	.word	43659
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_UNDERFLOW_ERROR_PACKETS',0,5,131,32,3
-	.word	61440
+	.word	61422
 	.byte	12,5,134,32,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	43820
+	.word	43802
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_UNICAST_PACKETS_GOOD_BAD',0,5,139,32,3
-	.word	61525
+	.word	61507
 	.byte	12,5,142,32,9,4,9
 	.byte	'U',0
-	.word	236
+	.word	218
 	.byte	4,2,35,0,9
 	.byte	'I',0
-	.word	269
+	.word	251
 	.byte	4,2,35,0,9
 	.byte	'B',0
-	.word	43965
+	.word	43947
 	.byte	4,2,35,0,0,3
 	.byte	'Ifx_GETH_TX_VLAN_PACKETS_GOOD',0,5,147,32,3
-	.word	61611
+	.word	61593
 	.byte	13,8
-	.word	598
+	.word	580
 	.byte	14,7,0,10
 	.byte	'_Ifx_GETH_MTL_TXQ0',0,5,159,32,25,28,9
 	.byte	'OPERATION_MODE',0
-	.word	53381
+	.word	53363
 	.byte	4,2,35,0,9
 	.byte	'UNDERFLOW',0
-	.word	53545
+	.word	53527
 	.byte	4,2,35,4,9
 	.byte	'DEBUG',0
-	.word	53230
+	.word	53212
 	.byte	4,2,35,8,9
 	.byte	'reserved_C',0
-	.word	61690
+	.word	61672
 	.byte	8,2,35,12,9
 	.byte	'ETS_STATUS',0
-	.word	53303
+	.word	53285
 	.byte	4,2,35,20,9
 	.byte	'QUANTUM_WEIGHT',0
-	.word	53463
+	.word	53445
 	.byte	4,2,35,24,0,7
-	.word	61699
+	.word	61681
 	.byte	3
 	.byte	'Ifx_GETH_MTL_TXQ0',0,5,167,32,3
-	.word	61847
+	.word	61829
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_Q0',0,5,182,32,25,4,9
 	.byte	'INTERRUPT_CONTROL_STATUS',0
-	.word	52332
+	.word	52314
 	.byte	4,2,35,0,0,7
-	.word	61879
+	.word	61861
 	.byte	3
 	.byte	'Ifx_GETH_MTL_Q0',0,5,185,32,3
-	.word	61937
+	.word	61919
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_RXQ0',0,5,200,32,25,16,9
 	.byte	'OPERATION_MODE',0
-	.word	52753
+	.word	52735
 	.byte	4,2,35,0,9
 	.byte	'MISSED_PACKET_OVERFLOW_CNT',0
-	.word	52659
+	.word	52641
 	.byte	4,2,35,4,9
 	.byte	'DEBUG',0
-	.word	52586
+	.word	52568
 	.byte	4,2,35,8,9
 	.byte	'CONTROL',0
-	.word	52511
+	.word	52493
 	.byte	4,2,35,12,0,7
-	.word	61967
+	.word	61949
 	.byte	3
 	.byte	'Ifx_GETH_MTL_RXQ0',0,5,206,32,3
-	.word	62085
+	.word	62067
 	.byte	13,4
-	.word	598
+	.word	580
 	.byte	14,3,0,10
 	.byte	'_Ifx_GETH_MTL_TXQ',0,5,221,32,25,40,9
 	.byte	'OPERATION_MODE',0
-	.word	53999
+	.word	53981
 	.byte	4,2,35,0,9
 	.byte	'UNDERFLOW',0
-	.word	54243
+	.word	54225
 	.byte	4,2,35,4,9
 	.byte	'DEBUG',0
-	.word	53622
+	.word	53604
 	.byte	4,2,35,8,9
 	.byte	'reserved_C',0
-	.word	62117
+	.word	62099
 	.byte	4,2,35,12,9
 	.byte	'ETS_CONTROL',0
-	.word	53694
+	.word	53676
 	.byte	4,2,35,16,9
 	.byte	'ETS_STATUS',0
-	.word	53772
+	.word	53754
 	.byte	4,2,35,20,9
 	.byte	'QUANTUM_WEIGHT',0
-	.word	54080
+	.word	54062
 	.byte	4,2,35,24,9
 	.byte	'SENDSLOPECREDIT',0
-	.word	54161
+	.word	54143
 	.byte	4,2,35,28,9
 	.byte	'HICREDIT',0
-	.word	53849
+	.word	53831
 	.byte	4,2,35,32,9
 	.byte	'LOCREDIT',0
-	.word	53924
+	.word	53906
 	.byte	4,2,35,36,0,7
-	.word	62126
+	.word	62108
 	.byte	3
 	.byte	'Ifx_GETH_MTL_TXQ',0,5,233,32,3
-	.word	62355
+	.word	62337
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_Q',0,5,248,32,25,4,9
 	.byte	'INTERRUPT_CONTROL_STATUS',0
-	.word	52422
+	.word	52404
 	.byte	4,2,35,0,0,7
-	.word	62386
+	.word	62368
 	.byte	3
 	.byte	'Ifx_GETH_MTL_Q',0,5,251,32,3
-	.word	62443
+	.word	62425
 	.byte	10
 	.byte	'_Ifx_GETH_MTL_RXQ',0,5,138,33,25,16,9
 	.byte	'OPERATION_MODE',0
-	.word	53149
+	.word	53131
 	.byte	4,2,35,0,9
 	.byte	'MISSED_PACKET_OVERFLOW_CNT',0
-	.word	53056
+	.word	53038
 	.byte	4,2,35,4,9
 	.byte	'DEBUG',0
-	.word	52909
+	.word	52891
 	.byte	4,2,35,8,9
 	.byte	'CONTROL',0
-	.word	52835
+	.word	52817
 	.byte	4,2,35,12,0,7
-	.word	62472
+	.word	62454
 	.byte	3
 	.byte	'Ifx_GETH_MTL_RXQ',0,5,144,33,3
-	.word	62589
+	.word	62571
 	.byte	13,24
-	.word	598
+	.word	580
 	.byte	14,23,0,10
 	.byte	'_Ifx_GETH_DMA_CH',0,5,159,33,25,128,1,9
 	.byte	'CONTROL',0
-	.word	44432
+	.word	44414
 	.byte	4,2,35,0,9
 	.byte	'TX_CONTROL',0
-	.word	45850
+	.word	45832
 	.byte	4,2,35,4,9
 	.byte	'RX_CONTROL',0
-	.word	45261
+	.word	45243
 	.byte	4,2,35,8,9
 	.byte	'reserved_C',0
-	.word	61690
+	.word	61672
 	.byte	8,2,35,12,9
 	.byte	'TXDESC_LIST_ADDRESS',0
-	.word	45596
+	.word	45578
 	.byte	4,2,35,20,9
 	.byte	'reserved_18',0
-	.word	62117
+	.word	62099
 	.byte	4,2,35,24,9
 	.byte	'RXDESC_LIST_ADDRESS',0
-	.word	45007
+	.word	44989
 	.byte	4,2,35,28,9
 	.byte	'TXDESC_TAIL_POINTER',0
-	.word	45765
+	.word	45747
 	.byte	4,2,35,32,9
 	.byte	'reserved_24',0
-	.word	62117
+	.word	62099
 	.byte	4,2,35,36,9
 	.byte	'RXDESC_TAIL_POINTER',0
-	.word	45176
+	.word	45158
 	.byte	4,2,35,40,9
 	.byte	'TXDESC_RING_LENGTH',0
-	.word	45681
+	.word	45663
 	.byte	4,2,35,44,9
 	.byte	'RXDESC_RING_LENGTH',0
-	.word	45092
+	.word	45074
 	.byte	4,2,35,48,9
 	.byte	'INTERRUPT_ENABLE',0
-	.word	44845
+	.word	44827
 	.byte	4,2,35,52,9
 	.byte	'RX_INTERRUPT_WATCHDOG_TIMER',0
-	.word	45337
+	.word	45319
 	.byte	4,2,35,56,9
 	.byte	'SLOT_FUNCTION_CONTROL_STATUS',0
-	.word	45430
+	.word	45412
 	.byte	4,2,35,60,9
 	.byte	'reserved_40',0
-	.word	62117
+	.word	62099
 	.byte	4,2,35,64,9
 	.byte	'CURRENT_APP_TXDESC',0
-	.word	44761
+	.word	44743
 	.byte	4,2,35,68,9
 	.byte	'reserved_48',0
-	.word	62117
+	.word	62099
 	.byte	4,2,35,72,9
 	.byte	'CURRENT_APP_RXDESC',0
-	.word	44591
+	.word	44573
 	.byte	4,2,35,76,9
 	.byte	'reserved_50',0
-	.word	62117
+	.word	62099
 	.byte	4,2,35,80,9
 	.byte	'CURRENT_APP_TXBUFFER',0
-	.word	44675
+	.word	44657
 	.byte	4,2,35,84,9
 	.byte	'reserved_58',0
-	.word	62117
+	.word	62099
 	.byte	4,2,35,88,9
 	.byte	'CURRENT_APP_RXBUFFER',0
-	.word	44505
+	.word	44487
 	.byte	4,2,35,92,9
 	.byte	'STATUS',0
-	.word	45524
+	.word	45506
 	.byte	4,2,35,96,9
 	.byte	'MISS_FRAME_CNT',0
-	.word	44927
+	.word	44909
 	.byte	4,2,35,100,9
 	.byte	'reserved_68',0
-	.word	62620
+	.word	62602
 	.byte	24,2,35,104,0,7
-	.word	62629
+	.word	62611
 	.byte	3
 	.byte	'Ifx_GETH_DMA_CH',0,5,187,33,3
-	.word	63307
+	.word	63289
 	.byte	10
 	.byte	'_Ifx_GETH_ACCEND',0,5,202,33,25,8,9
 	.byte	'ACCEN0D',0
-	.word	44224
+	.word	44206
 	.byte	4,2,35,0,9
 	.byte	'ACCEN1D',0
-	.word	44297
+	.word	44279
 	.byte	4,2,35,4,0,7
-	.word	63337
+	.word	63319
 	.byte	3
 	.byte	'Ifx_GETH_ACCEND',0,5,206,33,3
-	.word	63395
+	.word	63377
 	.byte	13,8
-	.word	532
+	.word	514
 	.byte	14,0,0
 .L8:
 	.byte	15
-	.word	63425
+	.word	63407
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
@@ -7411,12 +7411,10 @@ IfxGeth_cfg_indexMap:	.type	object
 	.word	.L12-.L11
 .L11:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
-	.byte	'C:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37x',0,0
+	.byte	'C:\\\\CONTROL_ECU\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37x',0,0
 	.byte	'../Libraries/iLLD/TC3xx/Tricore/_Impl/IfxGeth_cfg.c',0,0,0,0
-	.byte	'C:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\Cpu\\Std\\Platform_Types.h',0
-	.byte	0,0,0
-	.byte	'C:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\Cpu\\Std\\Ifx_Types.h',0
-	.byte	0,0,0
+	.byte	'C:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\Cpu\\Std\\Platform_Types.h',0,0,0,0
+	.byte	'C:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\Cpu\\Std\\Ifx_Types.h',0,0,0,0
 	.byte	'Ifx_TypesReg.h',0,1,0,0
 	.byte	'IfxGeth_regdef.h',0,1,0,0,0
 .L12:
@@ -7424,13 +7422,13 @@ IfxGeth_cfg_indexMap:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_cfg_indexMap')
 	.sect	'.debug_info'
 .L6:
-	.word	239
+	.word	221
 	.half	3
 	.word	.L7
 	.byte	4,1
 	.byte	'../Libraries/iLLD/TC3xx/Tricore/_Impl/IfxGeth_cfg.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\tools\\aurix\\tc375_control_ecu\\TriCore Debug (TASKING)\\',0,12,1,2
+	.byte	'C:\\CONTROL_ECU\\TriCore Debug (TASKING)\\',0,12,1,2
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_cfg_indexMap',0,1,61,30

@@ -1,4 +1,4 @@
 IfxAsclin_PinMap_TC37x_516.o :	../Libraries/iLLD/TC3xx/Tricore/_PinMap/TC37x/IfxAsclin_PinMap_TC37x_516.c
 ../Libraries/iLLD/TC3xx/Tricore/_PinMap/TC37x/IfxAsclin_PinMap_TC37x_516.c :
-IfxAsclin_PinMap_TC37x_516.o :	"C:\\tools\\aurix\\tc375_control_ecu\\Configurations\Ifx_Cfg.h"
-"C:\\tools\\aurix\\tc375_control_ecu\\Configurations\Ifx_Cfg.h" :
+IfxAsclin_PinMap_TC37x_516.o :	"C:\\CONTROL_ECU\\Configurations\Ifx_Cfg.h"
+"C:\\CONTROL_ECU\\Configurations\Ifx_Cfg.h" :

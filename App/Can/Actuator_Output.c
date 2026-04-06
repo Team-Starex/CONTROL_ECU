@@ -31,8 +31,8 @@ static uint8_t encode_speed_state(const VehicleState *vehicleState, bool isTimed
         case SPEED_STOP: return 0x1u;
         case SPEED_LOW:  return 0x2u;
         case SPEED_MID:  return 0x4u;
-        case SPEED_HIGH:
-        default:         return 0x8u;
+        case SPEED_HIGH: return 0x8u;
+        default:         return 0x2u;
     }
 }
 

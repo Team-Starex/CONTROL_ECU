@@ -8,7 +8,7 @@ Actuator_Output.o :	"C:\Infineon\AURIX-Studio-1.10.32\tools\Compilers\Tasking_1.
 "C:\Infineon\AURIX-Studio-1.10.32\tools\Compilers\Tasking_1.1r8\ctc\include\typeinfo.h" :
 Actuator_Output.o :	"C:\Infineon\AURIX-Studio-1.10.32\tools\Compilers\Tasking_1.1r8\ctc\include\stdbool.h"
 "C:\Infineon\AURIX-Studio-1.10.32\tools\Compilers\Tasking_1.1r8\ctc\include\stdbool.h" :
-Actuator_Output.o :	"C:\\tools\\aurix\\tc375_control_ecu\\Common\Types.h"
-"C:\\tools\\aurix\\tc375_control_ecu\\Common\Types.h" :
+Actuator_Output.o :	"C:\\CONTROL_ECU\\Common\Types.h"
+"C:\\CONTROL_ECU\\Common\Types.h" :
 Actuator_Output.o :	..\App\Can\HMI_Output.h
 ..\App\Can\HMI_Output.h :

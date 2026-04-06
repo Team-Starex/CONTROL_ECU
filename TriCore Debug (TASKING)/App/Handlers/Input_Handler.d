@@ -6,5 +6,5 @@ Input_Handler.o :	"C:\Infineon\AURIX-Studio-1.10.32\tools\Compilers\Tasking_1.1r
 "C:\Infineon\AURIX-Studio-1.10.32\tools\Compilers\Tasking_1.1r8\ctc\include\stdint.h" :
 Input_Handler.o :	"C:\Infineon\AURIX-Studio-1.10.32\tools\Compilers\Tasking_1.1r8\ctc\include\typeinfo.h"
 "C:\Infineon\AURIX-Studio-1.10.32\tools\Compilers\Tasking_1.1r8\ctc\include\typeinfo.h" :
-Input_Handler.o :	"C:\\tools\\aurix\\tc375_control_ecu\\Common\Types.h"
-"C:\\tools\\aurix\\tc375_control_ecu\\Common\Types.h" :
+Input_Handler.o :	"C:\\CONTROL_ECU\\Common\Types.h"
+"C:\\CONTROL_ECU\\Common\Types.h" :

@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc37504a --dep-file=Configurations/Debug/sync_on_halt.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\App -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\App\\\\Can -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\App\\\\Handlers -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\App\\\\Steer -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\App\\\\Timer -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Common -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Configurations -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37x -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx\\\\Tricore -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Service -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Can -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Can\\\\Can -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Can\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Stm -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Stm\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_Impl -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap\\\\TC37x -g2 -w544 -w557 -w508 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2012 -o Configurations/Debug/sync_on_halt.src ../Configurations/Debug/sync_on_halt.c"
+	.compiler_invocation	"ctc -f cc23584a --dep-file=Configurations/Debug/sync_on_halt.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\CONTROL_ECU -IC:\\\\CONTROL_ECU\\\\App -IC:\\\\CONTROL_ECU\\\\App\\\\Can -IC:\\\\CONTROL_ECU\\\\App\\\\Handlers -IC:\\\\CONTROL_ECU\\\\App\\\\Steer -IC:\\\\CONTROL_ECU\\\\App\\\\Timer -IC:\\\\CONTROL_ECU\\\\Common -IC:\\\\CONTROL_ECU\\\\Configurations -IC:\\\\CONTROL_ECU\\\\Libraries -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Infra -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37x -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx\\\\Tricore -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Service -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\CONTROL_ECU\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Can -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Can\\\\Can -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Can\\\\Std -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms\\\\Std -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port\\\\Std -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu\\\\Std -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src\\\\Std -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Stm -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Stm\\\\Std -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_Impl -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap -IC:\\\\CONTROL_ECU\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap\\\\TC37x -g2 -w544 -w557 -w508 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2012 -o Configurations/Debug/sync_on_halt.src ../Configurations/Debug/sync_on_halt.c"
 	.compiler_name		"ctc"
 	;source	'../Configurations/Debug/sync_on_halt.c'
 
@@ -125,7 +125,7 @@ _sync_on_halt_ucx:	.type	object
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L11:
-	.word	460
+	.word	442
 	.half	3
 	.word	.L12
 	.byte	4
@@ -133,30 +133,30 @@ _sync_on_halt_ucx:	.type	object
 	.byte	1
 	.byte	'../Configurations/Debug/sync_on_halt.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\tools\\aurix\\tc375_control_ecu\\TriCore Debug (TASKING)\\',0,12,1
+	.byte	'C:\\CONTROL_ECU\\TriCore Debug (TASKING)\\',0,12,1
 	.word	.L13
 	.byte	2
 	.byte	'unsigned char',0,1,8
 .L30:
 	.byte	3
-	.word	192
+	.word	174
 	.byte	4
 	.byte	'__cacheiwi',0,1,1,1,1,5
 	.byte	'p',0
-	.word	209
+	.word	191
 	.byte	0,2
 	.byte	'int',0,4,5,4
 	.byte	'__mtcr',0,1,1,1,1,6
-	.word	238
+	.word	220
 	.byte	6
-	.word	238
+	.word	220
 	.byte	0,7
-	.word	238
+	.word	220
 	.byte	8
 	.byte	'__mfcr',0
-	.word	268
+	.word	250
 	.byte	1,1,1,1,6
-	.word	238
+	.word	220
 	.byte	0,9
 	.byte	'__debug',0,1,1,1,1,9
 	.byte	'__nop',0,1,1,1,1,9
@@ -167,21 +167,21 @@ _sync_on_halt_ucx:	.type	object
 	.byte	'unsigned int',0,4,7,2
 	.byte	'short int',0,2,5,10
 	.byte	'__wchar_t',0,1,1,1
-	.word	361
+	.word	343
 	.byte	10
 	.byte	'__size_t',0,1,1,1
-	.word	345
+	.word	327
 	.byte	10
 	.byte	'__ptrdiff_t',0,1,1,1
-	.word	238
+	.word	220
 	.byte	11,1,3
-	.word	429
+	.word	411
 	.byte	10
 	.byte	'__codeptr',0,1,1,1
-	.word	431
+	.word	413
 .L35:
 	.byte	12,64
-	.word	345
+	.word	327
 	.byte	13,15,0,0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
@@ -205,13 +205,13 @@ _sync_on_halt_ucx:	.type	object
 	.sdecl	'.debug_info',debug,cluster('_sync_on_halt_end')
 	.sect	'.debug_info'
 .L14:
-	.word	245
+	.word	227
 	.half	3
 	.word	.L15
 	.byte	4,1
 	.byte	'../Configurations/Debug/sync_on_halt.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\tools\\aurix\\tc375_control_ecu\\TriCore Debug (TASKING)\\',0,12,1
+	.byte	'C:\\CONTROL_ECU\\TriCore Debug (TASKING)\\',0,12,1
 	.word	.L17,.L16
 	.byte	2
 	.word	.L10
@@ -254,13 +254,13 @@ _sync_on_halt_ucx:	.type	object
 	.sdecl	'.debug_info',debug,cluster('_sync_on_halt')
 	.sect	'.debug_info'
 .L19:
-	.word	312
+	.word	294
 	.half	3
 	.word	.L20
 	.byte	4,1
 	.byte	'../Configurations/Debug/sync_on_halt.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\tools\\aurix\\tc375_control_ecu\\TriCore Debug (TASKING)\\',0,12,1
+	.byte	'C:\\CONTROL_ECU\\TriCore Debug (TASKING)\\',0,12,1
 	.word	.L22,.L21
 	.byte	2
 	.word	.L10
@@ -358,13 +358,13 @@ _sync_on_halt_ucx:	.type	object
 	.sdecl	'.debug_info',debug,cluster('_sync_on_halt_lcx')
 	.sect	'.debug_info'
 .L24:
-	.word	223
+	.word	205
 	.half	3
 	.word	.L25
 	.byte	4,1
 	.byte	'../Configurations/Debug/sync_on_halt.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\tools\\aurix\\tc375_control_ecu\\TriCore Debug (TASKING)\\',0,12,1,2
+	.byte	'C:\\CONTROL_ECU\\TriCore Debug (TASKING)\\',0,12,1,2
 	.word	.L10
 	.byte	3
 	.byte	'_sync_on_halt_lcx',0,1,94,41
@@ -380,13 +380,13 @@ _sync_on_halt_ucx:	.type	object
 	.sdecl	'.debug_info',debug,cluster('_sync_on_halt_ucx')
 	.sect	'.debug_info'
 .L26:
-	.word	223
+	.word	205
 	.half	3
 	.word	.L27
 	.byte	4,1
 	.byte	'../Configurations/Debug/sync_on_halt.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\tools\\aurix\\tc375_control_ecu\\TriCore Debug (TASKING)\\',0,12,1,2
+	.byte	'C:\\CONTROL_ECU\\TriCore Debug (TASKING)\\',0,12,1,2
 	.word	.L10
 	.byte	3
 	.byte	'_sync_on_halt_ucx',0,1,95,41
