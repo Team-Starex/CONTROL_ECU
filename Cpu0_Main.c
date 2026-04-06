@@ -194,6 +194,12 @@ void core0_main(void)
                 IfxCan_Can_readMessage(&g_canNode, &g_rxMsg, (uint32 *)g_rxData);
                 process_rx_frame_words(g_rxData);
             }
+            /* 10ms마다 할 작업*/
+            // can통신 해서 데이터 구조 초기화
+        }
+        if (stm_get_50msflag() != FALSE)
+        {
+            /* 50ms마다 할 작업*/
         }
 
         /* ===== TX ===== */
@@ -223,18 +229,7 @@ void core0_main(void)
         /* ===== LED ===== */
         if (stm_get_1000msflag() != FALSE)
         {
-
             output_runtime_tick1000ms(&g_outputRuntime);
-            if (isOn == 1u)
-            {
-                isOn = 0u;
-                IfxPort_setPinState(LED, IfxPort_State_low);
-            }
-            else
-            {
-                isOn = 1u;
-                IfxPort_setPinState(LED, IfxPort_State_high);
-            }
         }
     }
 }
