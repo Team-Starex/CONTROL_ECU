@@ -155,7 +155,7 @@ static void process_rx_frame_words(const uint32 rxWords[2])
         input_handler_update(&g_vehicleState, &g_inputData);
     }
 
-    classify_state(&g_vehicleState);
+    classify_state(&g_vehicleState, &g_outputRuntime);
     output_runtime_notify_input(&g_outputRuntime);
     actuator_tx_runtime_update(&g_actuatorTxRuntime, &g_vehicleState);
 }

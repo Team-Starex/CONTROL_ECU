@@ -1,6 +1,6 @@
 #include "State_Manager.h"
 
-void classify_state(VehicleState *state)
+void classify_state(VehicleState *state, OutputRuntimeState *runtimeState)
 {
     uint8_t steerOffset;
     uint8_t steerWarnThreshold;
@@ -23,7 +23,7 @@ void classify_state(VehicleState *state)
         else{
             state->systemstate = SYS_STATE_NORMAL;
             state->logcode = LOG_NONE;//로그 상태해제 띄워야함
-            //output_runtime_notify_input(runtimeState);
+            output_runtime_notify_input(runtimeState);
         }
     }
 
