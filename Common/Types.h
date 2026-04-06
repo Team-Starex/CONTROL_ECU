@@ -56,7 +56,7 @@ typedef struct{
 
     uint8_t button;
 
-    uint8_t virtualSpeedKph_x10;   /* ex) 253 => 25.3 km/h */
+    uint8_t virtualSpeedKph;
     SpeedBand speedBand;
 
     SystemState systemstate;

@@ -58,10 +58,10 @@ void output_build_can_data(VehicleState *vehicleState,
     if (runtimeState->isTimedOut == true)
     {
         vehicleState->systemstate = (uint8_t)SYS_STATE_FATAL_NO_RESPONSE;
-        vehicleState->logcode     = (uint8_t)LOG_TIMEOUT;
+        vehicleState->logcode = (uint8_t)LOG_TIMEOUT;
     }
 
-    data[0] = vehicleState->virtualSpeedKph_x10;;
+    data[0] = vehicleState->virtualSpeedKph;
     data[1] = vehicleState->steer.filtered;
     data[2] = vehicleState->systemstate;
     data[3] = vehicleState->logcode;

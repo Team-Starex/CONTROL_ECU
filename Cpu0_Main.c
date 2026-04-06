@@ -57,6 +57,7 @@ static void initCanTransceiver(void)
 }
 
 /*********************************************************************************************************************/
+
 static void app_init_can(void)
 {
     IfxCan_Can_Config canConfig;
