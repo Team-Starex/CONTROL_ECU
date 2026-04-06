@@ -2,83 +2,39 @@
 
 #define BRAKE_ACTIVE_THRESHOLD   (150u)
 
-/* one-hot 4bit 인코딩 */
 static uint8_t encode_safe_state(SystemState s, bool isTimedOut)
 {
     if (isTimedOut == true)
     {
-        return 0x8u;   /* 1000 : FATAL */
+        return 0x8u;
     }
 
     switch (s)
     {
-        case SYS_STATE_NORMAL:   return 0x1u; /* 0001 */
-        case SYS_STATE_WARNING:  return 0x2u; /* 0010 */
-        case SYS_STATE_CRITICAL: return 0x4u; /* 0100 */
+        case SYS_STATE_NORMAL:   return 0x1u;
+        case SYS_STATE_WARNING:  return 0x2u;
+        case SYS_STATE_CRITICAL: return 0x4u;
         case SYS_STATE_FATAL_NO_RESPONSE:
-        default:                 return 0x8u; /* 1000 */
+        default:                 return 0x8u;
     }
 }
 
-/*
- * 지금 프로젝트에는 실제 속도값이 없어서 임시 정책으로 구성.
- * 필요하면 나중에 별도 speed 계산 로직으로 교체.
- */
-/* accel 홀센서값 기반 speed state 인코딩 */
 static uint8_t encode_speed_state(const VehicleState *vehicleState, bool isTimedOut)
 {
-    uint8_t brakeValue;
-
     if ((vehicleState == 0) || (isTimedOut == true))
     {
-        return 0x8u; /* FATAL */
+        return 0x8u;
     }
 
-    brakeValue = vehicleState->brake.cur;
-
-    if (brakeValue <= 63u)
+    switch (vehicleState->speedBand)
     {
-        return 0x1u; /* NORMAL   = 0001 */
-    }
-    else if (brakeValue <= 127u)
-    {
-        return 0x2u; /* WARNING  = 0010 */
-    }
-    else if (brakeValue <= 191u)
-    {
-        return 0x4u; /* CRITICAL = 0100 */
-    }
-    else
-    {
-        return 0x8u; /* FATAL    = 1000 */
+        case SPEED_STOP: return 0x1u;
+        case SPEED_LOW:  return 0x2u;
+        case SPEED_MID:  return 0x4u;
+        case SPEED_HIGH:
+        default:         return 0x8u;
     }
 }
-//static uint8_t encode_speed_state(const VehicleState *vehicleState, bool isTimedOut)
-//{
-//    if ((vehicleState == 0) || (isTimedOut == true))
-//    {
-//        return 0x1u; /* STOP */
-//    }
-//
-//    /* 임시 예시:
-//     * CRITICAL/FATAL -> STOP
-//     * WARNING        -> LOW
-//     * NORMAL         -> MID
-//     */
-//    switch (vehicleState->systemstate)
-//    {
-//        case SYS_STATE_CRITICAL:
-//        case SYS_STATE_FATAL_NO_RESPONSE:
-//            return 0x1u; /* STOP  = 0001 */
-//
-//        case SYS_STATE_WARNING:
-//            return 0x2u; /* LOW   = 0010 */
-//
-//        case SYS_STATE_NORMAL:
-//        default:
-//            return 0x4u; /* MID   = 0100 */
-//    }
-//}
 
 static uint8_t build_brake_active(const VehicleState *vehicleState)
 {
@@ -87,17 +43,22 @@ static uint8_t build_brake_active(const VehicleState *vehicleState)
         return 0u;
     }
 
-    return (vehicleState->brake.cur >= BRAKE_ACTIVE_THRESHOLD) ? 1u : 0u;
+    return (vehicleState->brake.filtered >= BRAKE_ACTIVE_THRESHOLD) ? 1u : 0u;
 }
 
 static uint8_t build_ev_state(const VehicleState *vehicleState)
 {
     uint8_t evState = 0u;
+    uint8_t steerOffset;
 
     if (vehicleState == 0)
     {
         return 0u;
     }
+
+    steerOffset = (vehicleState->steer.filtered > 128U)
+                ? (vehicleState->steer.filtered - 128U)
+                : (128U - vehicleState->steer.filtered);
 
     /* bit0 : Rapid Accel */
     if (vehicleState->accel.deltalevel >= DELTA_WARNING)
@@ -112,13 +73,13 @@ static uint8_t build_ev_state(const VehicleState *vehicleState)
     }
 
     /* bit2 : Warning Steer */
-    if (vehicleState->steer.deltalevel == DELTA_WARNING)
+    if ((vehicleState->steer.deltalevel == DELTA_WARNING) || (steerOffset >= 55U))
     {
         evState |= (1u << 2);
     }
 
     /* bit3 : Critical Steer */
-    if (vehicleState->steer.deltalevel == DELTA_CRITICAL)
+    if ((vehicleState->steer.deltalevel == DELTA_CRITICAL) || (steerOffset >= 90U))
     {
         evState |= (1u << 3);
     }
@@ -150,7 +111,6 @@ void actuator_tx_runtime_update(ActuatorTxRuntime *state, const VehicleState *ve
 
     curButton = (vehicleState->button != 0u) ? 1u : 0u;
 
-    /* pulse는 기본 0, 상승엣지에서만 1 */
     state->ackPulse = 0u;
 
     if ((state->prevButton == 0u) && (curButton == 1u))
@@ -170,8 +130,6 @@ void actuator_tx_runtime_on_periodic_send(ActuatorTxRuntime *state)
     }
 
     state->aliveCnt = (uint8_t)((state->aliveCnt + 1u) & 0x0Fu);
-
-    /* pulse는 한 프레임만 유지 */
     state->ackPulse = 0u;
 }
 
@@ -199,29 +157,14 @@ void actuator_build_can_data(const VehicleState *vehicleState,
     ackButton   = (txRuntime->ackPulse != 0u) ? 1u : 0u;
     msgValid    = (runtimeState->isTimedOut == false) ? 1u : 0u;
 
-    /* Byte0
-     * bit0~3 : SAFE_STATE
-     * bit4~7 : SPEED_STATE
-     */
     data[0] = (uint8_t)((safeState & 0x0Fu) |
                         ((speedState & 0x0Fu) << 4));
 
-    /* Byte1
-     * bit0   : BRAKE_ACTIVE
-     * bit1~4 : EV_STATE
-     * bit5   : ACK_BUTTON
-     * bit6   : MSG_VALID
-     * bit7   : RESERVED
-     */
     data[1] = (uint8_t)((brakeActive & 0x01u) |
                         ((evState & 0x0Fu) << 1) |
                         ((ackButton & 0x01u) << 5) |
                         ((msgValid & 0x01u) << 6));
 
-    /* Byte2
-     * bit0~3 : ALIVE_CNT
-     * bit4~7 : ACK_SEQ
-     */
     data[2] = (uint8_t)((txRuntime->aliveCnt & 0x0Fu) |
                         ((txRuntime->ackSeq & 0x0Fu) << 4));
 

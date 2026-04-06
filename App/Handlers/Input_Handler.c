@@ -1,20 +1,45 @@
 #include "Input_Handler.h"
 
-#define LOOKS_LIKE_NOISE 20U
-#define BRAKE_THRESHOLD_1   100U    //Brake delta warn
-#define BRAKE_THRESHOLD_2   180U    //Brake delta critical
-#define ACCEL_THRESHOLD_1   80U     //ACCEL delta warn
-#define ACCEL_THRESHOLD_2   150U    //ACCEL delta critical
-#define STEER_THRESHOLD_1   120U    //STEER delta warn
-#define STEER_THRESHOLD_2   220U    //STEER delta warn
+#define LOOKS_LIKE_NOISE      4U
 
-//delta값 계산 함수 (센서에 들어온 현재 값, 이전 값만 보고 비교중)
-static uint8_t cal_delta(uint8_t cur, uint8_t prev)
+#define BRAKE_THRESHOLD_1     10U
+#define BRAKE_THRESHOLD_2     25U
+#define ACCEL_THRESHOLD_1     8U
+#define ACCEL_THRESHOLD_2     20U
+#define STEER_THRESHOLD_1     10U
+#define STEER_THRESHOLD_2     20U
+
+#define FILTER_DIV            4U
+
+#define ACCEL_DEADZONE        20U
+#define BRAKE_DEADZONE        20U
+
+#define SPEED_MAX_X10         1200U   /* 120.0 km/h */
+#define SPEED_LOW_MAX_X10     200U    /* 20.0 km/h */
+#define SPEED_MID_MAX_X10     600U    /* 60.0 km/h */
+
+static uint8_t abs_u8(uint8_t a, uint8_t b)
 {
-    return ((cur > prev) ? (cur - prev) : (prev - cur));
+    return (a > b) ? (a - b) : (b - a);
 }
 
-//delta 값을 받은 후 이의 범위를 계산
+static uint8_t low_pass_u8(uint8_t prevFiltered, uint8_t raw)
+{
+    int16_t diff = (int16_t)raw - (int16_t)prevFiltered;
+    int16_t next = (int16_t)prevFiltered + (diff / (int16_t)FILTER_DIV);
+
+    if (next < 0)
+    {
+        next = 0;
+    }
+    if (next > 255)
+    {
+        next = 255;
+    }
+
+    return (uint8_t)next;
+}
+
 static DeltaLevel classify_delta(uint8_t delta, uint8_t warn, uint8_t critical)
 {
     if (delta >= critical)
@@ -31,12 +56,22 @@ static DeltaLevel classify_delta(uint8_t delta, uint8_t warn, uint8_t critical)
     }
 }
 
-// 센서의 데이터를 갱신
-static void update_sensor_data(SensorState *sensor, uint8_t new_data, uint8_t warn, uint8_t critical)
+static void update_sensor_data(SensorState *sensor, uint8_t newData, uint8_t warn, uint8_t critical)
 {
+    uint8_t prevFiltered;
+
+    if (sensor == 0)
+    {
+        return;
+    }
+
     sensor->prev = sensor->cur;
-    sensor->cur = new_data;
-    sensor->delta = cal_delta(sensor->cur, sensor->prev);
+    sensor->cur  = newData;
+
+    prevFiltered = sensor->filtered;
+    sensor->filtered = low_pass_u8(sensor->filtered, newData);
+
+    sensor->delta = abs_u8(sensor->filtered, prevFiltered);
 
     if (sensor->delta < LOOKS_LIKE_NOISE)
     {
@@ -46,7 +81,68 @@ static void update_sensor_data(SensorState *sensor, uint8_t new_data, uint8_t wa
     sensor->deltalevel = classify_delta(sensor->delta, warn, critical);
 }
 
-// can데이터 구조체 변환
+static uint8_t apply_deadzone(uint8_t value, uint8_t dz)
+{
+    return (value > dz) ? (value - dz) : 0U;
+}
+
+static void update_virtual_speed(VehicleState *state)
+{
+    uint8_t accelEff;
+    uint8_t brakeEff;
+    int32_t speed;
+    int32_t accelStep;
+    int32_t brakeStep;
+    int32_t dragStep;
+
+    if (state == 0)
+    {
+        return;
+    }
+
+    accelEff = apply_deadzone(state->accel.filtered, ACCEL_DEADZONE);
+    brakeEff = apply_deadzone(state->brake.filtered, BRAKE_DEADZONE);
+
+    speed = (int32_t)state->virtualSpeedKph_x10;
+
+    /* 10ms tick 기준 가상 속도 갱신 */
+    accelStep = ((int32_t)accelEff * 12) / 255;   /* 가속 효과 */
+    brakeStep = ((int32_t)brakeEff * 20) / 255;   /* 브레이크 효과 */
+    dragStep  = 1 + (speed / 200);                /* 자연 감속 */
+
+    speed += accelStep;
+    speed -= brakeStep;
+    speed -= dragStep;
+
+    if (speed < 0)
+    {
+        speed = 0;
+    }
+    else if (speed > SPEED_MAX_X10)
+    {
+        speed = SPEED_MAX_X10;
+    }
+
+    state->virtualSpeedKph_x10 = (uint16_t)speed;
+
+    if (speed == 0)
+    {
+        state->speedBand = SPEED_STOP;
+    }
+    else if (speed <= SPEED_LOW_MAX_X10)
+    {
+        state->speedBand = SPEED_LOW;
+    }
+    else if (speed <= SPEED_MID_MAX_X10)
+    {
+        state->speedBand = SPEED_MID;
+    }
+    else
+    {
+        state->speedBand = SPEED_HIGH;
+    }
+}
+
 void input_handler_parse_can(const uint8_t rxData[8], InputData *data)
 {
     if ((rxData == 0) || (data == 0))
@@ -60,7 +156,6 @@ void input_handler_parse_can(const uint8_t rxData[8], InputData *data)
     data->steer_value = rxData[6];
 }
 
-// 각 센서들의 데이터를 init
 void input_handler_init(VehicleState *state, const InputData *data)
 {
     if ((state == 0) || (data == 0))
@@ -72,24 +167,29 @@ void input_handler_init(VehicleState *state, const InputData *data)
 
     state->brake.prev = data->brake_value;
     state->brake.cur = data->brake_value;
+    state->brake.filtered = data->brake_value;
     state->brake.delta = 0U;
     state->brake.deltalevel = DELTA_NORMAL;
 
     state->accel.prev = data->accel_value;
     state->accel.cur = data->accel_value;
+    state->accel.filtered = data->accel_value;
     state->accel.delta = 0U;
     state->accel.deltalevel = DELTA_NORMAL;
 
     state->steer.prev = data->steer_value;
     state->steer.cur = data->steer_value;
+    state->steer.filtered = data->steer_value;
     state->steer.delta = 0U;
     state->steer.deltalevel = DELTA_NORMAL;
+
+    state->virtualSpeedKph_x10 = 0U;
+    state->speedBand = SPEED_STOP;
 
     state->systemstate = SYS_STATE_NORMAL;
     state->logcode = LOG_NONE;
 }
 
-// 센서 데이터 유무 판단 후 센서 값 갱신
 void input_handler_update(VehicleState *state, const InputData *data)
 {
     if ((state == 0) || (data == 0))
@@ -98,7 +198,10 @@ void input_handler_update(VehicleState *state, const InputData *data)
     }
 
     state->button = data->button;
+
     update_sensor_data(&state->brake, data->brake_value, BRAKE_THRESHOLD_1, BRAKE_THRESHOLD_2);
     update_sensor_data(&state->accel, data->accel_value, ACCEL_THRESHOLD_1, ACCEL_THRESHOLD_2);
     update_sensor_data(&state->steer, data->steer_value, STEER_THRESHOLD_1, STEER_THRESHOLD_2);
+
+    update_virtual_speed(state);
 }

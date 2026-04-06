@@ -27,6 +27,13 @@ typedef enum{
     LOG_TIMEOUT
 } LogCode;
 
+typedef enum{
+    SPEED_STOP = 0,
+    SPEED_LOW,
+    SPEED_MID,
+    SPEED_HIGH
+} SpeedBand;
+
 typedef struct{
     uint8_t button;
     uint8_t brake_value;
@@ -37,6 +44,7 @@ typedef struct{
 typedef struct{
     uint8_t prev;
     uint8_t cur;
+    uint8_t filtered;
     uint8_t delta;
     DeltaLevel deltalevel;
 } SensorState;
@@ -47,6 +55,9 @@ typedef struct{
     SensorState steer;
 
     uint8_t button;
+
+    uint16_t virtualSpeedKph_x10;   /* ex) 253 => 25.3 km/h */
+    SpeedBand speedBand;
 
     SystemState systemstate;
     LogCode logcode;

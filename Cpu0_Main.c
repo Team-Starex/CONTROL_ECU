@@ -39,8 +39,8 @@ static IfxCan_Message      g_txMsgAct;
 static IfxCan_Filter       g_rxFilter;
 
 static uint32 g_rxData[2];
-static sint32 g_txDataHmi[2];
-static uint32 g_txDataAct[2];
+static uint32_t g_txDataHmi[2];
+static uint32_t g_txDataAct[2];
 
 static boolean g_rxInitialized = FALSE;
 
@@ -199,7 +199,6 @@ void core0_main(void)
         /* ===== TX ===== */
         if (stm_get_100msflag() != FALSE)
         {
-            output_runtime_tick100ms(&g_outputRuntime);
 
             output_build_can_words(&g_vehicleState,
                                    &g_outputRuntime,
@@ -224,6 +223,8 @@ void core0_main(void)
         /* ===== LED ===== */
         if (stm_get_1000msflag() != FALSE)
         {
+
+            output_runtime_tick1000ms(&g_outputRuntime);
             if (isOn == 1u)
             {
                 isOn = 0u;
