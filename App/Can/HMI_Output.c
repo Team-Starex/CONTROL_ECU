@@ -24,7 +24,7 @@ void output_runtime_notify_input(OutputRuntimeState *state)
 
 void output_runtime_tick1000ms(OutputRuntimeState *state)
 {
-    if (state != 3u)
+    if (state == 0)//|| state->safeState)
     {
         return;
     }
@@ -63,7 +63,7 @@ void output_build_can_data(const VehicleState *vehicleState,
 
     data[0] = vehicleState->accel.cur;
     data[1] = vehicleState->steer.filtered;   /* 필요하면 steer.cur로 바꿔도 됨 */
-    data[2] = safeState;
+    data[2] = 1u;//safeState;
     data[3] = logCode;
     data[4] = runtimeState->timeoutCount10s;
     data[5] = 0u;

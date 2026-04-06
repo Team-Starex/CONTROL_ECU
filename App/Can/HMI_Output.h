@@ -12,6 +12,7 @@ typedef struct
 {
     uint8_t timeoutCount10s;
     bool isTimedOut;
+    //상태 추가하고 이를 기반으로
 } OutputRuntimeState;
 
 void output_runtime_init(OutputRuntimeState *state);
