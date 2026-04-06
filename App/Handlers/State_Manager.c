@@ -13,6 +13,20 @@ void classify_state(VehicleState *state)
         return;
     }
 
+    if (state->systemstate >= 2)
+    {
+        /* 버튼이 눌리지 않았으면 상태 판단하지 않고 현재 상태 유지 */
+        if(state->button != 1U){
+            return;
+        }
+        /* 버튼이 눌렸고, 현재 상태가 2 이상이면 NORMAL로 복구 */
+        else{
+            state->systemstate = SYS_STATE_NORMAL;
+            state->logcode = LOG_NONE;//로그 상태해제 띄워야함
+            //output_runtime_notify_input(runtimeState);
+        }
+    }
+
     state->systemstate = SYS_STATE_NORMAL;
     state->logcode = LOG_NONE;
 

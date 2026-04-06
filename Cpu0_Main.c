@@ -163,8 +163,6 @@ static void process_rx_frame_words(const uint32 rxWords[2])
 /*********************************************************************************************************************/
 void core0_main(void)
 {
-    uint8 isOn = 1u;
-
     IfxCpu_enableInterrupts();
 
     IfxScuWdt_disableCpuWatchdog(IfxScuWdt_getCpuWatchdogPassword());
@@ -233,7 +231,7 @@ void core0_main(void)
             output_runtime_tick1000ms(&g_vehicleState, &g_outputRuntime);
             /* 1000ms마다 할 작업 */
             // 토글 테스트
-            critical_response_timer_down();
+            //critical_response_timer_down();
         }
     }
 }

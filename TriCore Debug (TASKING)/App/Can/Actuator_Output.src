@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc38020a --dep-file=App/Can/Actuator_Output.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\App -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\App\\\\Can -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\App\\\\Handlers -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\App\\\\Steer -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\App\\\\Timer -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Common -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Configurations -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37x -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx\\\\Tricore -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Service -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Can -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Can\\\\Can -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Can\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Stm -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Stm\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_Impl -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap\\\\TC37x -g2 -w544 -w557 -w508 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2012 -o App/Can/Actuator_Output.src ../App/Can/Actuator_Output.c"
+	.compiler_invocation	"ctc -f cc31236a --dep-file=App/Can/Actuator_Output.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\App -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\App\\\\Can -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\App\\\\Handlers -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\App\\\\Service -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\App\\\\Steer -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\App\\\\Timer -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Common -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Configurations -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37x -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Infra\\\\Ssw\\\\TC3xx\\\\Tricore -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Service -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Can -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Can\\\\Can -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Can\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Pms\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Port\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Scu\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Src\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Stm -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\Stm\\\\Std -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_Impl -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap -IC:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Libraries\\\\iLLD\\\\TC3xx\\\\Tricore\\\\_PinMap\\\\TC37x -g2 -w544 -w557 -w508 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2012 -o App/Can/Actuator_Output.src ../App/Can/Actuator_Output.c"
 	.compiler_name		"ctc"
 	;source	'../App/Can/Actuator_Output.c'
 
@@ -12,42 +12,42 @@ $TC162
 	.align	2
 	
 ; Function encode_safe_state
-.L67:
+.L68:
 encode_safe_state:	.type	func
 	jeq	d5,#0,.L2
-.L323:
-	mov	d2,#8
 .L324:
+	mov	d2,#8
+.L325:
 	j	.L3
 .L2:
 	mov	d15,#0
 	jeq	d15,d4,.L4
-.L325:
+.L326:
 	mov	d15,#1
 	jeq	d15,d4,.L5
-.L326:
+.L327:
 	mov	d15,#2
 	jeq	d15,d4,.L6
-.L327:
+.L328:
 	mov	d15,#3
 	jeq	d15,d4,.L7
 	j	.L8
 .L4:
 	mov	d2,#1
-.L328:
+.L329:
 	j	.L9
 .L5:
 	mov	d2,#2
-.L329:
+.L330:
 	j	.L10
 .L6:
 	mov	d2,#4
-.L330:
+.L331:
 	j	.L11
 .L7:
 .L8:
 	mov	d2,#8
-.L331:
+.L332:
 	j	.L12
 .L12:
 .L11:
@@ -55,11 +55,11 @@ encode_safe_state:	.type	func
 .L9:
 .L3:
 	ret
-.L166:
+.L167:
 	
 __encode_safe_state_function_end:
 	.size	encode_safe_state,__encode_safe_state_function_end-encode_safe_state
-.L117:
+.L118:
 	; End of function
 	
 	.sdecl	'.text.Actuator_Output.encode_speed_state',code,cluster('encode_speed_state')
@@ -67,58 +67,62 @@ __encode_safe_state_function_end:
 	.align	2
 	
 ; Function encode_speed_state
-.L69:
+.L70:
 encode_speed_state:	.type	func
 	jz.a	a4,.L13
-.L336:
+.L337:
 	jeq	d4,#0,.L14
 .L13:
 	mov	d2,#8
-.L337:
+.L338:
 	j	.L15
 .L14:
-	ld.bu	d15,[a4]22
-.L338:
+	ld.bu	d15,[a4]20
+.L339:
 	mov	d0,#0
 	jeq	d15,d0,.L16
-.L339:
+.L340:
 	mov	d0,#1
 	jeq	d15,d0,.L17
-.L340:
+.L341:
 	mov	d0,#2
 	jeq	d15,d0,.L18
-.L341:
+.L342:
 	mov	d0,#3
 	jeq	d15,d0,.L19
 	j	.L20
 .L16:
 	mov	d2,#1
-.L342:
+.L343:
 	j	.L21
 .L17:
 	mov	d2,#2
-.L343:
+.L344:
 	j	.L22
 .L18:
 	mov	d2,#4
-.L344:
+.L345:
 	j	.L23
 .L19:
-.L20:
 	mov	d2,#8
-.L345:
+.L346:
 	j	.L24
+.L20:
+	mov	d2,#2
+.L347:
+	j	.L25
+.L25:
 .L24:
 .L23:
 .L22:
 .L21:
 .L15:
 	ret
-.L171:
+.L172:
 	
 __encode_speed_state_function_end:
 	.size	encode_speed_state,__encode_speed_state_function_end-encode_speed_state
-.L122:
+.L123:
 	; End of function
 	
 	.sdecl	'.text.Actuator_Output.build_brake_active',code,cluster('build_brake_active')
@@ -126,35 +130,35 @@ __encode_speed_state_function_end:
 	.align	2
 	
 ; Function build_brake_active
-.L71:
+.L72:
 build_brake_active:	.type	func
-	jnz.a	a4,.L25
-.L350:
-	mov	d2,#0
-.L351:
-	j	.L26
-.L25:
-	ld.bu	d15,[a4]2
+	jnz.a	a4,.L26
 .L352:
-	mov	d0,#150
-.L353:
-	jlt.u	d15,d0,.L27
-.L354:
-	mov	d2,#1
-.L355:
-	j	.L28
-.L27:
 	mov	d2,#0
-.L28:
-	j	.L29
-.L29:
+.L353:
+	j	.L27
 .L26:
+	ld.bu	d15,[a4]2
+.L354:
+	mov	d0,#150
+.L355:
+	jlt.u	d15,d0,.L28
+.L356:
+	mov	d2,#1
+.L357:
+	j	.L29
+.L28:
+	mov	d2,#0
+.L29:
+	j	.L30
+.L30:
+.L27:
 	ret
-.L174:
+.L175:
 	
 __build_brake_active_function_end:
 	.size	build_brake_active,__build_brake_active_function_end-build_brake_active
-.L127:
+.L128:
 	; End of function
 	
 	.sdecl	'.text.Actuator_Output.build_ev_state',code,cluster('build_ev_state')
@@ -162,73 +166,73 @@ __build_brake_active_function_end:
 	.align	2
 	
 ; Function build_ev_state
-.L73:
+.L74:
 build_ev_state:	.type	func
 	mov	d2,#0
-.L180:
-	jnz.a	a4,.L30
-.L360:
-	mov	d2,#0
 .L181:
-	j	.L31
-.L30:
-	ld.bu	d15,[a4]14
-.L361:
-	mov	d0,#128
+	jnz.a	a4,.L31
 .L362:
-	jge.u	d0,d15,.L32
-.L363:
-	ld.bu	d15,[a4]14
-.L364:
-	add	d0,d15,#-128
+	mov	d2,#0
 .L182:
-	j	.L33
-.L32:
+	j	.L32
+.L31:
 	ld.bu	d15,[a4]14
+.L363:
+	mov	d0,#128
+.L364:
+	jge.u	d0,d15,.L33
 .L365:
-	rsub	d0,d15,#128
-.L33:
-	ld.bu	d15,[a4]10
+	ld.bu	d15,[a4]14
 .L366:
-	jlt.u	d15,#1,.L34
+	add	d0,d15,#-128
+.L183:
+	j	.L34
+.L33:
+	ld.bu	d15,[a4]14
 .L367:
-	or	d2,d2,#1
+	rsub	d0,d15,#128
 .L34:
-	ld.bu	d15,[a4]4
+	ld.bu	d15,[a4]10
 .L368:
 	jlt.u	d15,#1,.L35
 .L369:
-	or	d2,d2,#2
+	or	d2,d2,#1
 .L35:
-	ld.bu	d15,[a4]16
+	ld.bu	d15,[a4]4
 .L370:
-	jeq	d15,#1,.L36
+	jlt.u	d15,#1,.L36
 .L371:
-	mov	d15,#55
-.L372:
-	jlt.u	d0,d15,.L37
+	or	d2,d2,#2
 .L36:
-	or	d2,d2,#4
-.L37:
 	ld.bu	d15,[a4]16
+.L372:
+	jeq	d15,#1,.L37
 .L373:
-	jeq	d15,#2,.L38
+	mov	d15,#55
 .L374:
-	mov	d15,#90
-.L375:
-	jlt.u	d0,d15,.L39
+	jlt.u	d0,d15,.L38
+.L37:
+	or	d2,d2,#4
 .L38:
-	or	d2,d2,#8
+	ld.bu	d15,[a4]16
+.L375:
+	jeq	d15,#2,.L39
+.L376:
+	mov	d15,#90
+.L377:
+	jlt.u	d0,d15,.L40
 .L39:
-	j	.L40
+	or	d2,d2,#8
 .L40:
-.L31:
+	j	.L41
+.L41:
+.L32:
 	ret
-.L176:
+.L177:
 	
 __build_ev_state_function_end:
 	.size	build_ev_state,__build_ev_state_function_end-build_ev_state
-.L132:
+.L133:
 	; End of function
 	
 	.sdecl	'.text.Actuator_Output.actuator_tx_runtime_init',code,cluster('actuator_tx_runtime_init')
@@ -237,34 +241,34 @@ __build_ev_state_function_end:
 	
 	.global	actuator_tx_runtime_init
 ; Function actuator_tx_runtime_init
-.L75:
+.L76:
 actuator_tx_runtime_init:	.type	func
-	jnz.a	a4,.L41
-.L214:
-	j	.L42
-.L41:
-	mov	d15,#0
+	jnz.a	a4,.L42
 .L215:
-	st.b	[a4],d15
-.L216:
-	mov	d15,#0
-.L217:
-	st.b	[a4]1,d15
-.L218:
-	mov	d15,#0
-.L219:
-	st.b	[a4]2,d15
-.L220:
-	mov	d15,#0
-.L221:
-	st.b	[a4]3,d15
+	j	.L43
 .L42:
+	mov	d15,#0
+.L216:
+	st.b	[a4],d15
+.L217:
+	mov	d15,#0
+.L218:
+	st.b	[a4]1,d15
+.L219:
+	mov	d15,#0
+.L220:
+	st.b	[a4]2,d15
+.L221:
+	mov	d15,#0
+.L222:
+	st.b	[a4]3,d15
+.L43:
 	ret
-.L133:
+.L134:
 	
 __actuator_tx_runtime_init_function_end:
 	.size	actuator_tx_runtime_init,__actuator_tx_runtime_init_function_end-actuator_tx_runtime_init
-.L92:
+.L93:
 	; End of function
 	
 	.sdecl	'.text.Actuator_Output.actuator_tx_runtime_update',code,cluster('actuator_tx_runtime_update')
@@ -273,55 +277,55 @@ __actuator_tx_runtime_init_function_end:
 	
 	.global	actuator_tx_runtime_update
 ; Function actuator_tx_runtime_update
-.L77:
+.L78:
 actuator_tx_runtime_update:	.type	func
-	jz.a	a4,.L43
-.L226:
-	jnz.a	a5,.L44
-.L43:
-	j	.L45
-.L44:
-	ld.bu	d15,[a5]18
+	jz.a	a4,.L44
 .L227:
-	jeq	d15,#0,.L46
-.L228:
-	mov	d0,#1
-.L183:
-	j	.L47
-.L46:
-	mov	d0,#0
-.L47:
-	mov	d15,#0
-.L229:
-	st.b	[a4]3,d15
-.L230:
-	ld.bu	d15,[a4]2
-.L231:
-	jne	d15,#0,.L48
-.L232:
-	jne	d0,#1,.L49
-.L233:
-	mov	d15,#1
-.L234:
-	st.b	[a4]3,d15
-.L235:
-	ld.bu	d15,[a4]1
-.L236:
-	add	d15,#1
-.L237:
-	and	d15,#15
-.L238:
-	st.b	[a4]1,d15
-.L49:
-.L48:
-	st.b	[a4]2,d0
+	jnz.a	a5,.L45
+.L44:
+	j	.L46
 .L45:
+	ld.bu	d15,[a5]18
+.L228:
+	jeq	d15,#0,.L47
+.L229:
+	mov	d0,#1
+.L184:
+	j	.L48
+.L47:
+	mov	d0,#0
+.L48:
+	mov	d15,#0
+.L230:
+	st.b	[a4]3,d15
+.L231:
+	ld.bu	d15,[a4]2
+.L232:
+	jne	d15,#0,.L49
+.L233:
+	jne	d0,#1,.L50
+.L234:
+	mov	d15,#1
+.L235:
+	st.b	[a4]3,d15
+.L236:
+	ld.bu	d15,[a4]1
+.L237:
+	add	d15,#1
+.L238:
+	and	d15,#15
+.L239:
+	st.b	[a4]1,d15
+.L50:
+.L49:
+	st.b	[a4]2,d0
+.L46:
 	ret
-.L136:
+.L137:
 	
 __actuator_tx_runtime_update_function_end:
 	.size	actuator_tx_runtime_update,__actuator_tx_runtime_update_function_end-actuator_tx_runtime_update
-.L97:
+.L98:
 	; End of function
 	
 	.sdecl	'.text.Actuator_Output.actuator_tx_runtime_on_periodic_send',code,cluster('actuator_tx_runtime_on_periodic_send')
@@ -330,30 +334,30 @@ __actuator_tx_runtime_update_function_end:
 	
 	.global	actuator_tx_runtime_on_periodic_send
 ; Function actuator_tx_runtime_on_periodic_send
-.L79:
+.L80:
 actuator_tx_runtime_on_periodic_send:	.type	func
-	jnz.a	a4,.L50
-.L243:
-	j	.L51
-.L50:
-	ld.bu	d15,[a4]
+	jnz.a	a4,.L51
 .L244:
-	add	d15,#1
-.L245:
-	and	d15,#15
-.L246:
-	st.b	[a4],d15
-.L247:
-	mov	d15,#0
-.L248:
-	st.b	[a4]3,d15
+	j	.L52
 .L51:
+	ld.bu	d15,[a4]
+.L245:
+	add	d15,#1
+.L246:
+	and	d15,#15
+.L247:
+	st.b	[a4],d15
+.L248:
+	mov	d15,#0
+.L249:
+	st.b	[a4]3,d15
+.L52:
 	ret
-.L142:
+.L143:
 	
 __actuator_tx_runtime_on_periodic_send_function_end:
 	.size	actuator_tx_runtime_on_periodic_send,__actuator_tx_runtime_on_periodic_send_function_end-actuator_tx_runtime_on_periodic_send
-.L102:
+.L103:
 	; End of function
 	
 	.sdecl	'.text.Actuator_Output.actuator_build_can_data',code,cluster('actuator_build_can_data')
@@ -362,144 +366,144 @@ __actuator_tx_runtime_on_periodic_send_function_end:
 	
 	.global	actuator_build_can_data
 ; Function actuator_build_can_data
-.L81:
+.L82:
 actuator_build_can_data:	.type	func
 	mov.aa	a12,a4
-.L185:
-	mov.aa	a13,a5
 .L186:
-	mov.aa	a14,a6
+	mov.aa	a13,a5
 .L187:
-	mov.aa	a15,a7
+	mov.aa	a14,a6
 .L188:
-	jz.a	a12,.L52
-.L253:
-	jz.a	a13,.L53
+	mov.aa	a15,a7
+.L189:
+	jz.a	a12,.L53
 .L254:
-	jz.a	a14,.L54
+	jz.a	a13,.L54
 .L255:
-	jnz.a	a15,.L55
+	jz.a	a14,.L55
+.L256:
+	jnz.a	a15,.L56
+.L55:
 .L54:
 .L53:
-.L52:
-	j	.L56
-.L55:
-	ld.bu	d4,[a12]23
-.L256:
+	j	.L57
+.L56:
+	ld.bu	d4,[a12]21
+.L257:
 	ld.bu	d5,[a13]1
 	call	encode_safe_state
-.L184:
+.L185:
 	mov	d8,d2
-.L190:
+.L191:
 	ld.bu	d4,[a13]1
 	mov.aa	a4,a12
-.L191:
-	call	encode_speed_state
-.L189:
-	mov	d10,d2
-.L193:
-	mov.aa	a4,a12
-.L194:
-	call	build_brake_active
 .L192:
-	mov	d9,d2
-.L196:
+	call	encode_speed_state
+.L190:
+	mov	d10,d2
+.L194:
 	mov.aa	a4,a12
-.L197:
-	call	build_ev_state
 .L195:
-	ld.bu	d15,[a14]3
-.L257:
-	jeq	d15,#0,.L57
-.L258:
-	mov	d0,#1
-.L199:
-	j	.L58
-.L57:
-	mov	d0,#0
-.L58:
-	ld.bu	d15,[a13]1
-.L259:
-	jne	d15,#0,.L59
-.L260:
-	mov	d4,#1
-.L201:
-	j	.L60
-.L59:
-	mov	d4,#0
-.L60:
-	and	d1,d8,#15
-.L261:
-	and	d15,d10,#15
-.L262:
-	sha	d3,d15,#4
-.L263:
-	or	d1,d3
-.L264:
-	st.b	[a15],d1
-.L265:
-	and	d1,d9,#1
-.L266:
-	and	d15,d2,#15
-.L267:
-	sha	d2,d15,#1
+	call	build_brake_active
+.L193:
+	mov	d9,d2
+.L197:
+	mov.aa	a4,a12
 .L198:
-	or	d1,d2
-.L268:
-	and	d15,d0,#1
-.L269:
-	sha	d0,d15,#5
+	call	build_ev_state
+.L196:
+	ld.bu	d15,[a14]3
+.L258:
+	jeq	d15,#0,.L58
+.L259:
+	mov	d0,#1
 .L200:
-	or	d1,d0
+	j	.L59
+.L58:
+	mov	d0,#0
+.L59:
+	ld.bu	d15,[a13]1
+.L260:
+	jne	d15,#0,.L60
+.L261:
+	mov	d4,#1
+.L202:
+	j	.L61
+.L60:
+	mov	d4,#0
+.L61:
+	and	d1,d8,#15
+.L262:
+	and	d15,d10,#15
+.L263:
+	sha	d3,d15,#4
+.L264:
+	or	d1,d3
+.L265:
+	st.b	[a15],d1
+.L266:
+	and	d1,d9,#1
+.L267:
+	and	d15,d2,#15
+.L268:
+	sha	d2,d15,#1
+.L199:
+	or	d1,d2
+.L269:
+	and	d15,d0,#1
 .L270:
-	and	d15,d4,#1
+	sha	d0,d15,#5
+.L201:
+	or	d1,d0
 .L271:
-	sha	d15,#6
+	and	d15,d4,#1
 .L272:
-	or	d1,d15
+	sha	d15,#6
 .L273:
-	st.b	[a15]1,d1
+	or	d1,d15
 .L274:
-	ld.bu	d15,[a14]
+	st.b	[a15]1,d1
 .L275:
-	and	d0,d15,#15
+	ld.bu	d15,[a14]
 .L276:
-	ld.bu	d15,[a14]1
+	and	d0,d15,#15
 .L277:
-	and	d15,#15
+	ld.bu	d15,[a14]1
 .L278:
-	sha	d15,#4
+	and	d15,#15
 .L279:
-	or	d0,d15
+	sha	d15,#4
 .L280:
-	st.b	[a15]2,d0
+	or	d0,d15
 .L281:
-	mov	d15,#0
+	st.b	[a15]2,d0
 .L282:
-	st.b	[a15]3,d15
+	mov	d15,#0
 .L283:
-	mov	d15,#0
+	st.b	[a15]3,d15
 .L284:
-	st.b	[a15]4,d15
+	mov	d15,#0
 .L285:
-	mov	d15,#0
+	st.b	[a15]4,d15
 .L286:
-	st.b	[a15]5,d15
+	mov	d15,#0
 .L287:
-	mov	d15,#0
+	st.b	[a15]5,d15
 .L288:
-	st.b	[a15]6,d15
-.L289:
 	mov	d15,#0
+.L289:
+	st.b	[a15]6,d15
 .L290:
+	mov	d15,#0
+.L291:
 	st.b	[a15]7,d15
-.L56:
+.L57:
 	ret
-.L144:
+.L145:
 	
 __actuator_build_can_data_function_end:
 	.size	actuator_build_can_data,__actuator_build_can_data_function_end-actuator_build_can_data
-.L107:
+.L108:
 	; End of function
 	
 	.sdecl	'.text.Actuator_Output.actuator_build_can_words',code,cluster('actuator_build_can_words')
@@ -508,78 +512,78 @@ __actuator_build_can_data_function_end:
 	
 	.global	actuator_build_can_words
 ; Function actuator_build_can_words
-.L83:
+.L84:
 actuator_build_can_words:	.type	func
 	sub.a	a10,#8
-.L202:
+.L203:
 	mov.aa	a15,a7
-.L205:
-	jz.a	a4,.L61
-.L295:
-	jz.a	a5,.L62
+.L206:
+	jz.a	a4,.L62
 .L296:
-	jz.a	a6,.L63
+	jz.a	a5,.L63
 .L297:
-	jnz.a	a15,.L64
+	jz.a	a6,.L64
+.L298:
+	jnz.a	a15,.L65
+.L64:
 .L63:
 .L62:
-.L61:
-	j	.L65
-.L64:
-	lea	a7,[a10]0
-.L204:
-	call	actuator_build_can_data
-.L203:
-	ld.bu	d0,[a10]
-.L298:
-	ld.bu	d15,[a10]1
-.L299:
-	sh	d15,d15,#8
-.L300:
-	or	d0,d15
-.L301:
-	ld.bu	d15,[a10]2
-.L302:
-	sh	d15,d15,#16
-.L303:
-	or	d0,d15
-.L304:
-	ld.bu	d15,[a10]3
-.L305:
-	sh	d15,d15,#24
-.L306:
-	or	d0,d15
-.L307:
-	st.w	[a15],d0
-.L308:
-	ld.bu	d0,[a10]4
-.L309:
-	ld.bu	d15,[a10]5
-.L310:
-	sh	d15,d15,#8
-.L311:
-	or	d0,d15
-.L312:
-	ld.bu	d15,[a10]6
-.L313:
-	sh	d15,d15,#16
-.L314:
-	or	d0,d15
-.L315:
-	ld.bu	d15,[a10]7
-.L316:
-	sh	d15,d15,#24
-.L317:
-	or	d0,d15
-.L318:
-	st.w	[a15]4,d0
+	j	.L66
 .L65:
+	lea	a7,[a10]0
+.L205:
+	call	actuator_build_can_data
+.L204:
+	ld.bu	d0,[a10]
+.L299:
+	ld.bu	d15,[a10]1
+.L300:
+	sh	d15,d15,#8
+.L301:
+	or	d0,d15
+.L302:
+	ld.bu	d15,[a10]2
+.L303:
+	sh	d15,d15,#16
+.L304:
+	or	d0,d15
+.L305:
+	ld.bu	d15,[a10]3
+.L306:
+	sh	d15,d15,#24
+.L307:
+	or	d0,d15
+.L308:
+	st.w	[a15],d0
+.L309:
+	ld.bu	d0,[a10]4
+.L310:
+	ld.bu	d15,[a10]5
+.L311:
+	sh	d15,d15,#8
+.L312:
+	or	d0,d15
+.L313:
+	ld.bu	d15,[a10]6
+.L314:
+	sh	d15,d15,#16
+.L315:
+	or	d0,d15
+.L316:
+	ld.bu	d15,[a10]7
+.L317:
+	sh	d15,d15,#24
+.L318:
+	or	d0,d15
+.L319:
+	st.w	[a15]4,d0
+.L66:
 	ret
-.L158:
+.L159:
 	
 __actuator_build_can_words_function_end:
 	.size	actuator_build_can_words,__actuator_build_can_words_function_end-actuator_build_can_words
-.L112:
+.L113:
 	; End of function
 	
 	.calls	'actuator_build_can_data','encode_safe_state'
@@ -598,18 +602,18 @@ __actuator_build_can_words_function_end:
 	.calls	'actuator_build_can_words','',8
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L85:
-	.word	1316
+.L86:
+	.word	1276
 	.half	3
-	.word	.L86
+	.word	.L87
 	.byte	4
-.L84:
+.L85:
 	.byte	1
 	.byte	'../App/Can/Actuator_Output.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\tools\\aurix\\tc375_control_ecu\\TriCore Debug (TASKING)\\',0,12,1
-	.word	.L87
-.L140:
+	.word	.L88
+.L141:
 	.byte	2
 	.byte	'unsigned char',0,1,8,3,1,10,9,4,4
 	.byte	'aliveCnt',0
@@ -624,7 +628,7 @@ __actuator_build_can_words_function_end:
 	.byte	'ackPulse',0
 	.word	182
 	.byte	1,2,35,3,0
-.L134:
+.L135:
 	.byte	5
 	.word	199
 	.byte	6,2,13,9,1,7
@@ -645,13 +649,12 @@ __actuator_build_can_words_function_end:
 	.byte	1,2,35,3,4
 	.byte	'deltalevel',0
 	.word	282
-	.byte	1,2,35,4,0,2
-	.byte	'unsigned short int',0,2,7,6,2,30,9,1,7
+	.byte	1,2,35,4,0,6,2,30,9,1,7
 	.byte	'SPEED_STOP',0,0,7
 	.byte	'SPEED_LOW',0,1,7
 	.byte	'SPEED_MID',0,2,7
 	.byte	'SPEED_HIGH',0,3,0
-.L167:
+.L168:
 	.byte	6,2,6,9,1,7
 	.byte	'SYS_STATE_NORMAL',0,0,7
 	.byte	'SYS_STATE_WARNING',0,1,7
@@ -664,7 +667,7 @@ __actuator_build_can_words_function_end:
 	.byte	'LOG_BRAKE_CRITICAL',0,4,7
 	.byte	'LOG_STEER_WARNING',0,5,7
 	.byte	'LOG_STEER_CRITICAL',0,6,7
-	.byte	'LOG_TIMEOUT',0,7,0,3,2,52,9,28,4
+	.byte	'LOG_TIMEOUT',0,7,0,3,2,52,9,24,4
 	.byte	'brake',0
 	.word	336
 	.byte	6,2,35,0,4
@@ -678,111 +681,108 @@ __actuator_build_can_words_function_end:
 	.word	182
 	.byte	1,2,35,18,4
 	.byte	'virtualSpeedKph_x10',0
-	.word	422
-	.byte	2,2,35,20,4
+	.word	182
+	.byte	1,2,35,19,4
 	.byte	'speedBand',0
-	.word	444
-	.byte	1,2,35,22,4
+	.word	422
+	.byte	1,2,35,20,4
 	.byte	'systemstate',0
-	.word	500
-	.byte	1,2,35,23,4
+	.word	478
+	.byte	1,2,35,21,4
 	.byte	'logcode',0
-	.word	596
-	.byte	1,2,35,24,0,8
-	.word	750
-.L138:
+	.word	574
+	.byte	1,2,35,22,0,8
+	.word	728
+.L139:
 	.byte	5
-	.word	903
-.L169:
+	.word	881
+.L170:
 	.byte	2
-	.byte	'_Bool',0,1,2,3,3,11,9,2,4
+	.byte	'_Bool',0,1,2,3,3,12,9,2,4
 	.byte	'timeoutCount10s',0
 	.word	182
 	.byte	1,2,35,0,4
 	.byte	'isTimedOut',0
-	.word	913
+	.word	891
 	.byte	1,2,35,1,0,8
-	.word	922
-.L146:
+	.word	900
+.L147:
 	.byte	5
-	.word	973
+	.word	951
 	.byte	8
 	.word	199
-.L148:
+.L149:
 	.byte	5
-	.word	983
-.L150:
+	.word	961
+.L151:
 	.byte	5
 	.word	182
 	.byte	2
 	.byte	'unsigned int',0,4,7
-.L162:
+.L163:
 	.byte	5
-	.word	998
-.L164:
+	.word	976
+.L165:
 	.byte	9,8
 	.word	182
 	.byte	10,7,0,11,1,5
-	.word	1028
+	.word	1006
 	.byte	12
 	.byte	'__codeptr',0,4,1,1
-	.word	1030
+	.word	1008
 	.byte	2
 	.byte	'int',0,4,5,12
 	.byte	'__intptr_t',0,4,1,1
-	.word	1053
+	.word	1031
 	.byte	12
 	.byte	'__uintptr_t',0,4,1,1
-	.word	998
+	.word	976
 	.byte	12
 	.byte	'uint8_t',0,5,242,1,41
 	.word	182
 	.byte	12
-	.byte	'uint16_t',0,5,246,1,41
-	.word	422
-	.byte	12
 	.byte	'uint32_t',0,5,254,1,41
-	.word	998
+	.word	976
 	.byte	12
 	.byte	'SystemState',0,2,11,3
-	.word	500
+	.word	478
 	.byte	12
 	.byte	'DeltaLevel',0,2,17,3
 	.word	282
 	.byte	12
 	.byte	'LogCode',0,2,28,3
-	.word	596
+	.word	574
 	.byte	12
 	.byte	'SpeedBand',0,2,35,3
-	.word	444
+	.word	422
 	.byte	12
 	.byte	'SensorState',0,2,50,3
 	.word	336
 	.byte	12
 	.byte	'VehicleState',0,2,64,3
-	.word	750
+	.word	728
 	.byte	12
-	.byte	'OutputRuntimeState',0,3,15,3
-	.word	922
+	.byte	'OutputRuntimeState',0,3,16,3
+	.word	900
 	.byte	12
 	.byte	'ActuatorTxRuntime',0,1,16,3
 	.word	199
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L86:
+.L87:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,19,1,58,15,59,15,57,15,11,15
 	.byte	0,0,4,13,0,3,8,73,19,11,15,56,9,0,0,5,15,0,73,19,0,0,6,4,1,58,15,59,15,57,15,11,15,0,0,7,40,0,3,8,28,13
 	.byte	0,0,8,38,0,73,19,0,0,9,1,1,11,15,73,19,0,0,10,33,0,47,15,0,0,11,21,0,54,15,0,0,12,22,0,3,8,58,15,59,15
 	.byte	57,15,73,19,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L87:
-	.word	.L207-.L206
-.L206:
+.L88:
+	.word	.L208-.L207
+.L207:
 	.half	3
-	.word	.L209-.L208
-.L208:
+	.word	.L210-.L209
+.L209:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'C:\\\\tools\\\\aurix\\\\tc375_control_ecu\\\\Common',0
 	.byte	'C:\\Infineon\\AURIX-Studio-1.10.32\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0,0
@@ -791,1159 +791,1163 @@ __actuator_build_can_words_function_end:
 	.byte	'..\\App\\Can\\HMI_Output.h',0,0,0,0
 	.byte	'../App/Can/Actuator_Output.c',0,0,0,0
 	.byte	'stdint.h',0,2,0,0,0
-.L209:
-.L207:
+.L210:
+.L208:
 	.sdecl	'.debug_info',debug,cluster('actuator_tx_runtime_init')
 	.sect	'.debug_info'
-.L88:
+.L89:
 	.word	260
 	.half	3
-	.word	.L89
+	.word	.L90
 	.byte	4,1
 	.byte	'../App/Can/Actuator_Output.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\tools\\aurix\\tc375_control_ecu\\TriCore Debug (TASKING)\\',0,12,1
-	.word	.L91,.L90
+	.word	.L92,.L91
 	.byte	2
-	.word	.L84
+	.word	.L85
 	.byte	3
 	.byte	'actuator_tx_runtime_init',0,1,90,6,1,1,1
-	.word	.L75,.L133,.L74
+	.word	.L76,.L134,.L75
 	.byte	4
 	.byte	'state',0,1,90,50
-	.word	.L134,.L135
+	.word	.L135,.L136
 	.byte	5
-	.word	.L75,.L133
+	.word	.L76,.L134
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('actuator_tx_runtime_init')
 	.sect	'.debug_abbrev'
-.L89:
+.L90:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('actuator_tx_runtime_init')
 	.sect	'.debug_line'
-.L90:
-	.word	.L211-.L210
-.L210:
+.L91:
+	.word	.L212-.L211
+.L211:
 	.half	3
-	.word	.L213-.L212
-.L212:
+	.word	.L214-.L213
+.L213:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../App/Can/Actuator_Output.c',0,0,0,0,0
-.L213:
+.L214:
 	.byte	5,5,7,0,5,2
-	.word	.L75
+	.word	.L76
 	.byte	3,219,0,1,5,9,7,9
-	.half	.L214-.L75
+	.half	.L215-.L76
 	.byte	3,2,1,5,25,9
-	.half	.L41-.L214
+	.half	.L42-.L215
 	.byte	3,3,1,5,23,9
-	.half	.L215-.L41
+	.half	.L216-.L42
 	.byte	1,5,25,9
-	.half	.L216-.L215
-	.byte	3,1,1,5,23,9
 	.half	.L217-.L216
-	.byte	1,5,25,9
+	.byte	3,1,1,5,23,9
 	.half	.L218-.L217
-	.byte	3,1,1,5,23,9
-	.half	.L219-.L218
 	.byte	1,5,25,9
-	.half	.L220-.L219
+	.half	.L219-.L218
 	.byte	3,1,1,5,23,9
+	.half	.L220-.L219
+	.byte	1,5,25,9
 	.half	.L221-.L220
+	.byte	3,1,1,5,23,9
+	.half	.L222-.L221
 	.byte	1,5,1,9
-	.half	.L42-.L221
+	.half	.L43-.L222
 	.byte	3,1,1,7,9
-	.half	.L92-.L42
+	.half	.L93-.L43
 	.byte	0,1,1
-.L211:
+.L212:
 	.sdecl	'.debug_ranges',debug,cluster('actuator_tx_runtime_init')
 	.sect	'.debug_ranges'
-.L91:
-	.word	-1,.L75,0,.L92-.L75,0,0
+.L92:
+	.word	-1,.L76,0,.L93-.L76,0,0
 	.sdecl	'.debug_info',debug,cluster('actuator_tx_runtime_update')
 	.sect	'.debug_info'
-.L93:
+.L94:
 	.word	310
 	.half	3
-	.word	.L94
+	.word	.L95
 	.byte	4,1
 	.byte	'../App/Can/Actuator_Output.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\tools\\aurix\\tc375_control_ecu\\TriCore Debug (TASKING)\\',0,12,1
-	.word	.L96,.L95
+	.word	.L97,.L96
 	.byte	2
-	.word	.L84
+	.word	.L85
 	.byte	3
 	.byte	'actuator_tx_runtime_update',0,1,103,6,1,1,1
-	.word	.L77,.L136,.L76
+	.word	.L78,.L137,.L77
 	.byte	4
 	.byte	'state',0,1,103,52
-	.word	.L134,.L137
+	.word	.L135,.L138
 	.byte	4
 	.byte	'vehicleState',0,1,103,79
-	.word	.L138,.L139
+	.word	.L139,.L140
 	.byte	5
-	.word	.L77,.L136
+	.word	.L78,.L137
 	.byte	6
 	.byte	'curButton',0,1,105,13
-	.word	.L140,.L141
+	.word	.L141,.L142
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('actuator_tx_runtime_update')
 	.sect	'.debug_abbrev'
-.L94:
+.L95:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
 	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('actuator_tx_runtime_update')
 	.sect	'.debug_line'
-.L95:
-	.word	.L223-.L222
-.L222:
+.L96:
+	.word	.L224-.L223
+.L223:
 	.half	3
-	.word	.L225-.L224
-.L224:
+	.word	.L226-.L225
+.L225:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../App/Can/Actuator_Output.c',0,0,0,0,0
-.L225:
+.L226:
 	.byte	5,9,7,0,5,2
-	.word	.L77
+	.word	.L78
 	.byte	3,234,0,1,5,39,7,9
-	.half	.L226-.L77
+	.half	.L227-.L78
 	.byte	1,5,9,7,9
-	.half	.L43-.L226
+	.half	.L44-.L227
 	.byte	3,2,1,5,30,9
-	.half	.L44-.L43
+	.half	.L45-.L44
 	.byte	3,3,1,5,17,9
-	.half	.L227-.L44
+	.half	.L228-.L45
 	.byte	1,5,46,7,9
-	.half	.L228-.L227
+	.half	.L229-.L228
 	.byte	1,5,51,9
-	.half	.L183-.L228
+	.half	.L184-.L229
 	.byte	1,5,46,9
-	.half	.L46-.L183
+	.half	.L47-.L184
 	.byte	1,5,23,9
-	.half	.L47-.L46
+	.half	.L48-.L47
 	.byte	3,2,1,5,21,9
-	.half	.L229-.L47
+	.half	.L230-.L48
 	.byte	1,5,15,9
-	.half	.L230-.L229
-	.byte	3,2,1,5,9,9
 	.half	.L231-.L230
-	.byte	1,5,49,7,9
+	.byte	3,2,1,5,9,9
 	.half	.L232-.L231
-	.byte	1,5,27,7,9
+	.byte	1,5,49,7,9
 	.half	.L233-.L232
-	.byte	3,2,1,5,25,9
+	.byte	1,5,27,7,9
 	.half	.L234-.L233
-	.byte	1,5,41,9
+	.byte	3,2,1,5,25,9
 	.half	.L235-.L234
-	.byte	3,1,1,5,50,9
+	.byte	1,5,41,9
 	.half	.L236-.L235
-	.byte	1,5,56,9
+	.byte	3,1,1,5,50,9
 	.half	.L237-.L236
-	.byte	1,5,23,9
+	.byte	1,5,56,9
 	.half	.L238-.L237
+	.byte	1,5,23,9
+	.half	.L239-.L238
 	.byte	1,9
-	.half	.L48-.L238
+	.half	.L49-.L239
 	.byte	3,3,1,5,1,9
-	.half	.L45-.L48
+	.half	.L46-.L49
 	.byte	3,1,1,7,9
-	.half	.L97-.L45
+	.half	.L98-.L46
 	.byte	0,1,1
-.L223:
+.L224:
 	.sdecl	'.debug_ranges',debug,cluster('actuator_tx_runtime_update')
 	.sect	'.debug_ranges'
-.L96:
-	.word	-1,.L77,0,.L97-.L77,0,0
+.L97:
+	.word	-1,.L78,0,.L98-.L78,0,0
 	.sdecl	'.debug_info',debug,cluster('actuator_tx_runtime_on_periodic_send')
 	.sect	'.debug_info'
-.L98:
+.L99:
 	.word	272
 	.half	3
-	.word	.L99
+	.word	.L100
 	.byte	4,1
 	.byte	'../App/Can/Actuator_Output.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\tools\\aurix\\tc375_control_ecu\\TriCore Debug (TASKING)\\',0,12,1
-	.word	.L101,.L100
+	.word	.L102,.L101
 	.byte	2
-	.word	.L84
+	.word	.L85
 	.byte	3
 	.byte	'actuator_tx_runtime_on_periodic_send',0,1,125,6,1,1,1
-	.word	.L79,.L142,.L78
+	.word	.L80,.L143,.L79
 	.byte	4
 	.byte	'state',0,1,125,62
-	.word	.L134,.L143
+	.word	.L135,.L144
 	.byte	5
-	.word	.L79,.L142
+	.word	.L80,.L143
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('actuator_tx_runtime_on_periodic_send')
 	.sect	'.debug_abbrev'
-.L99:
+.L100:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('actuator_tx_runtime_on_periodic_send')
 	.sect	'.debug_line'
-.L100:
-	.word	.L240-.L239
-.L239:
+.L101:
+	.word	.L241-.L240
+.L240:
 	.half	3
-	.word	.L242-.L241
-.L241:
+	.word	.L243-.L242
+.L242:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../App/Can/Actuator_Output.c',0,0,0,0,0
-.L242:
+.L243:
 	.byte	5,5,7,0,5,2
-	.word	.L79
+	.word	.L80
 	.byte	3,254,0,1,5,9,7,9
-	.half	.L243-.L79
+	.half	.L244-.L80
 	.byte	3,2,1,5,39,9
-	.half	.L50-.L243
+	.half	.L51-.L244
 	.byte	3,3,1,5,50,9
-	.half	.L244-.L50
+	.half	.L245-.L51
 	.byte	1,5,56,9
-	.half	.L245-.L244
-	.byte	1,5,21,9
 	.half	.L246-.L245
-	.byte	1,5,23,9
+	.byte	1,5,21,9
 	.half	.L247-.L246
-	.byte	3,1,1,5,21,9
+	.byte	1,5,23,9
 	.half	.L248-.L247
+	.byte	3,1,1,5,21,9
+	.half	.L249-.L248
 	.byte	1,5,1,9
-	.half	.L51-.L248
+	.half	.L52-.L249
 	.byte	3,1,1,7,9
-	.half	.L102-.L51
+	.half	.L103-.L52
 	.byte	0,1,1
-.L240:
+.L241:
 	.sdecl	'.debug_ranges',debug,cluster('actuator_tx_runtime_on_periodic_send')
 	.sect	'.debug_ranges'
-.L101:
-	.word	-1,.L79,0,.L102-.L79,0,0
+.L102:
+	.word	-1,.L80,0,.L103-.L80,0,0
 	.sdecl	'.debug_info',debug,cluster('actuator_build_can_data')
 	.sect	'.debug_info'
-.L103:
+.L104:
 	.word	474
 	.half	3
-	.word	.L104
+	.word	.L105
 	.byte	4,1
 	.byte	'../App/Can/Actuator_Output.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\tools\\aurix\\tc375_control_ecu\\TriCore Debug (TASKING)\\',0,12,1
-	.word	.L106,.L105
+	.word	.L107,.L106
 	.byte	2
-	.word	.L84
+	.word	.L85
 	.byte	3
 	.byte	'actuator_build_can_data',0,1,136,1,6,1,1,1
-	.word	.L81,.L144,.L80
+	.word	.L82,.L145,.L81
 	.byte	4
 	.byte	'vehicleState',0,1,136,1,50
-	.word	.L138,.L145
+	.word	.L139,.L146
 	.byte	4
 	.byte	'runtimeState',0,1,137,1,56
-	.word	.L146,.L147
+	.word	.L147,.L148
 	.byte	4
 	.byte	'txRuntime',0,1,138,1,55
-	.word	.L148,.L149
+	.word	.L149,.L150
 	.byte	4
 	.byte	'data',0,1,139,1,38
-	.word	.L150,.L151
+	.word	.L151,.L152
 	.byte	5
-	.word	.L81,.L144
+	.word	.L82,.L145
 	.byte	6
 	.byte	'safeState',0,1,141,1,13
-	.word	.L140,.L152
+	.word	.L141,.L153
 	.byte	6
 	.byte	'speedState',0,1,142,1,13
-	.word	.L140,.L153
+	.word	.L141,.L154
 	.byte	6
 	.byte	'brakeActive',0,1,143,1,13
-	.word	.L140,.L154
+	.word	.L141,.L155
 	.byte	6
 	.byte	'evState',0,1,144,1,13
-	.word	.L140,.L155
+	.word	.L141,.L156
 	.byte	6
 	.byte	'ackButton',0,1,145,1,13
-	.word	.L140,.L156
+	.word	.L141,.L157
 	.byte	6
 	.byte	'msgValid',0,1,146,1,13
-	.word	.L140,.L157
+	.word	.L141,.L158
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('actuator_build_can_data')
 	.sect	'.debug_abbrev'
-.L104:
+.L105:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
 	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('actuator_build_can_data')
 	.sect	'.debug_line'
-.L105:
-	.word	.L250-.L249
-.L249:
+.L106:
+	.word	.L251-.L250
+.L250:
 	.half	3
-	.word	.L252-.L251
-.L251:
+	.word	.L253-.L252
+.L252:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../App/Can/Actuator_Output.c',0,0,0,0,0
-.L252:
+.L253:
 	.byte	5,6,7,0,5,2
-	.word	.L81
+	.word	.L82
 	.byte	3,135,1,1,5,9,9
-	.half	.L188-.L81
+	.half	.L189-.L82
 	.byte	3,12,1,5,46,7,9
-	.half	.L253-.L188
+	.half	.L254-.L189
 	.byte	1,5,66,7,9
-	.half	.L254-.L253
-	.byte	1,5,81,7,9
 	.half	.L255-.L254
+	.byte	1,5,81,7,9
+	.half	.L256-.L255
 	.byte	1,5,9,7,9
-	.half	.L52-.L255
+	.half	.L53-.L256
 	.byte	3,2,1,5,49,9
-	.half	.L55-.L52
+	.half	.L56-.L53
 	.byte	3,3,1,5,76,9
-	.half	.L256-.L55
+	.half	.L257-.L56
 	.byte	1,5,17,9
-	.half	.L184-.L256
+	.half	.L185-.L257
 	.byte	1,5,64,9
-	.half	.L190-.L184
+	.half	.L191-.L185
 	.byte	3,1,1,5,17,9
-	.half	.L189-.L190
+	.half	.L190-.L191
 	.byte	1,5,38,9
-	.half	.L193-.L189
+	.half	.L194-.L190
 	.byte	3,1,1,5,17,9
-	.half	.L192-.L193
+	.half	.L193-.L194
 	.byte	1,5,34,9
-	.half	.L196-.L192
+	.half	.L197-.L193
 	.byte	3,1,1,5,29,9
-	.half	.L195-.L196
+	.half	.L196-.L197
 	.byte	3,1,1,5,19,9
-	.half	.L257-.L195
+	.half	.L258-.L196
 	.byte	1,5,47,7,9
-	.half	.L258-.L257
+	.half	.L259-.L258
 	.byte	1,5,52,9
-	.half	.L199-.L258
+	.half	.L200-.L259
 	.byte	1,5,47,9
-	.half	.L57-.L199
+	.half	.L58-.L200
 	.byte	1,5,32,9
-	.half	.L58-.L57
+	.half	.L59-.L58
 	.byte	3,1,1,5,19,9
-	.half	.L259-.L58
+	.half	.L260-.L59
 	.byte	1,5,55,7,9
-	.half	.L260-.L259
+	.half	.L261-.L260
 	.byte	1,5,60,9
-	.half	.L201-.L260
+	.half	.L202-.L261
 	.byte	1,5,55,9
-	.half	.L59-.L201
+	.half	.L60-.L202
 	.byte	1,5,36,9
-	.half	.L60-.L59
+	.half	.L61-.L60
 	.byte	3,2,1,5,38,9
-	.half	.L261-.L60
+	.half	.L262-.L61
 	.byte	3,1,1,5,47,9
-	.half	.L262-.L261
-	.byte	1,5,45,9
 	.half	.L263-.L262
-	.byte	3,127,1,5,13,9
+	.byte	1,5,45,9
 	.half	.L264-.L263
-	.byte	1,5,38,9
+	.byte	3,127,1,5,13,9
 	.half	.L265-.L264
-	.byte	3,3,1,5,35,9
+	.byte	1,5,38,9
 	.half	.L266-.L265
-	.byte	3,1,1,5,44,9
+	.byte	3,3,1,5,35,9
 	.half	.L267-.L266
+	.byte	3,1,1,5,44,9
+	.half	.L268-.L267
 	.byte	1,5,47,9
-	.half	.L198-.L267
+	.half	.L199-.L268
 	.byte	3,127,1,5,37,9
-	.half	.L268-.L198
+	.half	.L269-.L199
 	.byte	3,2,1,5,46,9
-	.half	.L269-.L268
+	.half	.L270-.L269
 	.byte	1,5,50,9
-	.half	.L200-.L269
+	.half	.L201-.L270
 	.byte	3,127,1,5,36,9
-	.half	.L270-.L200
+	.half	.L271-.L201
 	.byte	3,2,1,5,45,9
-	.half	.L271-.L270
-	.byte	1,5,52,9
 	.half	.L272-.L271
-	.byte	3,127,1,5,13,9
+	.byte	1,5,52,9
 	.half	.L273-.L272
-	.byte	3,126,1,5,35,9
-	.half	.L274-.L273
-	.byte	3,5,1,5,46,9
-	.half	.L275-.L274
-	.byte	1,5,36,9
-	.half	.L276-.L275
-	.byte	3,1,1,5,45,9
-	.half	.L277-.L276
-	.byte	1,5,54,9
-	.half	.L278-.L277
-	.byte	1,5,55,9
-	.half	.L279-.L278
 	.byte	3,127,1,5,13,9
+	.half	.L274-.L273
+	.byte	3,126,1,5,35,9
+	.half	.L275-.L274
+	.byte	3,5,1,5,46,9
+	.half	.L276-.L275
+	.byte	1,5,36,9
+	.half	.L277-.L276
+	.byte	3,1,1,5,45,9
+	.half	.L278-.L277
+	.byte	1,5,54,9
+	.half	.L279-.L278
+	.byte	1,5,55,9
 	.half	.L280-.L279
-	.byte	1,5,15,9
+	.byte	3,127,1,5,13,9
 	.half	.L281-.L280
-	.byte	3,3,1,5,13,9
+	.byte	1,5,15,9
 	.half	.L282-.L281
-	.byte	1,5,15,9
+	.byte	3,3,1,5,13,9
 	.half	.L283-.L282
-	.byte	3,1,1,5,13,9
+	.byte	1,5,15,9
 	.half	.L284-.L283
-	.byte	1,5,15,9
+	.byte	3,1,1,5,13,9
 	.half	.L285-.L284
-	.byte	3,1,1,5,13,9
+	.byte	1,5,15,9
 	.half	.L286-.L285
-	.byte	1,5,15,9
+	.byte	3,1,1,5,13,9
 	.half	.L287-.L286
-	.byte	3,1,1,5,13,9
-	.half	.L288-.L287
 	.byte	1,5,15,9
-	.half	.L289-.L288
+	.half	.L288-.L287
 	.byte	3,1,1,5,13,9
+	.half	.L289-.L288
+	.byte	1,5,15,9
 	.half	.L290-.L289
+	.byte	3,1,1,5,13,9
+	.half	.L291-.L290
 	.byte	1,5,1,9
-	.half	.L56-.L290
+	.half	.L57-.L291
 	.byte	3,1,1,7,9
-	.half	.L107-.L56
+	.half	.L108-.L57
 	.byte	0,1,1
-.L250:
+.L251:
 	.sdecl	'.debug_ranges',debug,cluster('actuator_build_can_data')
 	.sect	'.debug_ranges'
-.L106:
-	.word	-1,.L81,0,.L107-.L81,0,0
+.L107:
+	.word	-1,.L82,0,.L108-.L82,0,0
 	.sdecl	'.debug_info',debug,cluster('actuator_build_can_words')
 	.sect	'.debug_info'
-.L108:
+.L109:
 	.word	358
 	.half	3
-	.word	.L109
+	.word	.L110
 	.byte	4,1
 	.byte	'../App/Can/Actuator_Output.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\tools\\aurix\\tc375_control_ecu\\TriCore Debug (TASKING)\\',0,12,1
-	.word	.L111,.L110
+	.word	.L112,.L111
 	.byte	2
-	.word	.L84
+	.word	.L85
 	.byte	3
 	.byte	'actuator_build_can_words',0,1,178,1,6,1,1,1
-	.word	.L83,.L158,.L82
+	.word	.L84,.L159,.L83
 	.byte	4
 	.byte	'vehicleState',0,1,178,1,51
-	.word	.L138,.L159
+	.word	.L139,.L160
 	.byte	4
 	.byte	'runtimeState',0,1,179,1,57
-	.word	.L146,.L160
+	.word	.L147,.L161
 	.byte	4
 	.byte	'txRuntime',0,1,180,1,56
-	.word	.L148,.L161
+	.word	.L149,.L162
 	.byte	4
 	.byte	'txWords',0,1,181,1,40
-	.word	.L162,.L163
+	.word	.L163,.L164
 	.byte	5
-	.word	.L83,.L158
+	.word	.L84,.L159
 	.byte	6
 	.byte	'data',0,1,183,1,13
-	.word	.L164,.L165
+	.word	.L165,.L166
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('actuator_build_can_words')
 	.sect	'.debug_abbrev'
-.L109:
+.L110:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
 	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('actuator_build_can_words')
 	.sect	'.debug_line'
-.L110:
-	.word	.L292-.L291
-.L291:
+.L111:
+	.word	.L293-.L292
+.L292:
 	.half	3
-	.word	.L294-.L293
-.L293:
+	.word	.L295-.L294
+.L294:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../App/Can/Actuator_Output.c',0,0,0,0,0
-.L294:
+.L295:
 	.byte	5,6,7,0,5,2
-	.word	.L83
+	.word	.L84
 	.byte	3,177,1,1,5,9,9
-	.half	.L205-.L83
+	.half	.L206-.L84
 	.byte	3,7,1,5,46,7,9
-	.half	.L295-.L205
+	.half	.L296-.L206
 	.byte	1,5,66,7,9
-	.half	.L296-.L295
-	.byte	1,5,84,7,9
 	.half	.L297-.L296
+	.byte	1,5,84,7,9
+	.half	.L298-.L297
 	.byte	1,5,9,7,9
-	.half	.L61-.L297
+	.half	.L62-.L298
 	.byte	3,2,1,5,68,9
-	.half	.L64-.L61
+	.half	.L65-.L62
 	.byte	3,3,1,5,24,9
-	.half	.L203-.L64
+	.half	.L204-.L65
 	.byte	3,3,1,9
-	.half	.L298-.L203
+	.half	.L299-.L204
 	.byte	3,1,1,5,28,9
-	.half	.L299-.L298
-	.byte	1,5,29,9
 	.half	.L300-.L299
-	.byte	3,127,1,5,24,9
-	.half	.L301-.L300
-	.byte	3,2,1,5,28,9
-	.half	.L302-.L301
-	.byte	1,5,34,9
-	.half	.L303-.L302
-	.byte	3,127,1,5,24,9
-	.half	.L304-.L303
-	.byte	3,2,1,5,28,9
-	.half	.L305-.L304
-	.byte	1,5,35,9
-	.half	.L306-.L305
-	.byte	3,127,1,5,16,9
-	.half	.L307-.L306
-	.byte	3,125,1,5,24,9
-	.half	.L308-.L307
-	.byte	3,7,1,9
-	.half	.L309-.L308
-	.byte	3,1,1,5,28,9
-	.half	.L310-.L309
 	.byte	1,5,29,9
-	.half	.L311-.L310
+	.half	.L301-.L300
 	.byte	3,127,1,5,24,9
-	.half	.L312-.L311
+	.half	.L302-.L301
 	.byte	3,2,1,5,28,9
-	.half	.L313-.L312
+	.half	.L303-.L302
 	.byte	1,5,34,9
-	.half	.L314-.L313
+	.half	.L304-.L303
 	.byte	3,127,1,5,24,9
-	.half	.L315-.L314
+	.half	.L305-.L304
 	.byte	3,2,1,5,28,9
-	.half	.L316-.L315
+	.half	.L306-.L305
 	.byte	1,5,35,9
-	.half	.L317-.L316
+	.half	.L307-.L306
 	.byte	3,127,1,5,16,9
+	.half	.L308-.L307
+	.byte	3,125,1,5,24,9
+	.half	.L309-.L308
+	.byte	3,7,1,9
+	.half	.L310-.L309
+	.byte	3,1,1,5,28,9
+	.half	.L311-.L310
+	.byte	1,5,29,9
+	.half	.L312-.L311
+	.byte	3,127,1,5,24,9
+	.half	.L313-.L312
+	.byte	3,2,1,5,28,9
+	.half	.L314-.L313
+	.byte	1,5,34,9
+	.half	.L315-.L314
+	.byte	3,127,1,5,24,9
+	.half	.L316-.L315
+	.byte	3,2,1,5,28,9
+	.half	.L317-.L316
+	.byte	1,5,35,9
 	.half	.L318-.L317
+	.byte	3,127,1,5,16,9
+	.half	.L319-.L318
 	.byte	3,125,1,5,1,9
-	.half	.L65-.L318
+	.half	.L66-.L319
 	.byte	3,5,1,7,9
-	.half	.L112-.L65
+	.half	.L113-.L66
 	.byte	0,1,1
-.L292:
+.L293:
 	.sdecl	'.debug_ranges',debug,cluster('actuator_build_can_words')
 	.sect	'.debug_ranges'
-.L111:
-	.word	-1,.L83,0,.L112-.L83,0,0
+.L112:
+	.word	-1,.L84,0,.L113-.L84,0,0
 	.sdecl	'.debug_info',debug,cluster('encode_safe_state')
 	.sect	'.debug_info'
-.L113:
+.L114:
 	.word	275
 	.half	3
-	.word	.L114
+	.word	.L115
 	.byte	4,1
 	.byte	'../App/Can/Actuator_Output.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\tools\\aurix\\tc375_control_ecu\\TriCore Debug (TASKING)\\',0,12,1
-	.word	.L116,.L115
+	.word	.L117,.L116
 	.byte	2
-	.word	.L84
+	.word	.L85
 	.byte	3
 	.byte	'encode_safe_state',0,1,5,16
-	.word	.L140
+	.word	.L141
 	.byte	1,1
-	.word	.L67,.L166,.L66
+	.word	.L68,.L167,.L67
 	.byte	4
 	.byte	's',0,1,5,46
-	.word	.L167,.L168
+	.word	.L168,.L169
 	.byte	4
 	.byte	'isTimedOut',0,1,5,54
-	.word	.L169,.L170
+	.word	.L170,.L171
 	.byte	5
-	.word	.L67,.L166
+	.word	.L68,.L167
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('encode_safe_state')
 	.sect	'.debug_abbrev'
-.L114:
+.L115:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('encode_safe_state')
 	.sect	'.debug_line'
-.L115:
-	.word	.L320-.L319
-.L319:
+.L116:
+	.word	.L321-.L320
+.L320:
 	.half	3
-	.word	.L322-.L321
-.L321:
+	.word	.L323-.L322
+.L322:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../App/Can/Actuator_Output.c',0,0,0,0,0
-.L322:
+.L323:
 	.byte	5,5,7,0,5,2
-	.word	.L67
+	.word	.L68
 	.byte	3,6,1,5,16,7,9
-	.half	.L323-.L67
+	.half	.L324-.L68
 	.byte	3,2,1,5,9,9
-	.half	.L324-.L323
+	.half	.L325-.L324
 	.byte	1,5,14,9
-	.half	.L2-.L324
+	.half	.L2-.L325
 	.byte	3,5,1,9
-	.half	.L325-.L2
-	.byte	3,1,1,9
-	.half	.L326-.L325
+	.half	.L326-.L2
 	.byte	3,1,1,9
 	.half	.L327-.L326
+	.byte	3,1,1,9
+	.half	.L328-.L327
 	.byte	3,1,1,5,41,9
-	.half	.L4-.L327
+	.half	.L4-.L328
 	.byte	3,125,1,5,34,9
-	.half	.L328-.L4
+	.half	.L329-.L4
 	.byte	1,5,41,9
-	.half	.L5-.L328
+	.half	.L5-.L329
 	.byte	3,1,1,5,34,9
-	.half	.L329-.L5
+	.half	.L330-.L5
 	.byte	1,5,41,9
-	.half	.L6-.L329
+	.half	.L6-.L330
 	.byte	3,1,1,5,34,9
-	.half	.L330-.L6
+	.half	.L331-.L6
 	.byte	1,5,41,9
-	.half	.L8-.L330
+	.half	.L8-.L331
 	.byte	3,2,1,5,34,9
-	.half	.L331-.L8
+	.half	.L332-.L8
 	.byte	1,5,1,9
-	.half	.L3-.L331
+	.half	.L3-.L332
 	.byte	3,2,1,7,9
-	.half	.L117-.L3
+	.half	.L118-.L3
 	.byte	0,1,1
-.L320:
+.L321:
 	.sdecl	'.debug_ranges',debug,cluster('encode_safe_state')
 	.sect	'.debug_ranges'
-.L116:
-	.word	-1,.L67,0,.L117-.L67,0,0
+.L117:
+	.word	-1,.L68,0,.L118-.L68,0,0
 	.sdecl	'.debug_info',debug,cluster('encode_speed_state')
 	.sect	'.debug_info'
-.L118:
+.L119:
 	.word	287
 	.half	3
-	.word	.L119
+	.word	.L120
 	.byte	4,1
 	.byte	'../App/Can/Actuator_Output.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\tools\\aurix\\tc375_control_ecu\\TriCore Debug (TASKING)\\',0,12,1
-	.word	.L121,.L120
+	.word	.L122,.L121
 	.byte	2
-	.word	.L84
+	.word	.L85
 	.byte	3
 	.byte	'encode_speed_state',0,1,22,16
-	.word	.L140
+	.word	.L141
 	.byte	1,1
-	.word	.L69,.L171,.L68
+	.word	.L70,.L172,.L69
 	.byte	4
 	.byte	'vehicleState',0,1,22,55
-	.word	.L138,.L172
+	.word	.L139,.L173
 	.byte	4
 	.byte	'isTimedOut',0,1,22,74
-	.word	.L169,.L173
+	.word	.L170,.L174
 	.byte	5
-	.word	.L69,.L171
+	.word	.L70,.L172
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('encode_speed_state')
 	.sect	'.debug_abbrev'
-.L119:
+.L120:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('encode_speed_state')
 	.sect	'.debug_line'
-.L120:
-	.word	.L333-.L332
-.L332:
+.L121:
+	.word	.L334-.L333
+.L333:
 	.half	3
-	.word	.L335-.L334
-.L334:
+	.word	.L336-.L335
+.L335:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../App/Can/Actuator_Output.c',0,0,0,0,0
-.L335:
+.L336:
 	.byte	5,9,7,0,5,2
-	.word	.L69
+	.word	.L70
 	.byte	3,23,1,5,44,7,9
-	.half	.L336-.L69
+	.half	.L337-.L70
 	.byte	1,5,16,7,9
-	.half	.L13-.L336
+	.half	.L13-.L337
 	.byte	3,2,1,5,9,9
-	.half	.L337-.L13
+	.half	.L338-.L13
 	.byte	1,5,25,9
-	.half	.L14-.L337
+	.half	.L14-.L338
 	.byte	3,3,1,5,14,9
-	.half	.L338-.L14
+	.half	.L339-.L14
 	.byte	3,2,1,9
-	.half	.L339-.L338
-	.byte	3,1,1,9
 	.half	.L340-.L339
 	.byte	3,1,1,9
 	.half	.L341-.L340
+	.byte	3,1,1,9
+	.half	.L342-.L341
 	.byte	3,1,1,5,33,9
-	.half	.L16-.L341
+	.half	.L16-.L342
 	.byte	3,125,1,5,26,9
-	.half	.L342-.L16
+	.half	.L343-.L16
 	.byte	1,5,33,9
-	.half	.L17-.L342
+	.half	.L17-.L343
 	.byte	3,1,1,5,26,9
-	.half	.L343-.L17
+	.half	.L344-.L17
 	.byte	1,5,33,9
-	.half	.L18-.L343
+	.half	.L18-.L344
 	.byte	3,1,1,5,26,9
-	.half	.L344-.L18
+	.half	.L345-.L18
 	.byte	1,5,33,9
-	.half	.L20-.L344
-	.byte	3,2,1,5,26,9
-	.half	.L345-.L20
+	.half	.L19-.L345
+	.byte	3,1,1,5,26,9
+	.half	.L346-.L19
+	.byte	1,5,33,9
+	.half	.L20-.L346
+	.byte	3,1,1,5,26,9
+	.half	.L347-.L20
 	.byte	1,5,1,9
-	.half	.L15-.L345
+	.half	.L15-.L347
 	.byte	3,2,1,7,9
-	.half	.L122-.L15
+	.half	.L123-.L15
 	.byte	0,1,1
-.L333:
+.L334:
 	.sdecl	'.debug_ranges',debug,cluster('encode_speed_state')
 	.sect	'.debug_ranges'
-.L121:
-	.word	-1,.L69,0,.L122-.L69,0,0
+.L122:
+	.word	-1,.L70,0,.L123-.L70,0,0
 	.sdecl	'.debug_info',debug,cluster('build_brake_active')
 	.sect	'.debug_info'
-.L123:
+.L124:
 	.word	264
 	.half	3
-	.word	.L124
+	.word	.L125
 	.byte	4,1
 	.byte	'../App/Can/Actuator_Output.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\tools\\aurix\\tc375_control_ecu\\TriCore Debug (TASKING)\\',0,12,1
-	.word	.L126,.L125
+	.word	.L127,.L126
 	.byte	2
-	.word	.L84
+	.word	.L85
 	.byte	3
 	.byte	'build_brake_active',0,1,39,16
-	.word	.L140
+	.word	.L141
 	.byte	1,1
-	.word	.L71,.L174,.L70
+	.word	.L72,.L175,.L71
 	.byte	4
 	.byte	'vehicleState',0,1,39,55
-	.word	.L138,.L175
+	.word	.L139,.L176
 	.byte	5
-	.word	.L71,.L174
+	.word	.L72,.L175
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('build_brake_active')
 	.sect	'.debug_abbrev'
-.L124:
+.L125:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('build_brake_active')
 	.sect	'.debug_line'
-.L125:
-	.word	.L347-.L346
-.L346:
-	.half	3
+.L126:
 	.word	.L349-.L348
 .L348:
+	.half	3
+	.word	.L351-.L350
+.L350:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../App/Can/Actuator_Output.c',0,0,0,0,0
-.L349:
+.L351:
 	.byte	5,5,7,0,5,2
-	.word	.L71
+	.word	.L72
 	.byte	3,40,1,5,16,7,9
-	.half	.L350-.L71
+	.half	.L352-.L72
 	.byte	3,2,1,5,9,9
-	.half	.L351-.L350
-	.byte	1,5,32,9
-	.half	.L25-.L351
-	.byte	3,3,1,5,45,9
-	.half	.L352-.L25
-	.byte	1,5,12,9
 	.half	.L353-.L352
-	.byte	1,5,69,7,9
-	.half	.L354-.L353
-	.byte	1,5,74,9
+	.byte	1,5,32,9
+	.half	.L26-.L353
+	.byte	3,3,1,5,45,9
+	.half	.L354-.L26
+	.byte	1,5,12,9
 	.half	.L355-.L354
+	.byte	1,5,69,7,9
+	.half	.L356-.L355
+	.byte	1,5,74,9
+	.half	.L357-.L356
 	.byte	1,5,69,9
-	.half	.L27-.L355
+	.half	.L28-.L357
 	.byte	1,5,5,9
-	.half	.L28-.L27
+	.half	.L29-.L28
 	.byte	1,5,1,9
-	.half	.L26-.L28
+	.half	.L27-.L29
 	.byte	3,1,1,7,9
-	.half	.L127-.L26
+	.half	.L128-.L27
 	.byte	0,1,1
-.L347:
+.L349:
 	.sdecl	'.debug_ranges',debug,cluster('build_brake_active')
 	.sect	'.debug_ranges'
-.L126:
-	.word	-1,.L71,0,.L127-.L71,0,0
+.L127:
+	.word	-1,.L72,0,.L128-.L72,0,0
 	.sdecl	'.debug_info',debug,cluster('build_ev_state')
 	.sect	'.debug_info'
-.L128:
+.L129:
 	.word	305
 	.half	3
-	.word	.L129
+	.word	.L130
 	.byte	4,1
 	.byte	'../App/Can/Actuator_Output.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\tools\\aurix\\tc375_control_ecu\\TriCore Debug (TASKING)\\',0,12,1
-	.word	.L131,.L130
+	.word	.L132,.L131
 	.byte	2
-	.word	.L84
+	.word	.L85
 	.byte	3
 	.byte	'build_ev_state',0,1,49,16
-	.word	.L140
+	.word	.L141
 	.byte	1,1
-	.word	.L73,.L176,.L72
+	.word	.L74,.L177,.L73
 	.byte	4
 	.byte	'vehicleState',0,1,49,51
-	.word	.L138,.L177
+	.word	.L139,.L178
 	.byte	5
-	.word	.L73,.L176
+	.word	.L74,.L177
 	.byte	6
 	.byte	'evState',0,1,51,13
-	.word	.L140,.L178
+	.word	.L141,.L179
 	.byte	6
 	.byte	'steerOffset',0,1,52,13
-	.word	.L140,.L179
+	.word	.L141,.L180
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('build_ev_state')
 	.sect	'.debug_abbrev'
-.L129:
+.L130:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
 	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('build_ev_state')
 	.sect	'.debug_line'
-.L130:
-	.word	.L357-.L356
-.L356:
-	.half	3
+.L131:
 	.word	.L359-.L358
 .L358:
+	.half	3
+	.word	.L361-.L360
+.L360:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../App/Can/Actuator_Output.c',0,0,0,0,0
-.L359:
+.L361:
 	.byte	5,21,7,0,5,2
-	.word	.L73
+	.word	.L74
 	.byte	3,50,1,5,5,9
-	.half	.L180-.L73
+	.half	.L181-.L74
 	.byte	3,3,1,5,16,7,9
-	.half	.L360-.L180
+	.half	.L362-.L181
 	.byte	3,2,1,5,9,9
-	.half	.L181-.L360
+	.half	.L182-.L362
 	.byte	1,5,39,9
-	.half	.L30-.L181
+	.half	.L31-.L182
 	.byte	3,3,1,5,51,9
-	.half	.L361-.L30
+	.half	.L363-.L31
 	.byte	1,5,19,9
-	.half	.L362-.L361
-	.byte	1,5,39,7,9
-	.half	.L363-.L362
-	.byte	3,1,1,5,49,9
 	.half	.L364-.L363
+	.byte	1,5,39,7,9
+	.half	.L365-.L364
+	.byte	3,1,1,5,49,9
+	.half	.L366-.L365
 	.byte	1,5,17,9
-	.half	.L182-.L364
+	.half	.L183-.L366
 	.byte	3,1,1,5,46,9
-	.half	.L32-.L182
+	.half	.L33-.L183
 	.byte	1,5,25,9
-	.half	.L365-.L32
+	.half	.L367-.L33
 	.byte	1,5,28,9
-	.half	.L33-.L365
-	.byte	3,3,1,5,5,9
-	.half	.L366-.L33
-	.byte	1,5,17,7,9
-	.half	.L367-.L366
-	.byte	3,2,1,5,28,9
 	.half	.L34-.L367
-	.byte	3,4,1,5,5,9
+	.byte	3,3,1,5,5,9
 	.half	.L368-.L34
 	.byte	1,5,17,7,9
 	.half	.L369-.L368
-	.byte	3,2,1,5,29,9
+	.byte	3,2,1,5,28,9
 	.half	.L35-.L369
-	.byte	3,4,1,5,9,9
+	.byte	3,4,1,5,5,9
 	.half	.L370-.L35
-	.byte	1,5,78,7,9
+	.byte	1,5,17,7,9
 	.half	.L371-.L370
-	.byte	1,5,75,9
-	.half	.L372-.L371
-	.byte	1,5,17,7,9
-	.half	.L36-.L372
 	.byte	3,2,1,5,29,9
-	.half	.L37-.L36
+	.half	.L36-.L371
 	.byte	3,4,1,5,9,9
-	.half	.L373-.L37
-	.byte	1,5,79,7,9
+	.half	.L372-.L36
+	.byte	1,5,78,7,9
+	.half	.L373-.L372
+	.byte	1,5,75,9
 	.half	.L374-.L373
-	.byte	1,5,76,9
-	.half	.L375-.L374
 	.byte	1,5,17,7,9
-	.half	.L38-.L375
+	.half	.L37-.L374
+	.byte	3,2,1,5,29,9
+	.half	.L38-.L37
+	.byte	3,4,1,5,9,9
+	.half	.L375-.L38
+	.byte	1,5,79,7,9
+	.half	.L376-.L375
+	.byte	1,5,76,9
+	.half	.L377-.L376
+	.byte	1,5,17,7,9
+	.half	.L39-.L377
 	.byte	3,2,1,5,5,9
-	.half	.L39-.L38
+	.half	.L40-.L39
 	.byte	3,3,1,5,1,9
-	.half	.L31-.L39
+	.half	.L32-.L40
 	.byte	3,1,1,7,9
-	.half	.L132-.L31
+	.half	.L133-.L32
 	.byte	0,1,1
-.L357:
+.L359:
 	.sdecl	'.debug_ranges',debug,cluster('build_ev_state')
 	.sect	'.debug_ranges'
-.L131:
-	.word	-1,.L73,0,.L132-.L73,0,0
+.L132:
+	.word	-1,.L74,0,.L133-.L74,0,0
 	.sdecl	'.debug_loc',debug,cluster('actuator_build_can_data')
 	.sect	'.debug_loc'
-.L156:
-	.word	-1,.L81,.L199-.L81,.L57-.L81
+.L157:
+	.word	-1,.L82,.L200-.L82,.L58-.L82
 	.half	5
 	.byte	144,32,157,32,0
-	.word	.L58-.L81,.L200-.L81
+	.word	.L59-.L82,.L201-.L82
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
-.L80:
-	.word	-1,.L81,0,.L144-.L81
+.L81:
+	.word	-1,.L82,0,.L145-.L82
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L154:
-	.word	-1,.L81,.L192-.L81,.L195-.L81
+.L155:
+	.word	-1,.L82,.L193-.L82,.L196-.L82
 	.half	1
 	.byte	82
-	.word	.L196-.L81,.L56-.L81
+	.word	.L197-.L82,.L57-.L82
 	.half	1
 	.byte	89
 	.word	0,0
-.L151:
-	.word	-1,.L81,0,.L184-.L81
+.L152:
+	.word	-1,.L82,0,.L185-.L82
 	.half	1
 	.byte	103
-	.word	.L188-.L81,.L144-.L81
+	.word	.L189-.L82,.L145-.L82
 	.half	1
 	.byte	111
 	.word	0,0
-.L155:
-	.word	-1,.L81,.L195-.L81,.L198-.L81
+.L156:
+	.word	-1,.L82,.L196-.L82,.L199-.L82
 	.half	1
 	.byte	82
 	.word	0,0
-.L157:
-	.word	-1,.L81,.L201-.L81,.L59-.L81
+.L158:
+	.word	-1,.L82,.L202-.L82,.L60-.L82
 	.half	1
 	.byte	84
-	.word	.L60-.L81,.L56-.L81
+	.word	.L61-.L82,.L57-.L82
 	.half	1
 	.byte	84
 	.word	0,0
-.L147:
-	.word	-1,.L81,0,.L184-.L81
+.L148:
+	.word	-1,.L82,0,.L185-.L82
 	.half	1
 	.byte	101
-	.word	.L186-.L81,.L144-.L81
+	.word	.L187-.L82,.L145-.L82
 	.half	1
 	.byte	109
 	.word	0,0
-.L152:
-	.word	-1,.L81,.L184-.L81,.L189-.L81
+.L153:
+	.word	-1,.L82,.L185-.L82,.L190-.L82
 	.half	1
 	.byte	82
-	.word	.L190-.L81,.L56-.L81
+	.word	.L191-.L82,.L57-.L82
 	.half	1
 	.byte	88
 	.word	0,0
-.L153:
-	.word	-1,.L81,.L189-.L81,.L192-.L81
+.L154:
+	.word	-1,.L82,.L190-.L82,.L193-.L82
 	.half	1
 	.byte	82
-	.word	.L193-.L81,.L56-.L81
+	.word	.L194-.L82,.L57-.L82
 	.half	1
 	.byte	90
 	.word	0,0
-.L149:
-	.word	-1,.L81,0,.L184-.L81
+.L150:
+	.word	-1,.L82,0,.L185-.L82
 	.half	1
 	.byte	102
-	.word	.L187-.L81,.L144-.L81
+	.word	.L188-.L82,.L145-.L82
 	.half	1
 	.byte	110
 	.word	0,0
-.L145:
-	.word	-1,.L81,0,.L184-.L81
+.L146:
+	.word	-1,.L82,0,.L185-.L82
 	.half	1
 	.byte	100
-	.word	.L185-.L81,.L144-.L81
+	.word	.L186-.L82,.L145-.L82
 	.half	1
 	.byte	108
-	.word	.L191-.L81,.L189-.L81
+	.word	.L192-.L82,.L190-.L82
 	.half	1
 	.byte	100
-	.word	.L194-.L81,.L192-.L81
+	.word	.L195-.L82,.L193-.L82
 	.half	1
 	.byte	100
-	.word	.L197-.L81,.L195-.L81
+	.word	.L198-.L82,.L196-.L82
 	.half	1
 	.byte	100
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('actuator_build_can_words')
 	.sect	'.debug_loc'
-.L82:
-	.word	-1,.L83,0,.L202-.L83
+.L83:
+	.word	-1,.L84,0,.L203-.L84
 	.half	2
 	.byte	138,0
-	.word	.L202-.L83,.L158-.L83
+	.word	.L203-.L84,.L159-.L84
 	.half	2
 	.byte	138,8
-	.word	.L158-.L83,.L158-.L83
+	.word	.L159-.L84,.L159-.L84
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L165:
-	.word	-1,.L83,0,.L158-.L83
+.L166:
+	.word	-1,.L84,0,.L159-.L84
 	.half	2
 	.byte	145,120
 	.word	0,0
-.L160:
-	.word	-1,.L83,0,.L203-.L83
+.L161:
+	.word	-1,.L84,0,.L204-.L84
 	.half	1
 	.byte	101
 	.word	0,0
-.L161:
-	.word	-1,.L83,0,.L203-.L83
+.L162:
+	.word	-1,.L84,0,.L204-.L84
 	.half	1
 	.byte	102
 	.word	0,0
-.L163:
-	.word	-1,.L83,0,.L204-.L83
+.L164:
+	.word	-1,.L84,0,.L205-.L84
 	.half	1
 	.byte	103
-	.word	.L205-.L83,.L158-.L83
+	.word	.L206-.L84,.L159-.L84
 	.half	1
 	.byte	111
 	.word	0,0
-.L159:
-	.word	-1,.L83,0,.L203-.L83
+.L160:
+	.word	-1,.L84,0,.L204-.L84
 	.half	1
 	.byte	100
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('actuator_tx_runtime_init')
 	.sect	'.debug_loc'
-.L74:
-	.word	-1,.L75,0,.L133-.L75
+.L75:
+	.word	-1,.L76,0,.L134-.L76
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L135:
-	.word	-1,.L75,0,.L133-.L75
+.L136:
+	.word	-1,.L76,0,.L134-.L76
 	.half	1
 	.byte	100
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('actuator_tx_runtime_on_periodic_send')
 	.sect	'.debug_loc'
-.L78:
-	.word	-1,.L79,0,.L142-.L79
+.L79:
+	.word	-1,.L80,0,.L143-.L80
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L143:
-	.word	-1,.L79,0,.L142-.L79
+.L144:
+	.word	-1,.L80,0,.L143-.L80
 	.half	1
 	.byte	100
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('actuator_tx_runtime_update')
 	.sect	'.debug_loc'
-.L76:
-	.word	-1,.L77,0,.L136-.L77
+.L77:
+	.word	-1,.L78,0,.L137-.L78
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L141:
-	.word	-1,.L77,.L183-.L77,.L46-.L77
+.L142:
+	.word	-1,.L78,.L184-.L78,.L47-.L78
 	.half	5
 	.byte	144,32,157,32,0
-	.word	.L47-.L77,.L45-.L77
+	.word	.L48-.L78,.L46-.L78
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
-.L137:
-	.word	-1,.L77,0,.L136-.L77
+.L138:
+	.word	-1,.L78,0,.L137-.L78
 	.half	1
 	.byte	100
 	.word	0,0
-.L139:
-	.word	-1,.L77,0,.L136-.L77
+.L140:
+	.word	-1,.L78,0,.L137-.L78
 	.half	1
 	.byte	101
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('build_brake_active')
 	.sect	'.debug_loc'
-.L70:
-	.word	-1,.L71,0,.L174-.L71
+.L71:
+	.word	-1,.L72,0,.L175-.L72
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L175:
-	.word	-1,.L71,0,.L174-.L71
+.L176:
+	.word	-1,.L72,0,.L175-.L72
 	.half	1
 	.byte	100
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('build_ev_state')
 	.sect	'.debug_loc'
-.L72:
-	.word	-1,.L73,0,.L176-.L73
+.L73:
+	.word	-1,.L74,0,.L177-.L74
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L178:
-	.word	-1,.L73,.L180-.L73,.L181-.L73
-	.half	1
-	.byte	82
-	.word	.L30-.L73,.L31-.L73
-	.half	1
-	.byte	82
-	.word	0,0
 .L179:
-	.word	-1,.L73,.L182-.L73,.L32-.L73
+	.word	-1,.L74,.L181-.L74,.L182-.L74
+	.half	1
+	.byte	82
+	.word	.L31-.L74,.L32-.L74
+	.half	1
+	.byte	82
+	.word	0,0
+.L180:
+	.word	-1,.L74,.L183-.L74,.L33-.L74
 	.half	5
 	.byte	144,32,157,32,0
-	.word	.L33-.L73,.L31-.L73
+	.word	.L34-.L74,.L32-.L74
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
-.L177:
-	.word	-1,.L73,0,.L176-.L73
+.L178:
+	.word	-1,.L74,0,.L177-.L74
 	.half	1
 	.byte	100
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('encode_safe_state')
 	.sect	'.debug_loc'
-.L66:
-	.word	-1,.L67,0,.L166-.L67
+.L67:
+	.word	-1,.L68,0,.L167-.L68
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L170:
-	.word	-1,.L67,0,.L166-.L67
+.L171:
+	.word	-1,.L68,0,.L167-.L68
 	.half	1
 	.byte	85
 	.word	0,0
-.L168:
-	.word	-1,.L67,0,.L166-.L67
+.L169:
+	.word	-1,.L68,0,.L167-.L68
 	.half	1
 	.byte	84
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('encode_speed_state')
 	.sect	'.debug_loc'
-.L68:
-	.word	-1,.L69,0,.L171-.L69
+.L69:
+	.word	-1,.L70,0,.L172-.L70
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L173:
-	.word	-1,.L69,0,.L171-.L69
+.L174:
+	.word	-1,.L70,0,.L172-.L70
 	.half	1
 	.byte	84
 	.word	0,0
-.L172:
-	.word	-1,.L69,0,.L171-.L69
+.L173:
+	.word	-1,.L70,0,.L172-.L70
 	.half	1
 	.byte	100
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L376:
+.L378:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
@@ -1951,49 +1955,49 @@ __actuator_build_can_words_function_end:
 	.sdecl	'.debug_frame',debug,cluster('encode_safe_state')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L376,.L67,.L166-.L67
+	.word	.L378,.L68,.L167-.L68
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('encode_speed_state')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L376,.L69,.L171-.L69
+	.word	.L378,.L70,.L172-.L70
 	.byte	8,18,8,19,8,21,8,22,8,23,0,0
 	.sdecl	'.debug_frame',debug,cluster('build_brake_active')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L376,.L71,.L174-.L71
+	.word	.L378,.L72,.L175-.L72
 	.byte	8,18,8,19,8,21,8,22,8,23,0,0
 	.sdecl	'.debug_frame',debug,cluster('build_ev_state')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L376,.L73,.L176-.L73
+	.word	.L378,.L74,.L177-.L74
 	.byte	8,18,8,19,8,21,8,22,8,23,0,0
 	.sdecl	'.debug_frame',debug,cluster('actuator_tx_runtime_init')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L376,.L75,.L133-.L75
+	.word	.L378,.L76,.L134-.L76
 	.byte	8,18,8,19,8,21,8,22,8,23,0,0
 	.sdecl	'.debug_frame',debug,cluster('actuator_tx_runtime_update')
 	.sect	'.debug_frame'
 	.word	20
-	.word	.L376,.L77,.L136-.L77
+	.word	.L378,.L78,.L137-.L78
 	.byte	8,18,8,19,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('actuator_tx_runtime_on_periodic_send')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L376,.L79,.L142-.L79
+	.word	.L378,.L80,.L143-.L80
 	.byte	8,18,8,19,8,21,8,22,8,23,0,0
 	.sdecl	'.debug_frame',debug,cluster('actuator_build_can_data')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L376,.L81,.L144-.L81
+	.word	.L378,.L82,.L145-.L82
 	.sdecl	'.debug_frame',debug,cluster('actuator_build_can_words')
 	.sect	'.debug_frame'
 	.word	36
-	.word	.L376,.L83,.L158-.L83
+	.word	.L378,.L84,.L159-.L84
 	.byte	4
-	.word	(.L202-.L83)/2
+	.word	(.L203-.L84)/2
 	.byte	19,8,22,26,3,19,138,8,4
-	.word	(.L158-.L202)/2
+	.word	(.L159-.L203)/2
 	.byte	19,0,8,26,0,0
 	; Module end
