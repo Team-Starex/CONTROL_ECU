@@ -11,6 +11,7 @@
 #include "State_Manager.h"
 #include "HMI_Output.h"
 #include "Actuator_Output.h"
+#include "Log_Handler.h"
 
 #define LED &MODULE_P00, 5
 
@@ -157,7 +158,7 @@ static void process_rx_frame_words(const uint32 rxWords[2])
     }
 
     classify_state(&g_vehicleState, &g_outputRuntime);
-    //output_runtime_notify_input(&g_outputRuntime);
+    // output_runtime_notify_input(&g_outputRuntime);
     actuator_tx_runtime_update(&g_actuatorTxRuntime, &g_vehicleState);
 }
 
@@ -174,6 +175,7 @@ void core0_main(void)
 
     initPeripherals();
     app_init_can();
+    log_handler_init();
 
     g_inputData.button = 0u;
     g_inputData.brake_value = 0u;
@@ -192,6 +194,11 @@ void core0_main(void)
             if (IfxCan_Can_getRxFifo0FillLevel(&g_canNode) > 0u)
             {
                 IfxCan_Can_readMessage(&g_canNode, &g_rxMsg, (uint32 *)g_rxData);
+                log_handler_reset_rx_timeout();
+            }
+            else
+            {
+                log_handler_increment_rx_timeout();
                 process_rx_frame_words(g_rxData);
             }
             /* 10ms마다 할 작업*/
@@ -200,6 +207,10 @@ void core0_main(void)
         if (stm_get_50msflag() != FALSE)
         {
             /* 50ms마다 할 작업*/
+            /* ===== 상태 분류 및 로그 판별 ===== */
+            classify_state(&g_vehicleState, &g_outputRuntime);
+            LogCode current_logcode = log_handler_evaluate(&g_vehicleState);
+            log_handler_send_log(current_logcode);
         }
 
         /* ===== TX ===== */
@@ -232,7 +243,7 @@ void core0_main(void)
             output_runtime_tick1000ms(&g_vehicleState, &g_outputRuntime);
             /* 1000ms마다 할 작업 */
             // 토글 테스트
-            //critical_response_timer_down();
+            // critical_response_timer_down();
         }
     }
 }
