@@ -1,5 +1,4 @@
 #include "Log_Handler.h"
-#include <stdio.h>
 
 /* ===== 로컬 상태 ===== */
 static LogHandlerState g_logHandlerState = {0u};
@@ -194,43 +193,45 @@ void log_handler_reset_rx_timeout(void)
  */
 void log_handler_send_log(LogCode logcode)
 {
-    /* ===== 로그 출력 (디버그용) ===== */
+    /* ===== 로그 코드만 기록 (printf 제거 - 성능 개선) ===== */
+    /* printf는 Aurix에서 블로킹 작업으로 CAN 수신 지연 발생 */
+
     switch (logcode)
     {
     case LOG_NONE:
-        printf("[LOG] Status: NORMAL\r\n");
+        /* 정상 상태 - 로그 없음 */
         break;
 
     case LOG_ACCEL_WARNING:
-        printf("[LOG:1] ACCEL_WARNING - Acceleration sensor delta exceeds warning threshold\r\n");
+        /* ACCEL_WARNING: 가속도 센서 경고 임계값 초과 */
         break;
 
     case LOG_ACCEL_CRITICAL:
-        printf("[LOG:2] ACCEL_CRITICAL - Acceleration sensor delta exceeds critical threshold\r\n");
+        /* ACCEL_CRITICAL: 가속도 센서 심각 임계값 초과 */
         break;
 
     case LOG_BRAKE_WARNING:
-        printf("[LOG:3] BRAKE_WARNING - Brake sensor delta exceeds warning threshold\r\n");
+        /* BRAKE_WARNING: 브레이크 센서 경고 임계값 초과 */
         break;
 
     case LOG_BRAKE_CRITICAL:
-        printf("[LOG:4] BRAKE_CRITICAL - Brake sensor delta exceeds critical threshold\r\n");
+        /* BRAKE_CRITICAL: 브레이크 센서 심각 임계값 초과 */
         break;
 
     case LOG_STEER_WARNING:
-        printf("[LOG:5] STEER_WARNING - Steering sensor delta exceeds warning threshold\r\n");
+        /* STEER_WARNING: 조향각 센서 경고 임계값 초과 */
         break;
 
     case LOG_STEER_CRITICAL:
-        printf("[LOG:6] STEER_CRITICAL - Steering sensor delta exceeds critical threshold\r\n");
+        /* STEER_CRITICAL: 조향각 센서 심각 임계값 초과 */
         break;
 
     case LOG_TIMEOUT:
-        printf("[LOG:7] TIMEOUT - CAN message reception timeout\r\n");
+        /* TIMEOUT: CAN 메시지 수신 타임아웃 */
         break;
 
     default:
-        printf("[LOG] Unknown log code: %u\r\n", (uint32_t)logcode);
+        /* Unknown log code */
         break;
     }
 

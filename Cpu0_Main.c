@@ -195,11 +195,11 @@ void core0_main(void)
             {
                 IfxCan_Can_readMessage(&g_canNode, &g_rxMsg, (uint32 *)g_rxData);
                 log_handler_reset_rx_timeout();
+                process_rx_frame_words(g_rxData);
             }
             else
             {
                 log_handler_increment_rx_timeout();
-                process_rx_frame_words(g_rxData);
             }
             /* 10ms마다 할 작업*/
             // can통신 해서 데이터 구조 초기화
