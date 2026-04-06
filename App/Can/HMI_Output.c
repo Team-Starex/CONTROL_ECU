@@ -46,7 +46,6 @@ void output_build_can_data(const VehicleState *vehicleState,
 {
     uint8_t safeState;
     uint8_t logCode;
-    uint16_t speedKph;
 
     if ((vehicleState == 0) || (runtimeState == 0) || (data == 0))
     {
@@ -55,12 +54,6 @@ void output_build_can_data(const VehicleState *vehicleState,
 
     safeState = (uint8_t)vehicleState->systemstate;
     logCode   = (uint8_t)vehicleState->logcode;
-    speedKph = vehicleState->virtualSpeedKph_x10 / 10u;
-
-    if (speedKph > 255u)
-    {
-        speedKph = 255u;
-    }
 
     if (runtimeState->isTimedOut == true)
     {
@@ -68,7 +61,7 @@ void output_build_can_data(const VehicleState *vehicleState,
         logCode   = (uint8_t)LOG_TIMEOUT;
     }
 
-    data[0] = (uint8_t)speedKph;
+    data[0] = vehicleState->virtualSpeedKph;
     data[1] = vehicleState->steer.filtered;   /* 필요하면 steer.cur로 바꿔도 됨 */
     data[2] = safeState;
     data[3] = logCode;

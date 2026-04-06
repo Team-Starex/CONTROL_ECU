@@ -1,6 +1,6 @@
 #include "Actuator_Output.h"
 
-#define BRAKE_ACTIVE_THRESHOLD   (50u)
+#define BRAKE_ACTIVE_THRESHOLD   (30u)
 
 static uint8_t encode_safe_state(SystemState s, bool isTimedOut)
 {
