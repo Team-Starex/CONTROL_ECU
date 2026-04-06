@@ -57,6 +57,7 @@ static void initCanTransceiver(void)
 }
 
 /*********************************************************************************************************************/
+
 static void app_init_can(void)
 {
     IfxCan_Can_Config canConfig;
@@ -163,8 +164,6 @@ static void process_rx_frame_words(const uint32 rxWords[2])
 /*********************************************************************************************************************/
 void core0_main(void)
 {
-    uint8 isOn = 1u;
-
     IfxCpu_enableInterrupts();
 
     IfxScuWdt_disableCpuWatchdog(IfxScuWdt_getCpuWatchdogPassword());

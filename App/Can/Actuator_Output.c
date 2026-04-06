@@ -1,6 +1,6 @@
 #include "Actuator_Output.h"
 
-#define BRAKE_ACTIVE_THRESHOLD   (150u)
+#define BRAKE_ACTIVE_THRESHOLD   (50u)
 
 static uint8_t encode_safe_state(SystemState s, bool isTimedOut)
 {
@@ -113,7 +113,7 @@ void actuator_tx_runtime_update(ActuatorTxRuntime *state, const VehicleState *ve
 
     state->ackPulse = 0u;
 
-    if ((state->prevButton == 0u) && (curButton == 1u))
+    if ((state->prevButton == 0u) && (curButton == 1u)) // 감지
     {
         state->ackPulse = 1u;
         state->ackSeq = (uint8_t)((state->ackSeq + 1u) & 0x0Fu);

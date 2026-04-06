@@ -1,6 +1,6 @@
 #include "Input_Handler.h"
 
-#define LOOKS_LIKE_NOISE      4U
+#define LOOKS_LIKE_NOISE      15U
 
 #define BRAKE_THRESHOLD_1     10U
 #define BRAKE_THRESHOLD_2     25U
@@ -14,9 +14,9 @@
 #define ACCEL_DEADZONE        40U
 #define BRAKE_DEADZONE        40U
 
-#define SPEED_MAX_X10         255U   /* 255.0 km/h */
-#define SPEED_LOW_MAX_X10     40U    /* 40.0 km/h */
-#define SPEED_MID_MAX_X10     100U    /* 100.0 km/h */
+#define SPEED_MAX_X10         2550U      //255.0 km/h
+#define SPEED_LOW_MAX_X10     400U       //40.0 km/h
+#define SPEED_MID_MAX_X10     1000U      //100.0 km/h
 
 static uint8_t abs_u8(uint8_t a, uint8_t b)
 {
@@ -90,10 +90,10 @@ static void update_virtual_speed(VehicleState *state)
 {
     uint8_t accelEff;
     uint8_t brakeEff;
-    int32_t speed;
-    int32_t accelStep;
-    int32_t brakeStep;
-    int32_t dragStep;
+    int16_t speed;
+    int16_t accelStep;
+    int16_t brakeStep;
+    int16_t dragStep;
 
     if (state == 0)
     {
@@ -103,12 +103,12 @@ static void update_virtual_speed(VehicleState *state)
     accelEff = apply_deadzone(state->accel.filtered, ACCEL_DEADZONE);
     brakeEff = apply_deadzone(state->brake.filtered, BRAKE_DEADZONE);
 
-    speed = (int32_t)state->virtualSpeedKph_x10;
+    speed = (int16_t)state->virtualSpeedKph_x10;
 
-    /* 10ms tick 기준 가상 속도 갱신 */
-    accelStep = ((int32_t)accelEff * 4) / 255;   /* 가속 효과 */
-    brakeStep = ((int32_t)brakeEff * 6) / 255;   /* 브레이크 효과 */
-    dragStep  = 1 + (speed / 1000);                /* 자연 감속 */
+    //10ms마다 가상 속도 갱신
+    accelStep = ((int16_t)accelEff * 2) / 255;   //가속
+    brakeStep = ((int16_t)brakeEff * 2) / 255;   //브레이크
+    dragStep  = 1 + (speed / 1000);     //자연 감속
 
     speed += accelStep;
     speed -= brakeStep;
@@ -118,7 +118,7 @@ static void update_virtual_speed(VehicleState *state)
     {
         speed = 0;
     }
-    else if (speed > SPEED_MAX_X10)
+    else if (speed > (int16_t)SPEED_MAX_X10)
     {
         speed = SPEED_MAX_X10;
     }
@@ -150,7 +150,7 @@ void input_handler_parse_can(const uint8_t rxData[8], InputData *data)
         return;
     }
 
-    data->button      = rxData[0];
+    data->button      = rxData[0]; // 파싱
     data->brake_value = rxData[2];
     data->accel_value = rxData[4];
     data->steer_value = rxData[6];
@@ -163,7 +163,7 @@ void input_handler_init(VehicleState *state, const InputData *data)
         return;
     }
 
-    state->button = data->button;
+    state->button = data->button; // 데이터 반영
 
     state->brake.prev = data->brake_value;
     state->brake.cur = data->brake_value;
