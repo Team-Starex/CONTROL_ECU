@@ -24,7 +24,12 @@ void output_runtime_notify_input(OutputRuntimeState *state)
 
 void output_runtime_tick1000ms(const VehicleState *vehicleState, OutputRuntimeState *state)
 {
-    if (state == 0 || vehicleState->systemstate  != SAFE_MODE_CRITICAL_CHECK)
+    if ((state == 0) || (vehicleState == 0))
+    {
+        return;
+    }
+
+    if (vehicleState->systemstate != SAFE_MODE_CRITICAL_CHECK)
     {
         return;
     }
@@ -40,31 +45,26 @@ void output_runtime_tick1000ms(const VehicleState *vehicleState, OutputRuntimeSt
     }
 }
 
-void output_build_can_data(const VehicleState *vehicleState,
+void output_build_can_data(VehicleState *vehicleState,
                            const OutputRuntimeState *runtimeState,
                            uint8_t data[8])
 {
-    uint8_t safeState;
-    uint8_t logCode;
 
     if ((vehicleState == 0) || (runtimeState == 0) || (data == 0))
     {
         return;
     }
 
-    safeState = (uint8_t)vehicleState->systemstate;
-    logCode   = (uint8_t)vehicleState->logcode;
-
     if (runtimeState->isTimedOut == true)
     {
-        safeState = (uint8_t)SYS_STATE_FATAL_NO_RESPONSE;
-        logCode   = (uint8_t)LOG_TIMEOUT;
+        vehicleState->systemstate = (uint8_t)SYS_STATE_FATAL_NO_RESPONSE;
+        vehicleState->logcode = (uint8_t)LOG_TIMEOUT;
     }
 
     data[0] = vehicleState->virtualSpeedKph;
-    data[1] = vehicleState->steer.filtered;   /* 필요하면 steer.cur로 바꿔도 됨 */
-    data[2] = safeState;
-    data[3] = logCode;
+    data[1] = vehicleState->steer.filtered;
+    data[2] = vehicleState->systemstate;
+    data[3] = vehicleState->logcode;
     data[4] = runtimeState->timeoutCount10s;
     data[5] = 0u;
     data[6] = 0u;

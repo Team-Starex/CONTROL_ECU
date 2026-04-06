@@ -156,8 +156,8 @@ static void process_rx_frame_words(const uint32 rxWords[2])
         input_handler_update(&g_vehicleState, &g_inputData);
     }
 
-    classify_state(&g_vehicleState);
-    output_runtime_notify_input(&g_outputRuntime);
+    classify_state(&g_vehicleState, &g_outputRuntime);
+    //output_runtime_notify_input(&g_outputRuntime);
     actuator_tx_runtime_update(&g_actuatorTxRuntime, &g_vehicleState);
 }
 
@@ -232,7 +232,7 @@ void core0_main(void)
             output_runtime_tick1000ms(&g_vehicleState, &g_outputRuntime);
             /* 1000ms마다 할 작업 */
             // 토글 테스트
-            critical_response_timer_down();
+            //critical_response_timer_down();
         }
     }
 }
