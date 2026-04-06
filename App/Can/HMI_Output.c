@@ -61,9 +61,9 @@ void output_build_can_data(const VehicleState *vehicleState,
         logCode   = (uint8_t)LOG_TIMEOUT;
     }
 
-    data[0] = vehicleState->accel.cur;
+    data[0] = vehicleState->virtualSpeedKph_x10;;
     data[1] = vehicleState->steer.filtered;   /* 필요하면 steer.cur로 바꿔도 됨 */
-    data[2] = 1u;//safeState;
+    data[2] = vehicleState->systemstate;//safeState;
     data[3] = logCode;
     data[4] = runtimeState->timeoutCount10s;
     data[5] = 0u;

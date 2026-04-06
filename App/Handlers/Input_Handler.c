@@ -11,12 +11,12 @@
 
 #define FILTER_DIV            4U
 
-#define ACCEL_DEADZONE        20U
-#define BRAKE_DEADZONE        20U
+#define ACCEL_DEADZONE        40U
+#define BRAKE_DEADZONE        40U
 
-#define SPEED_MAX_X10         1200U   /* 120.0 km/h */
-#define SPEED_LOW_MAX_X10     200U    /* 20.0 km/h */
-#define SPEED_MID_MAX_X10     600U    /* 60.0 km/h */
+#define SPEED_MAX_X10         255U   /* 255.0 km/h */
+#define SPEED_LOW_MAX_X10     40U    /* 40.0 km/h */
+#define SPEED_MID_MAX_X10     100U    /* 100.0 km/h */
 
 static uint8_t abs_u8(uint8_t a, uint8_t b)
 {
@@ -106,9 +106,9 @@ static void update_virtual_speed(VehicleState *state)
     speed = (int32_t)state->virtualSpeedKph_x10;
 
     /* 10ms tick 기준 가상 속도 갱신 */
-    accelStep = ((int32_t)accelEff * 12) / 255;   /* 가속 효과 */
-    brakeStep = ((int32_t)brakeEff * 20) / 255;   /* 브레이크 효과 */
-    dragStep  = 1 + (speed / 200);                /* 자연 감속 */
+    accelStep = ((int32_t)accelEff * 4) / 255;   /* 가속 효과 */
+    brakeStep = ((int32_t)brakeEff * 6) / 255;   /* 브레이크 효과 */
+    dragStep  = 1 + (speed / 1000);                /* 자연 감속 */
 
     speed += accelStep;
     speed -= brakeStep;
