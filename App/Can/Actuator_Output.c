@@ -73,17 +73,19 @@ static uint8_t build_ev_state(const VehicleState *vehicleState)
     }
 
     /* bit2 : Warning Steer */
-    if ((vehicleState->steer.deltalevel == DELTA_WARNING) || (steerOffset >= 55U))
+    if (vehicleState->speedBand != SPEED_STOP)
     {
-        evState |= (1u << 2);
-    }
+        if ((vehicleState->steer.deltalevel == DELTA_WARNING) || (steerOffset >= 55U))
+        {
+            evState |= (1u << 2);
+        }
 
-    /* bit3 : Critical Steer */
-    if ((vehicleState->steer.deltalevel == DELTA_CRITICAL) || (steerOffset >= 90U))
-    {
-        evState |= (1u << 3);
+        /* bit3 : Critical Steer */
+        if ((vehicleState->steer.deltalevel == DELTA_CRITICAL) || (steerOffset >= 90U))
+        {
+            evState |= (1u << 3);
+        }
     }
-
     return evState;
 }
 

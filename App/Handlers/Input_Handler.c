@@ -14,7 +14,7 @@
 #define ACCEL_DEADZONE        10U
 #define BRAKE_DEADZONE        10U
 
-#define SPEED_MAX_KPH        200U      //200 km/h
+#define SPEED_MAX_KPH        200U       //200 km/h
 #define SPEED_MID_MAX_KPH     120U      //80 km/h
 #define SPEED_LOW_MAX_KPH     60U      //30 km/h
 
