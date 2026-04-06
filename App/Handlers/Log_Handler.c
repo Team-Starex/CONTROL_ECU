@@ -2,7 +2,7 @@
 
 /* ===== 로컬 상태 ===== */
 static LogHandlerState g_logHandlerState = {0u};
-
+static LogCode evaluate_stop_steer_warning(const VehicleState *vehicle_state);
 /*********************************************************************************************************************/
 /**
  * @brief 로그 핸들러 초기화
@@ -85,8 +85,9 @@ LogCode log_handler_evaluate(VehicleState *vehicle_state)
     LogCode brake_log = LOG_NONE;
     LogCode steer_log = LOG_NONE;
     LogCode final_logcode = LOG_NONE;
+    LogCode stop_steer_log = LOG_NONE;
 
-    if (vehicle_state == NULL)
+    if (vehicle_state == 0)
     {
         return LOG_NONE;
     }
@@ -95,6 +96,7 @@ LogCode log_handler_evaluate(VehicleState *vehicle_state)
     accel_log = evaluate_accel_log(vehicle_state->accel.delta);
     brake_log = evaluate_brake_log(vehicle_state->brake.delta);
     steer_log = evaluate_steer_log(vehicle_state->steer.delta);
+    stop_steer_log = evaluate_stop_steer_warning(vehicle_state);
 
     /* ===== 타임아웃 판별 ===== */
     LogCode timeout_log = LOG_NONE;
@@ -122,7 +124,8 @@ LogCode log_handler_evaluate(VehicleState *vehicle_state)
     /* 2순위: WARNING (경고) */
     else if (accel_log == LOG_ACCEL_WARNING ||
              brake_log == LOG_BRAKE_WARNING ||
-             steer_log == LOG_STEER_WARNING)
+             steer_log == LOG_STEER_WARNING ||
+             stop_steer_log == LOG_STEER_WARNING)
     {
         if (accel_log == LOG_ACCEL_WARNING)
             final_logcode = LOG_ACCEL_WARNING;
@@ -191,6 +194,24 @@ void log_handler_reset_rx_timeout(void)
  * - Flash 메모리에 기록
  * - 원격 모니터링 시스템으로 전송
  */
+
+static LogCode evaluate_stop_steer_warning(const VehicleState *vehicle_state)
+{
+    if (vehicle_state == 0)
+    {
+        return LOG_NONE;
+    }
+
+    /* 속도 0이고, 조향각이 5도 이상이면 steer warning */
+    if ((vehicle_state->virtualSpeedKph == 0u) &&
+        (vehicle_state->steer.filtered >= 5u))
+    {
+        return LOG_STEER_WARNING;
+    }
+
+    return LOG_NONE;
+}
+
 void log_handler_send_log(LogCode logcode)
 {
     /* ===== 로그 코드만 기록 (printf 제거 - 성능 개선) ===== */
@@ -234,20 +255,4 @@ void log_handler_send_log(LogCode logcode)
         /* Unknown log code */
         break;
     }
-
-    /* ===== TODO: 실제 시스템 구현 ===== */
-    /*
-     * 1. UART 전송 실装
-     * extern void uart_send_byte(uint8_t data);
-     * uart_send_byte((uint8_t)logcode);
-     *
-     * 2. CAN 진단 메시지로 전송 (ISO-TP)
-     * IfxCan_Can_Message diagMsg;
-     * diagMsg.messageId = 0x7DF;  // UDS Functional Addressing
-     * diagMsg.data[0] = logcode;
-     * IfxCan_Can_sendMessage(&g_canNode, &diagMsg, ...);
-     *
-     * 3. 또는 외부 메モ리(Flash/EEPROM)에 로그 저장
-     * log_storage_write(logcode, timestamp);
-     */
 }
