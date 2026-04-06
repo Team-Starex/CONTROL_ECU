@@ -24,7 +24,7 @@ void output_runtime_notify_input(OutputRuntimeState *state)
 
 void output_runtime_tick1000ms(OutputRuntimeState *state)
 {
-    if (state == 0)
+    if (state != 3u)
     {
         return;
     }

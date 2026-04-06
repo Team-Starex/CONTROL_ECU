@@ -20,6 +20,7 @@ static IfxCan_Can_Pins    g_canPins;
 static IfxCan_Message     g_txMsg;
 static uint32             g_txData[2];
 static uint8 timeout_counter = 10;  // ← 정적 변수로 값 유지
+static uint8 response_button = 0;
 
 typedef struct {
     uint8 speed_value;
@@ -29,6 +30,7 @@ typedef struct {
     uint8 timeout;
 } CanPerceiveData;
 
+static CanPerceiveData data;
 /* 버튼 상태 읽기
  * 지금은 HIGH면 눌림이라고 가정
  * 만약 보드 버튼이 Active Low면 low로 바꿔야 함
@@ -50,6 +52,12 @@ void init_can(void)
 {
     IfxCan_Can_Config canConfig;
     IfxCan_Can_NodeConfig nodeConfig;
+
+    data.speed_value = 0u;
+    data.steer_angle = 0u;
+    data.safe_state  = 0u;
+    data.log_num     = 0u;
+    data.timeout     = 10u;  // ← 현재 카운터 값 전송
 
     IfxCan_Can_initModuleConfig(&canConfig, &MODULE_CAN0);
     IfxCan_Can_initModule(&g_mcmcan, &canConfig);
@@ -129,25 +137,35 @@ static void send_perceive_data(const CanPerceiveData *d)
     }
 }
 
+/*
+ * 고려할 점
+ * 상태가 critical 첫 진입하면 10으로 초기화
+ * */
+
+static volatile uint8 temp_safe_mode = 2u;
+
 void critical_response_timer_down(void){
-    if (timeout_counter > 0)
-    {
-        timeout_counter--;
+    if(data.safe_state != 2u){
+        return;
     }
-    else
-    {
-        timeout_counter = 10;  // 0이 되면 다시 10으로 리셋
-    }
+    timeout_counter = timeout_counter >0? timeout_counter - 1: 10u;
 }
 
 void can_perceive_ras_100ms(void)
 {
-    CanPerceiveData data;
-
-
+    if(data.safe_state == 2u && !button_pressed())//나중에 버튼 상태 불러와서 적용하기
+    {
+        timeout_counter = 10u;  // 0이 되면 다시 10으로 리셋
+        //임시로 버튼 누르면 해제 되도록 테스팅
+        temp_safe_mode = 0u;
+    }
+    else if(data.safe_state == 2u && timeout_counter==0){
+        temp_safe_mode = 3u;
+    }
+    //받아온 값 최신화 해주기
     data.speed_value = 10u;
     data.steer_angle = 90u;
-    data.safe_state  = 2u;
+    data.safe_state  = temp_safe_mode;
     data.log_num     = 42u;
     data.timeout     = timeout_counter;  // ← 현재 카운터 값 전송
 

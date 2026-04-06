@@ -12,16 +12,17 @@
 #include "HMI_Output.h"
 #include "Actuator_Output.h"
 
-#define LED                     &MODULE_P00, 5
+#define LED &MODULE_P00, 5
 
-#define RX_SENSOR_MSG_ID        0x123u
-#define TX_ACT_MSG_ID           0x201u
-#define TX_HMI_MSG_ID           0x202u
+#define RX_SENSOR_MSG_ID 0x123u
+#define TX_ACT_MSG_ID 0x201u
+#define TX_HMI_MSG_ID 0x202u
 
-#define CAN_STB_PORT            (&MODULE_P20)
-#define CAN_STB_PIN             (6U)
+#define CAN_STB_PORT (&MODULE_P20)
+#define CAN_STB_PIN (6U)
 
-IFX_ALIGN(4) IfxCpu_syncEvent cpuSyncEvent = 0;
+IFX_ALIGN(4)
+IfxCpu_syncEvent cpuSyncEvent = 0;
 
 /* ===== 상태 ===== */
 static InputData g_inputData;
@@ -30,13 +31,13 @@ static OutputRuntimeState g_outputRuntime;
 static ActuatorTxRuntime g_actuatorTxRuntime;
 
 /* ===== CAN ===== */
-static IfxCan_Can          g_mcmcan;
-static IfxCan_Can_Node     g_canNode;
-static IfxCan_Can_Pins     g_canPins;
-static IfxCan_Message      g_rxMsg;
-static IfxCan_Message      g_txMsgHmi;
-static IfxCan_Message      g_txMsgAct;
-static IfxCan_Filter       g_rxFilter;
+static IfxCan_Can g_mcmcan;
+static IfxCan_Can_Node g_canNode;
+static IfxCan_Can_Pins g_canPins;
+static IfxCan_Message g_rxMsg;
+static IfxCan_Message g_txMsgHmi;
+static IfxCan_Message g_txMsgAct;
+static IfxCan_Filter g_rxFilter;
 
 static uint32 g_rxData[2];
 static uint32_t g_txDataHmi[2];
@@ -175,7 +176,7 @@ void core0_main(void)
     initPeripherals();
     app_init_can();
 
-    g_inputData.button      = 0u;
+    g_inputData.button = 0u;
     g_inputData.brake_value = 0u;
     g_inputData.accel_value = 0u;
     g_inputData.steer_value = 0u;
@@ -230,6 +231,9 @@ void core0_main(void)
         if (stm_get_1000msflag() != FALSE)
         {
             output_runtime_tick1000ms(&g_outputRuntime);
+            /* 1000ms마다 할 작업 */
+            // 토글 테스트
+            critical_response_timer_down();
         }
     }
 }
