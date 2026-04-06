@@ -22,9 +22,9 @@ void output_runtime_notify_input(OutputRuntimeState *state)
     state->isTimedOut = false;
 }
 
-void output_runtime_tick1000ms(OutputRuntimeState *state)
+void output_runtime_tick1000ms(const VehicleState *vehicleState, OutputRuntimeState *state)
 {
-    if (state == 0)//|| state->safeState)
+    if (state == 0 || vehicleState->systemstate  != SAFE_MODE_CRITICAL_CHECK)
     {
         return;
     }

@@ -230,7 +230,7 @@ void core0_main(void)
         /* ===== LED ===== */
         if (stm_get_1000msflag() != FALSE)
         {
-            output_runtime_tick1000ms(&g_outputRuntime);
+            output_runtime_tick1000ms(&g_vehicleState, &g_outputRuntime);
             /* 1000ms마다 할 작업 */
             // 토글 테스트
             critical_response_timer_down();
