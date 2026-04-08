@@ -1,3 +1,5 @@
 TriCore Debug (TASKING)/
 .cproject
-.setting/language.setting.settings.xml
+.settings/
+tc375_control_ecu TriCore Debug (TASKING).launch
+.metadata/
