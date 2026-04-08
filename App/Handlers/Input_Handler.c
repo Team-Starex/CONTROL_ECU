@@ -14,9 +14,9 @@
 #define ACCEL_DEADZONE        10U
 #define BRAKE_DEADZONE        10U
 
-#define SPEED_MAX_KPH        200U       //200 km/h
-#define SPEED_MID_MAX_KPH     120U      //80 km/h
-#define SPEED_LOW_MAX_KPH     60U      //30 km/h
+#define SPEED_MAX_KPH        200U       //200 km/h 최대 속도
+#define SPEED_MID_MAX_KPH     100U      //80 km/h 중속
+#define SPEED_LOW_MAX_KPH     30U       //30 km/h 저속
 
 typedef enum
 {
