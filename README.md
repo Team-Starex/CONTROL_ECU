@@ -1,6 +1,6 @@
 # TC375 Control ECU
 
-Infineon AURIX TC375 TriCore 기반 멀티코어 제어 ECU 프로젝트입니다.
+Infineon AURIX TC375 TriCore 기반 단일코어 제어 ECU 프로젝트입니다.
 
 ## 📋 프로젝트 개요
 
