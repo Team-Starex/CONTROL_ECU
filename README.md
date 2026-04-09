@@ -168,7 +168,6 @@ typedef struct {
 
 ## 🔍 주요 특징
 
-- ✅ 3개 코어 병렬 처리
 - ✅ 실시간 CAN 통신
 - ✅ 센서 이상 감지 (WARNING/CRITICAL)
 - ✅ 타임아웃 처리
